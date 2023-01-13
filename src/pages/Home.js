@@ -29,9 +29,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
-
-
             <section id="header" className="d-flex align-items-center mt-5  text-dark">
 
 <div className="container-fluid nav_bg">
@@ -39,7 +36,7 @@ const Home = () => {
         <div className="col-10 mx-auto">
             <div className="row">
             <div className="col-lg-7 col-md-12 col-sm-12  header-img">
-                    <img src={img1} className="img-fluid" />
+                    <img src={img1} className="img-fluid" alt="img1" />
                 </div>
                 <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                  
