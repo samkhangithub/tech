@@ -41,6 +41,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            
             <section id="header2" className="d-flex align-items-center mt-5  text-dark">
 
                 <div className="container-fluid nav_bg">
