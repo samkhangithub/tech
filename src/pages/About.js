@@ -13,6 +13,8 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { GrLinkedinOption } from 'react-icons/gr';
+import Slider from './slider';
+
 
 const About = () => {
     const [index, setIndex] = useState(0);
@@ -23,26 +25,60 @@ const About = () => {
 
     const Array = [
         {
-            img : img8,
-            title : "CEO",
-            name : "Federico"
+            img: img8,
+            title: "CEO",
+            name: "Federico"
         },
         {
-            img : img8,
-            title : "CTO",
-            name : "Rodrigo"
+            img: img8,
+            title: "CTO",
+            name: "Rodrigo"
         },
         {
-            img : img8,
-            title : "CBO",
-            name : "Eugenio"
+            img: img8,
+            title: "CBO",
+            name: "Eugenio"
         },
         {
-            img : img8,
-            title : "COO",
-            name : "Pedro"
+            img: img8,
+            title: "COO",
+            name: "Pedro"
         },
-        
+
+
+    ]
+
+    const Senior = [
+        {
+            img: img8,
+            title: "CEO",
+            name: "Federico"
+        },
+        {
+            img: img8,
+            title: "CTO",
+            name: "Rodrigo"
+        },
+        {
+            img: img8,
+            title: "CBO",
+            name: "Eugenio"
+        },
+        {
+            img: img8,
+            title: "COO",
+            name: "Pedro"
+        },
+        {
+            img: img8,
+            title: "COO",
+            name: "Pedro"
+        },
+        {
+            img: img8,
+            title: "CTO",
+            name: "Rodrigo"
+        },
 
     ]
     return (
@@ -208,36 +244,121 @@ const About = () => {
 
             <section id="header3" className="d-flex align-items-center bg-light text-dark mt-5">
 
-<div className="container-fluid ">
-    <div className="row">
-        <div className="col-10 mx-auto">
-        <div className='board'>
-        <h2>Our Board</h2>
-        <p>Meet the guys that are directing our efforts</p>
-        </div>
-       
-        <Row xs={1} md={4} className="g-4">
-      {Array.map((item, index) => (
-        <Col  key={index}>
-          <Card>
-          <img src={item.img}  className="img-fluid img8"  />
-            <Card.Body>
-              <Card.Title>{item.title}</Card.Title>
-              <Card.Text>
-               {item.name}
-               <GrLinkedinOption  style={{marginLeft:"60%",color:"blue"}} size={30}/>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      ))}
-    </Row>
-    
+                <div className="container-fluid ">
+                    <div className="row">
+                        <div className="col-10 mx-auto">
+                            <div className='board'>
+                                <h2>Our Board</h2>
+                                <p>Meet the guys that are directing our efforts</p>
+                            </div>
 
-        </div>
-    </div>
-</div>
-</section>
+                            <Row xs={1} md={4} className="g-4">
+                                {Array.map((item, index) => (
+                                    <Col key={index}>
+                                        <Card>
+                                            <img src={item.img} className="img-fluid img8" />
+                                            <Card.Body>
+                                                <Card.Title>{item.title}</Card.Title>
+                                                <Card.Text>
+                                                    {item.name}
+                                                    <GrLinkedinOption style={{ marginLeft: "60%", color: "blue" }} size={30} />
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                ))}
+                            </Row>
+
+
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-10 mx-auto">
+                            <Carousel activeIndex={index} onSelect={handleSelect} className="slider2">
+                                <Carousel.Item className='carouselitem2'>
+                                    <h3 className='slidetitle2'>"No risk, no reward"
+                                    </h3>
+                                    <p className='slidepara2'>Federico</p>
+
+                                </Carousel.Item>
+                                <Carousel.Item className='carouselitem2'>
+                                    <h3 className='slidetitle2'>"This looks intersting, let's give it a try"
+                                    </h3>
+                                    <p className='slidepara2'>Rodrigo</p>
+
+
+                                </Carousel.Item>
+                                <Carousel.Item className='carouselitem2'>
+
+                                    <h3 className='slidetitle2'>"Think big!"
+                                    </h3>
+                                    <p className='slidepara2'>Eugenio</p>
+
+                                </Carousel.Item>
+                            </Carousel>
+
+
+                            <div className='triangleimg4' >
+                                        <img src={img2} className="img-fluid" />
+                                    </div>
+                                    <div className='img5'>
+                                        <img src={img4} className="img-fluid" />
+                                    </div>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-10 mx-auto">
+                            <div className='Senior'>
+                                <h2>Senior Management</h2>
+                                <p>Where stretegic decisions take place</p>
+                            </div>
+
+                            <Row xs={1} md={4} className="g-4">
+                                {Senior.map((item, index) => (
+                                    <Col key={index}>
+                                        <Card>
+                                        <div className='img8'>
+                                        <img src={item.img} className="img-fluid" />
+                                        </div>
+                                          
+                                            <Card.Body>
+                                                <Card.Title>{item.title}</Card.Title>
+                                                <Card.Text>
+                                                    {item.name}
+                                                    <GrLinkedinOption style={{ marginLeft: "60%", color: "blue" }} size={30} />
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                ))}
+                            </Row>
+
+
+                        </div>
+                    </div>
+
+
+                    <div className="row">
+                        <div className="col-10 mx-auto">
+                            <div className='team'>
+                                <h2>Our Team</h2>
+                                <p>These are the people who get the job done</p>
+                            </div>
+
+
+<Slider />
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+
+
+                
+            </section>
+
 
 
         </>
