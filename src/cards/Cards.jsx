@@ -5,17 +5,21 @@ import image1 from "../image/Conv.webp";
 import image2 from "../image/connect.webp";
 import image3 from "../image/reheus.webp";
 import image4 from "../image/quote.webp";
-import imgs1 from '../image/wizlinelogo.webp';
-import imgs2 from '../image/fitbacklogo.webp';
-import imgs3 from '../image/visionlogo.webp';
-import imgs4 from '../image/wizlinelogo.webp';
-import imgs5 from '../image/rofexlogo.webp';
-import imgs6 from '../image/wizlinelogo.webp';
-import imgs7 from '../image/rehbouslogo.webp';
-import imgs8 from '../image/patagoninalogo.webp';
-import imgs9 from '../image/pacteralogo.webp';
-import imgs10 from '../image/opticlogo.webp';
+import imgs1 from '../image/raodmap.png';
+import imgs2 from '../image/Patronwork logo.png';
+import imgs3 from '../image/logo-white.png';
+import imgs4 from '../image/image00292.png';
+import imgs5 from '../image/BelgiumImmo.png';
+import imgs6 from '../image/apca.png';
+import imgs7 from '../image/twitter.png';
 
+
+
+const boxInfo = [
+    {img:image1,para:"The fact that they’ve been with us from the start and were patient, supportive, committed, and flexible is excellent.",link:"Steven Krubiner",span:"Founder & CEO"},
+    {img:image2,para:"We have had a good collaboration and we can talk openly about topics that are working well and also the ones that aren't.",link:" July Jimenez",span:"CTO"},
+    {img:image3,para:"We have had a good collaboration and we can talk openly about topics that are working well and also the ones that aren't.",link:" Sean Crawford",span:"Founder & CEO"}
+]
 const Cards = () =>{
     return(
         <>
@@ -28,33 +32,20 @@ const Cards = () =>{
       <section className="card-img">
       <div className="container py-5">
     <div className="row">
-        <div className="col-md-4 col-sm-12 py-5">
+    {
+        boxInfo.map((item)=>{
+            return(
+                <div className="col-md-4 col-sm-12 py-5">
             <div className="box p-4 bg-white text-dark">
-                <img src={image1} className=" img-div"/>
-                <p className="">The fact that they’ve been with us from the start and were patient, supportive, committed, and flexible is excellent.</p>
-            <a href="#"> <img src={image4} className="img-quote" /><img src={image4} className="img-quote"/>  Steven Krubiner</a>
-            <span>Founder & CEO</span>
+                <img src={item.img} className=" img-div"/>
+                <p className="">{item.para}</p>
+            <a href="#"> <img src={image4} className="img-quote" /><img src={image4} className="img-quote"/>  {item.link}</a>
+            <span>{item.span}</span>
             </div>
         </div>
-
-        <div className="col-md-4 col-sm-12 py-5">
-            <div className="box p-4 bg-white text-dark">
-                <img src={image2} className=" img-div"/>
-                <p>The fact that they’ve been with us from the start and were patient, supportive, committed, and flexible is excellent.</p>
-            <a href="#"> <img src={image4} className="img-quote" /><img src={image4} className="img-quote"/> July Jimenez</a>
-            <span>CTO</span>
-            </div>
-        </div>
-
-        <div className="col-md-4 col-sm-12 py-5">
-            <div className="box p-4 bg-white text-dark">
-                <img src={image3} className=" img-div"/>
-                <p>The fact that they’ve been with us from the start and were patient, supportive, committed, and flexible is excellent.</p>
-            <a href="#"> <img src={image4} className="img-quote" /><img src={image4} className="img-quote"/> Sean Crawford</a>
-            <span>Founder & CEO</span>
-            </div>
-        </div>
-    
+            )
+        })
+    }
  
 {/* start count jsx */}
     <div className="row">
@@ -73,7 +64,7 @@ const Cards = () =>{
         </div>
     </div>
   <div className="row">
-  <Marquee gradient={false} speed={20} className="pt-5">
+  <Marquee gradient={false} speed={40} className="pt-5">
     <div className="col img-wrapper">
         <img src={imgs1} />
     </div>
@@ -95,15 +86,7 @@ const Cards = () =>{
     <div className="col img-wrapper">
         <img src={imgs7} />
     </div>
-    <div className="col img-wrapper">
-        <img src={imgs8} />
-    </div>
-    <div className="col img-wrapper">
-        <img src={imgs9} />
-    </div>
-    <div className="col img-wrapper">
-        <img src={imgs10} />
-    </div>
+   
     </Marquee>
   </div>
     </div>

@@ -54,8 +54,8 @@
     text-decoration: none;
     color: #15284b;
     font-size:20px;
-
 }
+
 .box span{
     color: #8a94a5;
     font-size: 15px;
@@ -93,5 +93,5 @@
 /* Count CSS end */
 
 .img-wrapper img{
-    width: 40%;
+    width: 100px;
 }
