@@ -1,13 +1,14 @@
-import './About.css';
+import './about.css';
 import React, { useState } from 'react';
-import img1 from "../image/img15.webp";
-import img2 from "../image/img16.webp";
-import img3 from "../image/img17.webp";
-import img4 from "../image/img18.webp";
-import img5 from "../image/img19.webp";
-import img6 from "../image/img20.webp";
-import img7 from "../image/img21.webp";
-import img8 from "../image/img3.webp";
+
+import img1 from "../../image/img15.webp";
+import img2 from "../../image/img16.webp";
+import img3 from "../../image/img17.webp";
+import img4 from "../../image/img18.webp";
+import img5 from "../../image/img19.webp";
+import img6 from "../../image/img20.webp";
+import img7 from "../../image/img21.webp";
+import img8 from "../../image/img3.webp";
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
@@ -59,7 +60,7 @@ const About = () => {
                                 </div>
 
                                 <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
-                                    <p className='we'>We are a multinational tech company with offices in Argentina, Colombia and the USA. With our multidisciplinary teams we create products for companies and organizations from various industries around the world.</p>
+                                    <p className='we-about'>We are a multinational tech company with offices in Argentina, Colombia and the USA. With our multidisciplinary teams we create products for companies and organizations from various industries around the world.</p>
                                 </div>
                             </div>
 
@@ -218,14 +219,14 @@ const About = () => {
        
         <Row xs={1} md={4} className="g-4">
       {Array.map((item, index) => (
-        <Col  key={index}>
-          <Card>
-          <img src={item.img}  className="img-fluid img8"  />
+        <Col  key={index} >
+          <Card className='about-img'>
+          <img  src={item.img}  />
             <Card.Body>
               <Card.Title>{item.title}</Card.Title>
-              <Card.Text>
+              <Card.Text className='des d-flex justify-content-between'>
                {item.name}
-               <GrLinkedinOption  style={{marginLeft:"60%",color:"blue"}} size={30}/>
+               <GrLinkedinOption  style={{color:"blue"}} size={30}/>
               </Card.Text>
             </Card.Body>
           </Card>

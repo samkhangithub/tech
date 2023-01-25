@@ -1,8 +1,11 @@
 import TopNav from './components/TopNav';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './pages/Home';
-import About from './pages/About';
-import Servises from './Servises/Servises';
+
+
+import Home from './Componentss/Home/Home';
+import About from './Componentss/About/About';
+import Services from './Componentss/Our Services/Services';
+import Contact from './Componentss/Contacts/Contact';
 
 const RouterPage = () =>
 {
@@ -13,7 +16,8 @@ const RouterPage = () =>
       <Routes>
         <Route path='/' element= {<Home />} />
         <Route path='/about' element= {<About />} />
-        <Route path='/servises' element={<Servises/>} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/contact'  element={<Contact />}/>
       </Routes>
      </BrowserRouter>
         </>

@@ -1,11 +1,12 @@
 import React from "react";
-import { MdKeyboardArrowRight } from "react-icons/md";
 import './career.css';
-import piwe from '../image/piwe.svg';
-const Carrer = () => {
-    return (
+import { MdKeyboardArrowRight } from "react-icons/md";
+import piwe from '../../image/piwe.svg';
+
+const Career = () =>{
+    return(
         <>
-            <div className="container-fluid bg-white py-5 ">
+<div className="container-fluid bg-white py-5 ">
                 <div className="container  main-div">
                     <div className="row">
                         <div className="col-10 mx-auto">
@@ -32,4 +33,4 @@ const Carrer = () => {
     )
 };
 
-export default Carrer;
+export default Career;

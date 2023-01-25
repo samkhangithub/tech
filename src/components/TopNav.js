@@ -1,9 +1,10 @@
 import React from "react";
-import {  NavLink } from "react-router-dom";
+import {  NavLink, Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './TopNav.css';
+import logo from "../image/logo.png";
 
 
 const TopNav = () => {
@@ -18,34 +19,35 @@ const TopNav = () => {
             name: "About"
         },
         {
+            path:'/services',
+            name: 'Services'
+        },
+        {
             path:'/contact',
             name: "Contact"
         },
-        {
-            path:'/servises',
-            name: 'Servises'
-        },
+       
     ]
 
 
     return (
         <>
-          <Navbar bg="primary" expand="lg">
+          <Navbar bg="primary" expand="lg" >
       <Container>
-        <Navbar.Brand href="#home" className="text-white">Brains PK</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <NavLink to="/" className="logo"><img src={logo} /></NavLink>
+        <Navbar.Toggle/>
+        <Navbar.Collapse>
           <Nav className="ms-auto">
            {
             menuData.map((item)=>( 
-                <NavLink to={item.path} key={item.id}>
-                    <div className="list_item text-white">{item.name}</div>
+                <NavLink to={item.path} key={item.id} className="nav-item">
+                    <div className="text-white">{item.name}</div>
                 </NavLink>
             ))
            }
           </Nav>
-          <Nav className="ms-auto">
-            <button className="btn btn-success">Sign up</button>
+          <Nav className="ms-auto ">
+            <Link to="/contact" className="btn-nav">CONTACT</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -55,3 +57,5 @@ const TopNav = () => {
 };
 
 export default TopNav;
+
+
