@@ -1,4 +1,4 @@
-import './About.css';
+import './about.css';
 import React, { useState } from 'react';
 import img1 from "../image/img15.webp";
 import img2 from "../image/img16.webp";
@@ -97,7 +97,7 @@ const About = () => {
                                 </div>
 
                                 <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
-                                    <p className='we'>We are a multinational tech company with offices in Argentina, Colombia and the USA. With our multidisciplinary teams we create products for companies and organizations from various industries around the world.</p>
+                                    <p className='we-about'>We are a multinational tech company with offices in Argentina, Colombia and the USA. With our multidisciplinary teams we create products for companies and organizations from various industries around the world.</p>
                                 </div>
                             </div>
 

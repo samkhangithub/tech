@@ -1,24 +1,24 @@
-/* .dev-img img {
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    border-radius: 30px;
-    transform: rotate(-90deg);
-} */
-/* .dev-img2 img {
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    border-radius: 30px;
-    transform: rotate(-90deg);
-} */
-/* .dev-img1 img{
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    border-radius: 30px;
-    transform: rotate(90deg);
-} */
+.services-head{
+    text-align: end;
+}
+.servises-main{
+    background-image: url(/src/image/servicesbg.svg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
 .img-devel {
     width: 60%;
 }
 
 .dev-btn {
-    color: orange;
+    color: #e56700;
     text-decoration: none;
     font-weight: 500;
 }
@@ -93,5 +93,3 @@ transition: 0.5s;
 .card h2:hover{
     color: blue;
 }
-
-/* Card Css */

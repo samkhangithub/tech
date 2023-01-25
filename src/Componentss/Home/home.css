@@ -5,7 +5,7 @@
 }
 
 .homeimg {
-    background-image: url(../image/img2.webp);
+    background-image: url(/src/image/img2.webp);
     width: 100%;
     height: auto;
     background-size: cover;
@@ -16,7 +16,7 @@
 }
 
 .backgimg {
-    background-image: url(../image/img12.webp);
+    background-image: url(/src/image/img12.webp);
     /* width: 100%; */
     height: auto;
     background-size: cover;
@@ -89,7 +89,7 @@
     position: absolute;
     width: 9rem;
     height: 9rem;
-    background-image: url(../image/img11.webp);
+    background-image: url(/src/image/img11.webp);
     background-size: cover;
    margin-top: 10%;
    margin-left: 25%;
@@ -99,12 +99,28 @@
     position: absolute;
     width: 9rem;
     height: 9rem;
-    background-image: url(../image/img11.webp);
+    background-image: url(/src/image/img11.webp);
     background-size: cover;
    margin-top: 32%;
    margin-left: -4%;
 }
-
+.btn-con{
+    padding: 16px 33px;
+    background-color: #e56700;
+    border-color: #e56700;
+    border-radius: 30px;
+    color: #fff;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: 600;
+     border: 2px solid #e56700;
+     transition: 0.5s;
+}
+.btn-con:hover{
+    background-color: #FFFFFF;
+    color: #e56700;
+   
+}
 .cmp-btn {
     display: inline-flex;
     align-items: center;
@@ -171,17 +187,21 @@
 }
 .here {
     margin-top: 10%;
+    font-size: 25px;
+    opacity: 0.6;
 }
 .petro {
     color: #8a94a5;
     margin-left: 2%;
     margin-top: 5%;
+    font-size: 25px;
 }
+
 .Plat {
     color: #313d52;
-    max-width: 950px;
-    font-size: 40px;
-    font-weight: 600;
+   
+    font-size: 30px;
+    font-weight: 400;
     margin-left: 2%;
     
 }
@@ -191,12 +211,12 @@
     font-size: 20px;
     margin-top: 5%;
     margin-left: 2%;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
 }
 .howbtn {
     padding: 0;
-    font-size: 20px;
-    letter-spacing: .1em;
+    font-size: 15px;
+   letter-spacing: 1px;
     border: none;
     text-transform: uppercase;
     background: none;
@@ -204,6 +224,7 @@
     color: #f1860e;
     text-decoration: none;
     font-weight: 700;
+    transition: 0.5s;
 
 }
 .cmp-btn2 {
@@ -253,7 +274,11 @@
 .header-img .img14 img {
     border: none;
 }
-
+@media screen and (max-width: 320px){
+    .Plat{
+        font-size: 27px;
+    }
+}
 @media (min-width: 320px) and (max-width: 499px) {
   
     .header-img img {
@@ -308,7 +333,7 @@
         position: absolute;
         width: 9rem;
         height: 9rem;
-        background-image: url(../image/img11.webp);
+        background-image: url(/src/image/img11.webp);
         background-size: cover;
        margin-top: -10%;
        margin-left: 43%;
@@ -355,14 +380,8 @@
         background-color: #ffffff;
         color: #e56700;
     }
-    .Plat {
-        color: #313d52;
-        max-width: 950px;
-        font-size: 35px;
-        font-weight: 600;
-        margin-left: 2%;
-        
-    }
+ 
+
     .howbtn {
         padding: 0;
         font-size: 15px;
@@ -459,7 +478,7 @@
         position: absolute;
         width: 9rem;
         height: 9rem;
-        background-image: url(../image/img11.webp);
+        background-image: url(/src/image/img11.webp);
         background-size: cover;
        margin-top: -5%;
        margin-left: 43%;
@@ -513,12 +532,9 @@
         
     }
     .we {
-        color: #313d52;
-        max-width: 950px;
-        font-size: 17px;
-        margin-top: 5%;
-        margin-left: 2%;
-        margin-bottom: 20%;
+        color: #000000;
+        font-weight: 300;
+        font-size: 10px;
     }
     .bg {
         height: 1200px;
@@ -601,7 +617,7 @@
         position: absolute;
         width: 9rem;
         height: 9rem;
-        background-image: url(../image/img11.webp);
+        background-image: url(/src/image/img11.webp);
         background-size: cover;
        margin-top: 17%;
        margin-left: 35%;
@@ -611,7 +627,7 @@
         position: absolute;
         width: 9rem;
         height: 9rem;
-        background-image: url(../image/img11.webp);
+        background-image: url(/src/image/img11.webp);
         background-size: cover;
        margin-top: 26%;
        margin-left: -4%;
@@ -705,7 +721,7 @@
         position: absolute;
         width: 9rem;
         height: 9rem;
-        background-image: url(../image/img11.webp);
+        background-image: url(/src/image/img11.webp);
         background-size: cover;
        margin-top: 40%;
        margin-left: -5%;
@@ -731,3 +747,173 @@
         border: none;
     }
   }
+
+
+
+
+
+
+
+  .card-img{
+    background-image: url(/src/image/ba.svg);
+       width: 100%;
+       height: auto;
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       position: relative;
+       vertical-align: middle;
+       padding-top: 150px;
+       padding-bottom: 200px;
+   }
+   .clint-div h3 {
+       color: #44546f;
+       font-weight: 600;
+       font-size: 30px;
+       
+   }
+   
+   .clint-div h5 {
+       color: #44546f;
+       font-weight: 400;
+       letter-spacing: .1em;
+       font-family: Lato, sans-serif;
+       font-size: 15px;
+   }
+   
+   .img-div {
+       width: 170px;
+   }
+   
+   .img-quote {
+       width: 10px;
+       margin-bottom: 30px;
+   }
+   
+   .box {
+       width: 100%;
+       height: auto;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       flex-direction: column;
+       box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+           0 32px 64px -48px rgba(0, 0, 0, 0.5);
+       border-radius: 5px;
+   }
+   
+   .box p {
+       padding: 30px;
+       font-size: 18px;
+       color: #8a94a5;
+
+   }
+   
+   .box h5 {
+       text-decoration: none;
+       color: #15284b;
+       font-size:17px;
+       text-align: left;
+   }
+   
+   .box span{
+       color: #8a94a5;
+       font-size: 16px;
+    
+   }
+   /* start Count CSS */
+   .count span{
+       font-size: 40px;
+       color: #FFFFFF;
+       letter-spacing: 0.2rem;
+   }
+   .count h1{
+       color: #e56700;
+       font-size: 50px;
+   }
+   .count .my-span{
+       font-weight: 300;
+       font-size: 30px;
+       color: #FFFFFF;
+   }
+   @media screen and (max-width: 768px) {
+       .count span{
+           font-size: 32px;
+       }
+       .count h1{
+        font-size: 32px;
+       }
+       .count .my-span{
+           font-size: 20px;
+       }
+       .count{
+           margin-bottom: 30px;
+           text-align: center;
+       }
+   }
+   /* Count CSS end */
+   
+   .img-wrapper img{
+       width: 100px;
+   }
+
+
+
+   *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.mains{
+    padding-top: 150px;
+    padding-bottom: 150px;
+background-color: rgb(254, 250, 250);
+}
+.div-project h3{
+    font-size: 30px;
+
+}
+.proj-header h3{
+color: rgb(85, 84, 84);
+font-weight: 350;
+}
+.bold{
+    font-weight: 900;
+}
+.proj-btn{
+    width: 140px;
+    height: 50px;
+    background-color: #e56700;
+    border-radius: 30px;
+    border-color: #e56700;
+    color: #fff;
+    transition: 0.5s;
+    border: 2px solid;
+}
+.proj-btn:hover{
+    background-color: #fff;
+    border-color: #e56700;
+    color: #e56700;
+}
+
+
+.img-fluid1 {
+    width: 200px;
+    height: 200px;
+    margin-top: 60px;
+
+}
+
+.div-header h6 {
+    color: gray;
+}
+
+.div-header p {
+    font-size: 26px;
+}
+
+@media only screen and (min-width: 320px) and (max-width:700px){
+    .marque img{
+        width: 50px;
+    }
+}

@@ -1,18 +1,3 @@
-.img-fluid1 {
-    width: 200px;
-    height: 200px;
-    margin-top: 60px;
-
-}
-
-.div-header h6 {
-    color: gray;
-}
-
-.div-header p {
-    font-size: 26px;
-}
-
 .main-div {
     box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
         0 32px 64px -48px rgba(0, 0, 0, 0.5);
@@ -22,33 +7,37 @@
 }
 
 .btns1 {
-    color: orange;
+    color: #e56700;
     font-weight: 500;
-    width: 230px;
+    font-size: 15px;
+    width: 235px;
     height: 50px;
-    border-color: orange;
+    border-color: #e56700;
     border-radius: 30px;
     background-color: #fff;
     transition: 0.5s;
+    border: 2px solid;
 
 }
 
 .btns1:hover {
-    background-color: orange;
+    background-color: #e56700;
     color: #fff;
 }
 
 .btns2 {
-    color: orange;
+    color: #e56700;
+    font-size: 15px;
     width: 150px;
     height: 50px;
     border-radius: 30px;
-    border-color: orange;
+    border-color: #e56700;
     background-color: #fff;
     transition: 0.5s;
+    border: 2px solid;
 }
 
 .btns2:hover {
-    background-color: orange;
+    background-color: #e56700;
     color: #FFFFFF;
 }
