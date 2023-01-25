@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App">
  <RouterPage />
- <Cards />
- <Project />
- <Carrer />
+ {/* <Cards /> */}
+ {/* <Project /> */}
+ {/* <Carrer /> */}
    <Footer />
 
     </div>

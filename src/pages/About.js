@@ -5,15 +5,17 @@ import img2 from "../image/img16.webp";
 import img3 from "../image/img17.webp";
 import img4 from "../image/img18.webp";
 import img5 from "../image/img19.webp";
-import img6 from "../image/img20.webp";
-import img7 from "../image/img21.webp";
+import img6 from "../image/img6.webp";
+import img7 from "../image/img3.webp";
 import img8 from "../image/img3.webp";
+import img13 from "../image/img13.webp";
+import img14 from "../image/img14.webp";
+import { MdKeyboardArrowRight } from "react-icons/md";
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { GrLinkedinOption } from 'react-icons/gr';
-import Slider from './slider';
 
 
 const About = () => {
@@ -299,11 +301,11 @@ const About = () => {
 
 
                             <div className='triangleimg4' >
-                                        <img src={img2} className="img-fluid" />
-                                    </div>
-                                    <div className='img5'>
-                                        <img src={img4} className="img-fluid" />
-                                    </div>
+                                <img src={img2} className="img-fluid" />
+                            </div>
+                            <div className='img5'>
+                                <img src={img4} className="img-fluid" />
+                            </div>
                         </div>
                     </div>
 
@@ -318,10 +320,10 @@ const About = () => {
                                 {Senior.map((item, index) => (
                                     <Col key={index}>
                                         <Card>
-                                        <div className='img8'>
-                                        <img src={item.img} className="img-fluid" />
-                                        </div>
-                                          
+                                            <div className='img8'>
+                                                <img src={item.img} className="img-fluid" />
+                                            </div>
+
                                             <Card.Body>
                                                 <Card.Title>{item.title}</Card.Title>
                                                 <Card.Text>
@@ -338,25 +340,139 @@ const About = () => {
                         </div>
                     </div>
 
+                    <div>
 
-                    <div className="row">
-                        <div className="col-10 mx-auto">
+                    </div>
+
+
+
+                    <div className="row rowteam mt-5">
+                        <div className="col-12 mx-auto">
                             <div className='team'>
                                 <h2>Our Team</h2>
                                 <p>These are the people who get the job done</p>
                             </div>
 
+                            <Carousel activeIndex={index} onSelect={handleSelect} className="slider2">
+                                <Carousel.Item className='carouselitem2'>
+                                    <img src={img8} className="img-fluid item1" />
+                                    <img src={img6} className="img-fluid item2" />
+                                    <img src={img7} className="img-fluid item3" />
+                                </Carousel.Item>
+                                <Carousel.Item className='carouselitem2'>
+                                    <img src={img8} className="img-fluid item1" />
+                                    <img src={img6} className="img-fluid item2" />
+                                    <img src={img7} className="img-fluid item3" />
+                                </Carousel.Item>
+                                <Carousel.Item className='carouselitem2'>
+                                    <img src={img6} className="img-fluid item1" />
+                                    <img src={img7} className="img-fluid item2" />
+                                    <img src={img8} className="img-fluid item3" />
+                                </Carousel.Item>
+                            </Carousel>
 
-<Slider />
+
+                        </div>
+                    </div>
+
+ <div className="row mt-5 backgimg text-white  rounded">
+
+                        <div className="col-10 mx-auto mt-5">
+                            <h2 className=" text-center here">Here are our services in action</h2>
+                            <h1 className="mt-2 text-center">Take a look at some of what we do.</h1>
+                            <a className="cmp-btn2 mt-5" href="/our-services">View all our work <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="cmp-btn__icon" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></a>
+                            <div className="row bg-white bg mt-5">
+
+                                <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+
+
+                                    <h1 className="petro">Petromark</h1>
+                                    <h5 className="mt-2 Plat">Patagonian created a platform <br /> that led Petromark to its <br /> digital transformation process</h5>
+                                    <p className="we">We developed an entire platform that enabled <br /> Petromark to track and report their non destructive <br /> testing projects in their clients oilfields.</p>
+                                    <div className="mt-3 mb-5">
+                                        <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
+                                    </div>
+
+                                </div>
+                                <div className="col-lg-5 col-md-12 col-sm-12 pt-5 header-img">
+
+                                    <div className="img13">
+
+                                        <img src={img13} className="img-fluid " alt="img13" />
+                                    </div>
+                                    <div className="img14">
+                                        <img src={img14} className="img-fluid" alt="img14" />
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
 
 
                     
+                    <div className="row text-white  rounded">
+
+                        <div className="col-10 mx-auto mt-1">
+                            <div className="row bg-white bg mt-5">
+                                <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+                                    <h2 className="petro">Interamerican Development Bank</h2>
+                                    <h5 className="mt-2 Plat">Fast Reaction and Agility for <br /> Covid-19 relief</h5>
+                                    <p className="we">We built, in record time, an interactive map for local <br /> communities to find scarce resources and assistance <br /> for COVID-19 relief.</p>
+                                    <div className="mt-3 mb-5">
+                                        <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
+                                    </div>
+                                </div>
+                                <div className="col-lg-5 col-md-12 col-sm-12 pt-5 header-img">
+                                    <div className="img13">
+
+                                        <img src={img13} className="img-fluid " alt="img13" />
+                                    </div>
+                                    <div className="img14">
+                                        <img src={img14} className="img-fluid" alt="img14" />
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="row text-white  rounded">
+
+                        <div className="col-10 mx-auto mt-1">
+                            <div className="row bg-white bg mt-5">
+                                <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+                                    <h2 className="petro">Interamerican Development Bank</h2>
+                                    <h5 className="mt-2 Plat">Fast Reaction and Agility for <br /> Covid-19 relief</h5>
+                                    <p className="we">We built, in record time, an interactive map for local <br /> communities to find scarce resources and assistance <br /> for COVID-19 relief.</p>
+                                    <div className="mt-3 mb-5">
+                                        <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
+                                    </div>
+                                </div>
+                                <div className="col-lg-5 col-md-12 col-sm-12 pt-5 header-img">
+                                    <div className="img13">
+
+                                        <img src={img13} className="img-fluid " alt="img13" />
+                                    </div>
+                                    <div className="img14">
+                                        <img src={img14} className="img-fluid" alt="img14" />
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 
-                
+
             </section>
 
 

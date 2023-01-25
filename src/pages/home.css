@@ -348,7 +348,7 @@
         text-decoration: none;
         width: auto;
         text-align: center;
-        margin-left: 5%;
+        margin-left: 5% !important;
         border-color: #e56700;
     }
     .cmp-btn2:hover {
@@ -497,7 +497,7 @@
         text-decoration: none;
         width: auto;
         text-align: center;
-        margin-left: 20%;
+        margin-left: 20% !important;
         border-color: #e56700;
     }
     .cmp-btn2:hover {

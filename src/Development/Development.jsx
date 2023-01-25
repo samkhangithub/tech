@@ -135,7 +135,7 @@ const Development = () => {
         </div>
       </section>
 <Carrer />
-<Footer />
+{/* <Footer /> */}
 {/* Card Jsx */}
     </>
   )
