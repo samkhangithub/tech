@@ -26,7 +26,7 @@ import imgs5 from '../../image/BelgiumImmo.png';
 import imgs7 from '../../image/twitter.png';
 
 
-import Footers from "../Footers/Footer";
+
 import Career from "../Careers/Career";
 
 
@@ -383,7 +383,7 @@ const Home = () => {
 
                 <Career />
 
-            <Footers />
+
         </>
     )
 }
