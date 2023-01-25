@@ -17,6 +17,7 @@ const TopNav = () => {
         {
             path:'/about',
             name: "About"
+            
         },
         {
             path:'/services',
