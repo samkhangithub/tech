@@ -89,11 +89,14 @@
 .img4 {
     /* margin-top: -50%; */
     z-index: -1;
-    width: 50%;
-    margin-bottom: -150%;
-    margin-left: 20%;
+    width: 90%;
+    /* margin-bottom: -150%; */
+    /* margin-left: 20%; */
+    align-items: end;
 }
-
+.senior-main{
+    padding-top: 150px;
+}
 
 .start {
     color: #81b5fd;

@@ -1,6 +1,4 @@
-.services-head{
-    text-align: end;
-}
+
 .servises-main{
     background-image: url(/src/image/servicesbg.svg);
     width: 100%;
@@ -13,9 +11,7 @@
 }
 
 
-.img-devel {
-    width: 60%;
-}
+
 
 .dev-btn {
     color: #e56700;
@@ -54,8 +50,9 @@ transition: 0.5s;
     flex-direction: column;
     box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
         0 32px 64px -48px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+        border-radius: 5px;
 }
+
 .md_icon {
  
     font-size: 20px;

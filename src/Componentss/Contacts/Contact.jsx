@@ -8,6 +8,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { GrTwitter } from "react-icons/gr";
+import Fade from 'react-reveal/Fade';
 
 
 const initialValues = {
@@ -33,59 +34,6 @@ const Contact = () => {
   });
   console.log(errors);
 
-  // const [done, setDone] = useState(false);
-  // const form = useRef();
-
-  // const defaultValue = {
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  //   phone: "",
-  //   location: "",
-  // };
-
-  // const validationSchema = yup.object().shape({
-  //   name: yup.string().required("Please enter your name"),
-  //   email: yup
-  //     .string()
-  //     .required("Please enter your valid email")
-  //     .email("please enter valid email"),
-  //   location: yup.string().required("please enter your location"),
-  //   phone: yup.number().required(" please enter your phone number"),
-  //   message: yup.string().required("At least 12 characters required"),
-  // });
-
-  // const handleSubmit = (values) => {
-  //   console.log("values", values);
-  // };
-
-  // const sendEmail = (e) => {
-  //   emailjs
-  //     .sendForm(
-  //       "service_ke6l7t9",
-  //       "template_az7509f",
-  //       form.current,
-  //       "YVdl6iNn7uMxsZU4r"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //         setSentMessage(true);
-  //         setTimeout(() => {
-  //           setSentMessage(false);
-  //         }, 2000);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  //   document.getElementById("name").value = "";
-  //   document.getElementById("email").value = "";
-  //   document.getElementById("phone").value = "";
-  //   document.getElementById("location").value = "";
-  //   document.getElementById("message").value = "";
-  // };
-
 
 
 
@@ -94,6 +42,7 @@ const Contact = () => {
       <section className="contact-main">
         <div className="container-fluid">
           <div className="row">
+          <Fade left duration={2000}>
             <div className="col-10 mx-auto text-white">
               <div className="row">
                 <div className="col-lg-6 col-md-12 col-sm-12   d-flex justify-content-center flex-column">
@@ -105,6 +54,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+            </Fade>
           </div>
         </div>
 
@@ -115,10 +65,11 @@ const Contact = () => {
         <div className="row">
           <div className="col-8 mx-auto">
             <div className="row">
+            <Fade bottom duration={2000}>
               <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex flex-column cont-img">
                 <img src={contact} />
               </div>
-
+</Fade>
 
             </div>
           </div>
@@ -129,20 +80,15 @@ const Contact = () => {
 
 
       <div>
-        <div
-        // className="contact2"
-        // style={{
-        //   backgroundImage:
-        //     "url(https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/map.jpg)",
-        // }}
-        // id="contact"
-        >
+        <div>
           <div className="container">
             <div className="row contact-container">
+            <Fade bottom duration={2000}>
               <div className="col-lg-12 main-card">
                 <div className="card card-shadow border-0 mb-4">
                   <div className="row">
                     <div className="col-lg-8">
+                   
                       <div className="contact-box p-4">
                         <h4 className="title">Contact Us</h4>
 
@@ -257,6 +203,7 @@ const Contact = () => {
                           </p>
                         )}
                       </div>
+                    
                     </div>
                     <div
                     className="col-lg-4 bg-image"
@@ -306,6 +253,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
+                </Fade>
             </div>
           </div>
         </div>

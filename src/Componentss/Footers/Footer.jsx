@@ -5,12 +5,13 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { GrTwitter } from "react-icons/gr";
+import Fade from 'react-reveal/Fade';
 const Footers = () => {
   return (
     <>
 
 
-
+<Fade bottom duration={2000}>
       <footer className="footer-39201 bg-primary text-white">
         <div className="container py-5">
           <div className="row" >
@@ -54,8 +55,8 @@ const Footers = () => {
 
         </div>
       </footer>
-    
-
+      </Fade>
+<Fade bottom duration={2000}>
       <div className="container bg-white  text-dark py-5">
         <div className="row p-1">
           <div className="col-md-3 col-sm-12 col-xs-12 text-center text-white ">
@@ -141,6 +142,7 @@ const Footers = () => {
         <p>&copy; 2023 BrainsPk. All rights reserved.</p>
 
       </div>
+      </Fade>
     </>
   )
 };
