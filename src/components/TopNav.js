@@ -8,7 +8,7 @@ import logo from "../image/logo.png";
 
 
 const TopNav = () => {
-
+    
     const menuData = [
         {
             path:'/',
@@ -33,7 +33,7 @@ const TopNav = () => {
 
     return (
         <>
-          <Navbar bg="primary" expand="lg" >
+          <Navbar bg="primary" expand="lg" fixed="top" className="main-nav py-0" >
       <Container>
         <NavLink to="/" className="logo"><img src={logo} /></NavLink>
         <Navbar.Toggle/>

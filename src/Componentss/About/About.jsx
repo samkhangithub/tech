@@ -9,6 +9,40 @@ import img7 from "../../image/img3.webp";
 import img8 from "../../image/img3.webp";
 import img13 from "../../image/img13.webp";
 import img14 from "../../image/img14.webp";
+import imgsen1 from "../../image/saud.webp";
+import imgsen2 from "../../image/shehzadshah.webp";
+import imgsen3 from "../../image/amir.webp";
+import imgsen4 from "../../image/roohullah.webp";
+import imgpro1 from "../../image/travcont.webp";
+import imgpro2 from "../../image/RiseImage.webp";
+import imgpro3 from "../../image/raso.webp";
+import imgpro4 from "../../image/Behance.webp";
+import imgpro5 from "../../image/AddaImage.webp";
+import imgpro6 from "../../image/bubbleImage.webp";
+import imgpro7 from "../../image/MusafirImage.webp";
+import imgpro8 from "../../image/GratitudeImage.webp";
+import imgpro9 from "../../image/traficinfoImage.webp";
+import imgpro10 from "../../image/PakfoneImage.webp";
+import imgpro11 from "../../image/khpalmart.webp";
+import imgpro12 from "../../image/khpalmart.webp";
+
+
+import imgteam1 from "../../image/mustafa.webp";
+import imgteam2 from "../../image/romi.jpg";
+import imgteam3 from "../../image/saad.webp";
+import imgteam4 from "../../image/Imran.webp";
+import imgteam5 from "../../image/Aqib.webp";
+import imgteam6 from "../../image/ahmad.webp";
+import imgteam7 from "../../image/Hamid.webp";
+import imgteam8 from "../../image/ihtesham.webp";
+import imgteam9 from "../../image/ihtizaz.webp";
+import imgteam10 from "../../image/Sameer.webp";
+import imgteam11 from "../../image/umar.webp";
+import imgteam12 from "../../image/Wajahat.webp";
+import imgteam13 from "../../image/luqman.webp";
+
+
+
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
@@ -18,9 +52,12 @@ import { GrLinkedinOption } from 'react-icons/gr';
 import Career from '../Careers/Career';
 import Footers from '../Footers/Footer';
 import Fade from 'react-reveal/Fade';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const About = () => {
+    const navigate = useNavigate();
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex, e) => {
@@ -54,41 +91,48 @@ const About = () => {
 
     const Senior = [
         {
-            img: img8,
-            title: "CEO",
-            name: "Federico"
+            img: imgsen1,
+            title: "CEO FullStack Developer",
+            name: "Saud Khan"
         },
         {
-            img: img8,
-            title: "CTO",
-            name: "Rodrigo"
+            img: imgsen2,
+            title: "Full Stack Developer",
+            name: "Shehzad Shah"
         },
         {
-            img: img8,
-            title: "CBO",
-            name: "Eugenio"
+            img: imgsen3,
+            title: "Founder",
+            name: "Aamir Shehzad"
         },
         {
-            img: img8,
-            title: "COO",
-            name: "Pedro"
-        },
-        {
-            img: img8,
-            title: "COO",
-            name: "Pedro"
-        },
-        {
-            img: img8,
-            title: "CTO",
-            name: "Rodrigo"
+            img: imgsen4,
+            title: "DevOps/Project Manager",
+            name: "Rooh Ullah"
         },
 
     ]
+
+
+    const projectInfo = [
+        {img:imgpro1,link:"https://www.travcont.com/",head:"Travcont", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
+        {img:imgpro2,link:"https://risetech.pk/",head:"Ristech", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
+        {img:imgpro3,link:"https://www.behance.net/gallery/92378157/Rasoya-App?tracking_source=project_owner_other_projects",head:"Rasoyia", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
+        {img:imgpro4,link:"https://www.behance.net/gallery/92378157/Rasoya-App?tracking_source=project_owner_other_projects",link:"https://www.upwork.com/o/companies/~010359a829c900bed1/portfolio/project/1484076208918925312",head:"Mobile & Laptop Services", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
+        {img:imgpro5,link:"https://www.upwork.com/o/companies/~010359a829c900bed1/portfolio/project/1484076208918925312",head:"Adda Bazar", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
+        {img:imgpro6,link:"https://www.behance.net/gallery/92465019/Bubbles-Laundry-App?tracking_source=project_owner_other_projects",head:"Bubbles Laundry", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
+        {img:imgpro7,link:"https://www.behance.net/gallery/89606661/Mosafir-App-for-Mobilink-Jazz?tracking_source=project_owner_other_projects",head:"Musafir App", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
+        {img:imgpro8,link:"https://www.behance.net/gallery/92140709/Gratitude",head:"Gratitude-Selfcare", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
+        {img:imgpro9,link:"https://traffikinfoo.netlify.app/",head:"Traffic Info", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
+        {img:imgpro10,link:"https://pakfon.com/",head:"Pakfone", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
+        {img:imgpro11,link:"https://khpalmart.com/",head:"Khpal Mart", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
+        {img:imgpro12,link:"https://khpalmart.com/",head:"Khpal Mart", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
+        
+    ];
     return (
         <>
 
-            <section id="header" className="d-flex align-items-center homeimg text-white">
+            <section className="d-flex align-items-center aboutimg text-white">
 
                 <div className="container-fluid ">
                     <div className="row" style={{ marginTop: "15%", marginBottom: "15%" }}>
@@ -101,7 +145,7 @@ const About = () => {
                                     </div>
 
                                     <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
-                                        <p className='we-about'>We are a multinational tech company with offices in Argentina, Colombia and the USA. With our multidisciplinary teams we create products for companies and organizations from various industries around the world.</p>
+                                        <p className='we-about lead'>At Brains,Pk, We specialize in products and services that span over several domains like Software Applications, Data analytics, Embedded Systems and Artificial Intelligence smart solutions with unified goal of realizing the dreams of a better tomorrow through technology.</p>
                                     </div>
                                 </div>
 
@@ -185,17 +229,17 @@ const About = () => {
                                             <p className='style'>LIFESTYLE</p>
                                             <h1 className='our'>Our Culture</h1>
                                             <p className='spite'>In spite of having experienced significant growth we strive to maintain the essence of a small outfit: with open door policies, a relaxed work culture and, first and foremost, an unwavering fidelity for all of our clients, big and small.</p>
-                                            <a class="cmp-btn" href="/our-services">View all services <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="cmp-btn__icon" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></a>
+                                            <a class="cmp-btn" onClick={() => navigate("/services")}>View all services <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="cmp-btn__icon" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></a>
                                         </div>
                                     </Fade>
                                 </div>
 
                                 <div className="col-lg-6 col-md-12 col-sm-12 mb-5 mt-5">
-                                <Fade right duration={2000}>
-                                    <div className='img4'>
-                                        <img src={img4} className="img-fluid" />
-                                    </div>
-</Fade>
+                                    <Fade right duration={2000}>
+                                        <div className='img4'>
+                                            <img src={img4} className="img-fluid" />
+                                        </div>
+                                    </Fade>
                                 </div>
                             </div>
 
@@ -203,8 +247,6 @@ const About = () => {
                     </div>
                 </div>
             </section>
-
-
 
             <section id="header4" className="d-flex align-items-center  ">
 
@@ -270,12 +312,12 @@ const About = () => {
                                     {Array.map((item, index) => (
                                         <Col key={index}>
                                             <Card>
-                                                <img src={item.img} className="img-fluid img8" />
+                                                <img src={item.img} className="img-fluid senior-img" />
                                                 <Card.Body>
-                                                    <Card.Title>{item.title}</Card.Title>
-                                                    <Card.Text>
+                                                    <Card.Title className='sen-title'>{item.title}</Card.Title>
+                                                    <Card.Text className='sen-name'>
                                                         {item.name}
-                                                        <GrLinkedinOption style={{ marginLeft: "60%", color: "blue" }} size={30} />
+                                                        <GrLinkedinOption className='icon' />
                                                     </Card.Text>
                                                 </Card.Body>
                                             </Card>
@@ -331,15 +373,15 @@ const About = () => {
                                     {Senior.map((item, index) => (
                                         <Col key={index}>
                                             <Card>
-                                                <div className='img8'>
+                                                <div className='senior-img'>
                                                     <img src={item.img} className="img-fluid" />
                                                 </div>
 
-                                                <Card.Body>
-                                                    <Card.Title>{item.title}</Card.Title>
-                                                    <Card.Text>
+                                                <Card.Body className='main-cards'>
+                                                    <Card.Title className='sen-title'>{item.title}</Card.Title>
+                                                    <Card.Text className='sen-name'>
                                                         {item.name}
-                                                        <GrLinkedinOption style={{ marginLeft: "60%", color: "blue" }} size={30} />
+                                                        <GrLinkedinOption className='icon' />
                                                     </Card.Text>
                                                 </Card.Body>
                                             </Card>
@@ -368,19 +410,19 @@ const About = () => {
 
                                 <Carousel activeIndex={index} onSelect={handleSelect} className="slider2">
                                     <Carousel.Item className='carouselitem2'>
-                                        <img src={img8} className="img-fluid item1" />
-                                        <img src={img6} className="img-fluid item2" />
-                                        <img src={img7} className="img-fluid item3" />
+                                        <img src={imgteam1} className="img-fluid item1" />
+                                        <img src={imgteam2} className="img-fluid item2" />
+                                        <img src={imgteam3} className="img-fluid item3" />
                                     </Carousel.Item>
                                     <Carousel.Item className='carouselitem2'>
-                                        <img src={img8} className="img-fluid item1" />
-                                        <img src={img6} className="img-fluid item2" />
-                                        <img src={img7} className="img-fluid item3" />
+                                        <img src={imgteam4} className="img-fluid item1" />
+                                        <img src={imgteam5} className="img-fluid item2" />
+                                        <img src={imgteam6} className="img-fluid item3" />
                                     </Carousel.Item>
                                     <Carousel.Item className='carouselitem2'>
-                                        <img src={img6} className="img-fluid item1" />
-                                        <img src={img7} className="img-fluid item2" />
-                                        <img src={img8} className="img-fluid item3" />
+                                        <img src={imgteam7} className="img-fluid item1" />
+                                        <img src={imgteam8} className="img-fluid item2" />
+                                        <img src={imgteam9} className="img-fluid item3" />
                                     </Carousel.Item>
                                 </Carousel>
 
@@ -390,41 +432,41 @@ const About = () => {
                     </div>
 
                     <div className="row mt-5 backgimg text-white  rounded">
-<Fade bottom duration={2000}>
-                        <div className="col-10 mx-auto mt-5">
-                            <h2 className=" text-center here">Here are our services in action</h2>
-                            <h1 className="mt-2 text-center">Take a look at some of what we do.</h1>
-                            <a className="cmp-btn2 mt-5" href="/our-services">View all our work <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="cmp-btn__icon" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></a>
-                            <div className="row bg-white bg mt-5">
+                        <Fade bottom duration={2000}>
+                            <div className="col-10 mx-auto mt-5">
+                                <h2 className=" text-center here">Here are our services in action</h2>
+                                <h1 className="mt-2 text-center">Take a look at some of what we do.</h1>
+                                <a className="cmp-btn2 mt-5" href="/our-services">View all our work <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="cmp-btn__icon" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></a>
+                                <div className="row bg-white bg mt-5">
 
-                                <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+                                    <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
 
 
-                                    <h1 className="petro">Petromark</h1>
-                                    <h5 className="mt-2 Plat">Patagonian created a platform <br /> that led Petromark to its <br /> digital transformation process</h5>
-                                    <p className="we">We developed an entire platform that enabled <br /> Petromark to track and report their non destructive <br /> testing projects in their clients oilfields.</p>
-                                    <div className="mt-3 mb-5">
-                                        <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
-                                    </div>
-
-                                </div>
-                                <div className="col-lg-5 col-md-12 col-sm-12 pt-5 header-img">
-
-                                    <div className="img13">
-
-                                        <img src={img13} className="img-fluid " alt="img13" />
-                                    </div>
-                                    <div className="img14">
-                                        <img src={img14} className="img-fluid" alt="img14" />
+                                        <h1 className="petro">Petromark</h1>
+                                        <h5 className="mt-2 Plat">Patagonian created a platform <br /> that led Petromark to its <br /> digital transformation process</h5>
+                                        <p className="we">We developed an entire platform that enabled <br /> Petromark to track and report their non destructive <br /> testing projects in their clients oilfields.</p>
+                                        <div className="mt-3 mb-5">
+                                            <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
+                                        </div>
 
                                     </div>
+                                    <div className="col-lg-5 col-md-12 col-sm-12 pt-5 header-img">
 
+                                        <div className="img13">
+
+                                            <img src={img13} className="img-fluid " alt="img13" />
+                                        </div>
+                                        <div className="img14">
+                                            <img src={img14} className="img-fluid" alt="img14" />
+
+                                        </div>
+
+
+                                    </div>
 
                                 </div>
 
                             </div>
-
-                        </div>
                         </Fade>
                     </div>
 
@@ -434,38 +476,65 @@ const About = () => {
 
 
                     <div className="row text-white  rounded">
-<Fade bottom duration={2000}>
-                        <div className="col-10 mx-auto mt-1">
-                            <div className="row bg-white bg mt-5">
-                                <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                                    <h2 className="petro">Interamerican Development Bank</h2>
-                                    <h5 className="mt-2 Plat">Fast Reaction and Agility for <br /> Covid-19 relief</h5>
-                                    <p className="we">We built, in record time, an interactive map for local <br /> communities to find scarce resources and assistance <br /> for COVID-19 relief.</p>
-                                    <div className="mt-3 mb-5">
-                                        <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
+                        <Fade bottom duration={2000}>
+                            <div className="col-10 mx-auto">
+                                <div className="row bg-white bg mt-5">
+                                    <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+                                        <h2 className="petro">Interamerican Development Bank</h2>
+                                        <h5 className="mt-2 Plat">Fast Reaction and Agility for <br /> Covid-19 relief</h5>
+                                        <p className="we">We built, in record time, an interactive map for local <br /> communities to find scarce resources and assistance <br /> for COVID-19 relief.</p>
+                                        <div className="mt-3 mb-5">
+                                            <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="col-lg-5 col-md-12 col-sm-12 pt-5 header-img">
-                                    <div className="img13">
+                                    <div className="col-lg-5 col-md-12 col-sm-12 pt-5 header-img">
+                                        <div className="img13">
 
-                                        <img src={img13} className="img-fluid " alt="img13" />
+                                            <img src={img13} className="img-fluid " alt="img13" />
+                                        </div>
+                                        <div className="img14">
+                                            <img src={img14} className="img-fluid" alt="img14" />
+
+                                        </div>
+
                                     </div>
-                                    <div className="img14">
-                                        <img src={img14} className="img-fluid" alt="img14" />
-
-                                    </div>
-
                                 </div>
                             </div>
-                        </div>
                         </Fade>
                     </div>
                 </div>
-
-
-
             </section>
 
+
+            <div className='proimg'>
+  <div className="col">
+    <h1 className="pro-mains text-center my-5">
+      Our Projects
+    </h1>
+  </div>
+  <div className="container d-md-flex">
+  <div className='row'>
+  {
+    projectInfo.map((projectInfo)=>{
+        return(
+            <div className="col-md-4 col-sm-12 cards container">
+      <img src={projectInfo.img} className=""/>
+      <div className="cards-body">
+        <h1 className="cards-title">{projectInfo.head}</h1>
+        <p className="cards-info">{projectInfo.para}</p>
+        <a className="cards-btn" href={projectInfo.link}>{projectInfo.btn}</a>
+      </div>
+    </div>
+        )
+    })
+  }
+   
+  
+   
+  
+  </div>
+  </div>
+</div>
             <Career />
             <Footers />
 

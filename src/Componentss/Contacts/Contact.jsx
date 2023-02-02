@@ -39,7 +39,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className="contact-main">
+      {/* <section className="contact-main">
         <div className="container-fluid">
           <div className="row">
           <Fade left duration={2000}>
@@ -59,7 +59,36 @@ const Contact = () => {
         </div>
 
 
-      </section>
+      </section> */}
+
+
+
+      <section id="header" className="d-flex align-items-center contact-main text-white">
+
+<div className="container-fluid ">
+    <div className="row" style={{ marginTop: "15%", marginBottom: "15%" }}>
+        <Fade left delay={500} duration={3000}>
+            <div className="col-10 mx-auto">
+                <div className="row">
+                    <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+                        <h1 className='about'> <strong>Contact Us</strong></h1>
+
+                    </div>
+
+                    <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
+                    <h2>Want to Say Something?</h2>
+                        <p className='we-about lead'>We are here to respond on your querries.</p>
+                    </div>
+                </div>
+
+            </div>
+        </Fade>
+
+    </div>
+</div>
+</section>
+
+
 
       <div className="container-fluid">
         <div className="row">
@@ -184,10 +213,10 @@ const Contact = () => {
                                 className="btn-sub btn btn-danger-gradiant mt-4 mb-3 text-white border-0 py-2 px-3"
                               // disabled={isSubmitting}
                               >
-                                <span>
+                                <a>
 
                                   SUBMIT NOW <i className="ti-arrow-right" />
-                                </span>
+                                </a>
                               </button>
                             </div>
                           </div>

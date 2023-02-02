@@ -40,7 +40,7 @@ const cardInfo = [
 const Services = () => {
   return (
     <>
-      <section className="servises-main">
+      {/* <section className="servises-main">
         <div className="container-fluid">
           <div className="row">
             <Fade left delay={500} duration={3000}>
@@ -60,9 +60,31 @@ const Services = () => {
         </div>
 
 
-      </section>
+      </section> */}
 
+      <section className="d-flex align-items-center servises-main text-white">
 
+<div className="container-fluid ">
+    <div className="row" style={{ marginTop: "15%", marginBottom: "15%" }}>
+        <Fade left delay={500} duration={3000}>
+            <div className="col-10 mx-auto">
+                <div className="row">
+                    <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+                        <h1 className='about'> <strong>Our Services</strong></h1>
+
+                    </div>
+
+                    <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
+                        <p className='we-about lead'>At Brains,Pk, We specialize in products and services that span over several domains like Software Applications, Data analytics, Embedded Systems and Artificial Intelligence smart solutions with unified goal of realizing the dreams of a better tomorrow through technology.</p>
+                    </div>
+                </div>
+
+            </div>
+        </Fade>
+
+    </div>
+</div>
+</section>
 
 
       <div class="container col-xxl-8 ">
@@ -79,7 +101,7 @@ const Services = () => {
               <div>
                 <h1 class="display-5 fw-bold lh-1 mb-3 text-primary ">Software<br /> Development</h1>
                 <p class="lead">We have a top-class talent pool ready to jump on any new challenge. We scale our client's delivery capacity with the right skills, reducing the time to market for any new product or functionality.</p>
-                <div className="pb-5 see-btn">
+                {/* <div className="pb-5 see-btn">
                   <a href="" className="dev-btn">SEE SERVICE <MdKeyboardArrowRight className="md_icon" /></a>
                 </div>
                 <div className="pt-3">
@@ -89,7 +111,7 @@ const Services = () => {
                   <button type="button" class="btn btn-outline-secondary btn-my  px-4 me-md-2">DATA SERVICES</button>
                   <button type="button" class="btn btn-outline-secondary  px-4">DATA SCIENCE</button>
                   <button type="button" class="btn btn-outline-secondary  px-4">DEVELOPMENT</button>
-                </div>
+                </div> */}
               </div>
             </Fade>
           </div>
@@ -111,7 +133,7 @@ const Services = () => {
               <div>
                 <h1 class="display-5 fw-bold lh-1 mb-3 text-primary ">Software Product<br /> Discovery</h1>
                 <p class="lead">We help our clients weed out unnecessary scope by understanding users' problems and opportunities before we set out to solve them. A good Product Discovery ensures a project is on the right track, reducing risks and uncertainty, and builds a solid foundation to grow any product.</p>
-                <div className="pb-5 see-btn">
+                {/* <div className="pb-5 see-btn">
                   <a href="" className="dev-btn">SEE SERVICE  <MdKeyboardArrowRight className="md_icon" /></a>
                 </div>
                 <div className="pt-3 ">
@@ -121,7 +143,7 @@ const Services = () => {
                   <button type="button" class="btn btn-outline-secondary  px-4 me-md-2">USER INTERFACE</button>
                   <button type="button" class="btn btn-outline-secondary  px-4">BRANDING</button>
                   <button type="button" class="btn btn-outline-secondary  px-4">USER EXPERIENCE</button>
-                </div>
+                </div> */}
               </div>
             </Fade>
           </div>
@@ -144,9 +166,9 @@ const Services = () => {
             <div>
               <h1 class="display-5 fw-bold lh-1 mb-3 text-primary ">Talent<br /> Augmentation</h1>
               <p class="lead">We have a top-class talent pool ready to jump on any new challenge. We scale our client's delivery capacity with the right skills, reducing the time to market for any new product or functionality.</p>
-              <div className="pb-5 see-btn">
+              {/* <div className="pb-5 see-btn">
                 <a href="" className="dev-btn">SEE SERVICE  <MdKeyboardArrowRight className="md_icon" /></a>
-              </div>
+              </div> */}
               </div>
             </Fade>
           </div>
@@ -167,11 +189,11 @@ const Services = () => {
                 return (
                   <Fade bottom duration={1000}>
                   <div className="col-md-4 col-sm-12 py-5">
-                    <div className="card p-4 bg-white text-dark card-dev">
+                    <div className="card-ser p-4 bg-white text-dark card-dev">
                       <img src={item.img} className="pt-3" />
                       <h3 className="pt-4">{item.header}</h3>
-                      <p className=" pt-4">{item.para}</p>
-                      <a href="">{item.btn}  <MdKeyboardArrowRight className="md_icon" /></a>
+                      <span className=" pt-4">{item.para}</span>
+                      {/* <a href="">{item.btn}  <MdKeyboardArrowRight className="md_icon" /></a> */}
                     </div>
 
                   </div>
