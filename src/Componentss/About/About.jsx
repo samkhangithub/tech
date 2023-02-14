@@ -1,14 +1,9 @@
 import './about.css';
 import React, { useState } from 'react';
 import img1 from "../../image/img15.webp";
-import img2 from "../../image/img16.webp";
-import img4 from "../../image/banner .png";
-import img5 from "../../image/img19.webp";
-import img6 from "../../image/img6.webp";
-import img7 from "../../image/img3.webp";
-import img8 from "../../image/img3.webp";
-import img13 from "../../image/img13.webp";
-import img14 from "../../image/img14.webp";
+import repairimg from "../../image/repaircms.jpeg";
+import patronimg from "../../image/petron.png";
+import saloonimg from "../../image/saloon.png";
 import imgsen1 from "../../image/saud.webp";
 import imgsen2 from "../../image/shehzadshah.webp";
 import imgsen3 from "../../image/amir.webp";
@@ -25,25 +20,26 @@ import imgpro9 from "../../image/traficinfoImage.webp";
 import imgpro10 from "../../image/PakfoneImage.webp";
 import imgpro11 from "../../image/khpalmart.webp";
 import imgpro12 from "../../image/khpalmart.webp";
-
-
-import imgteam1 from "../../image/mustafa.webp";
+import imgpro13 from "../../image/petron1.png";
+import imgpro14 from "../../image/repair1.png";
+import imgpro15 from "../../image/saloon1.png";
+import imgteam1 from "../../image/mustafa.png";
 import imgteam2 from "../../image/romi.jpg";
-import imgteam3 from "../../image/saad.webp";
-import imgteam4 from "../../image/Imran.webp";
-import imgteam5 from "../../image/Aqib.webp";
-import imgteam6 from "../../image/ahmad.webp";
-import imgteam7 from "../../image/Hamid.webp";
-import imgteam8 from "../../image/ihtesham.webp";
-import imgteam9 from "../../image/ihtizaz.webp";
-import imgteam10 from "../../image/Sameer.webp";
-import imgteam11 from "../../image/umar.webp";
-import imgteam12 from "../../image/Wajahat.webp";
-import imgteam13 from "../../image/luqman.webp";
+import imgteam3 from "../../image/saad.png";
+import imgteam4 from "../../image/Imran.png";
+import imgteam5 from "../../image/Aqib.png";
+import imgteam6 from "../../image/ahmad.png";
+import imgteam7 from "../../image/Hamid.png";
+import imgteam8 from "../../image/ihtesham.png";
+import imgteam9 from "../../image/ihtizaz.png";
+import imgteam10 from "../../image/Sameer.png";
+import imgteam11 from "../../image/umar.png";
+import imgteam12 from "../../image/Wajahat.png";
+import imgteam13 from "../../image/luqman.png";
 
 
 
-import { MdKeyboardArrowRight } from "react-icons/md";
+
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
@@ -66,25 +62,18 @@ const About = () => {
 
     const Array = [
         {
-            img: img8,
+            img: imgsen1,
             title: "CEO",
-            name: "Federico"
+            name: "Saud Khan",
+            link: 'https://www.linkedin.com/in/saudkhan0039/'
         },
         {
-            img: img8,
-            title: "CTO",
-            name: "Rodrigo"
+            img: imgsen3,
+            title: "MG",
+            name: "Aamir Shehzad",
+            link: 'https://pk.linkedin.com/in/aamir-shahzad-77ba95191?trk=public_profile_browsemap'
         },
-        {
-            img: img8,
-            title: "CBO",
-            name: "Eugenio"
-        },
-        {
-            img: img8,
-            title: "COO",
-            name: "Pedro"
-        },
+
 
 
     ]
@@ -93,7 +82,8 @@ const About = () => {
         {
             img: imgsen1,
             title: "CEO FullStack Developer",
-            name: "Saud Khan"
+            name: "Saud Khan",
+            link: 'https://www.linkedin.com/in/saudkhan0039/'
         },
         {
             img: imgsen2,
@@ -103,31 +93,36 @@ const About = () => {
         {
             img: imgsen3,
             title: "Founder",
-            name: "Aamir Shehzad"
+            name: "Aamir Shehzad",
+            link: 'https://pk.linkedin.com/in/aamir-shahzad-77ba95191?trk=public_profile_browsemap'
         },
         {
             img: imgsen4,
             title: "DevOps/Project Manager",
-            name: "Rooh Ullah"
+            name: "Rooh Ullah",
+            link: 'https://pk.linkedin.com/in/rooh-ullah-bpk?trk=public_profile_browsemap'
         },
 
     ]
 
 
     const projectInfo = [
-        {img:imgpro1,link:"https://www.travcont.com/",head:"Travcont", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
-        {img:imgpro2,link:"https://risetech.pk/",head:"Ristech", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
-        {img:imgpro3,link:"https://www.behance.net/gallery/92378157/Rasoya-App?tracking_source=project_owner_other_projects",head:"Rasoyia", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
-        {img:imgpro4,link:"https://www.behance.net/gallery/92378157/Rasoya-App?tracking_source=project_owner_other_projects",link:"https://www.upwork.com/o/companies/~010359a829c900bed1/portfolio/project/1484076208918925312",head:"Mobile & Laptop Services", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
-        {img:imgpro5,link:"https://www.upwork.com/o/companies/~010359a829c900bed1/portfolio/project/1484076208918925312",head:"Adda Bazar", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
-        {img:imgpro6,link:"https://www.behance.net/gallery/92465019/Bubbles-Laundry-App?tracking_source=project_owner_other_projects",head:"Bubbles Laundry", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
-        {img:imgpro7,link:"https://www.behance.net/gallery/89606661/Mosafir-App-for-Mobilink-Jazz?tracking_source=project_owner_other_projects",head:"Musafir App", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
-        {img:imgpro8,link:"https://www.behance.net/gallery/92140709/Gratitude",head:"Gratitude-Selfcare", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
-        {img:imgpro9,link:"https://traffikinfoo.netlify.app/",head:"Traffic Info", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
-        {img:imgpro10,link:"https://pakfon.com/",head:"Pakfone", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
-        {img:imgpro11,link:"https://khpalmart.com/",head:"Khpal Mart", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
-        {img:imgpro12,link:"https://khpalmart.com/",head:"Khpal Mart", para:"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",btn:"Go To Website"},
-        
+        { img: imgpro1, link: "https://www.travcont.com/", head: "Travcont", para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..", btn: "Go To Website" },
+        { img: imgpro2, link: "https://risetech.pk/", head: "Ristech", para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..", btn: "Go To Website" },
+        { img: imgpro3, link: "https://www.behance.net/gallery/92378157/Rasoya-App?tracking_source=project_owner_other_projects", head: "Rasoyia", para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..", btn: "Go To Website" },
+        { img: imgpro4, link: "https://www.behance.net/gallery/92378157/Rasoya-App?tracking_source=project_owner_other_projects", link: "https://www.upwork.com/o/companies/~010359a829c900bed1/portfolio/project/1484076208918925312", head: "Mobile & Laptop Services", para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..", btn: "Go To Website" },
+        { img: imgpro5, link: "https://www.upwork.com/o/companies/~010359a829c900bed1/portfolio/project/1484076208918925312", head: "Adda Bazar", para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..", btn: "Go To Website" },
+        { img: imgpro6, link: "https://www.behance.net/gallery/92465019/Bubbles-Laundry-App?tracking_source=project_owner_other_projects", head: "Bubbles Laundry", para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..", btn: "Go To Website" },
+        { img: imgpro7, link: "https://www.behance.net/gallery/89606661/Mosafir-App-for-Mobilink-Jazz?tracking_source=project_owner_other_projects", head: "Musafir App", para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..", btn: "Go To Website" },
+        { img: imgpro8, link: "https://www.behance.net/gallery/92140709/Gratitude", head: "Gratitude-Selfcare", para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..", btn: "Go To Website" },
+        { img: imgpro9, link: "https://traffikinfoo.netlify.app/", head: "Traffic Info", para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..", btn: "Go To Website" },
+        { img: imgpro10, link: "https://pakfon.com/", head: "Pakfone", para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..", btn: "Go To Website" },
+        { img: imgpro11, link: "https://khpalmart.com/", head: "Khpal Mart", para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..", btn: "Go To Website" },
+        { img: imgpro12, link: "https://khpalmart.com/", head: "Khpal Mart", para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..", btn: "Go To Website" },
+        { img: imgpro13, link: "http://www.patronworks.net/home", head: "Patronworks", para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..", btn: "Go To Website" },
+        { img: imgpro14, link: "https://repaircms.com/de/", head: "Repaircms", para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..", btn: "Go To Website" },
+        { img: imgpro15, link: "https://dancing-vacherin-e90755.netlify.app/", head: "Saloon", para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..", btn: "Go To Website" },
+
     ];
     return (
         <>
@@ -145,7 +140,7 @@ const About = () => {
                                     </div>
 
                                     <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
-                                        <p className='we-about lead'>At Brains,Pk, We specialize in products and services that span over several domains like Software Applications, Data analytics, Embedded Systems and Artificial Intelligence smart solutions with unified goal of realizing the dreams of a better tomorrow through technology.</p>
+                                        <p className='we-about lead'>At TechCreator We specialize in products and services that span over several domains like Software Applications, Data analytics, Embedded Systems and Artificial Intelligence smart solutions with unified goal of realizing the dreams of a better tomorrow through technology.</p>
                                     </div>
                                 </div>
 
@@ -207,7 +202,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-
+            {/* 
             <section id="header3" className="d-flex align-items-center bg-light text-dark">
 
                 <div className="container-fluid ">
@@ -295,7 +290,7 @@ const About = () => {
                         </Fade>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section id="header3" className="d-flex align-items-center bg-light text-dark mt-5">
 
@@ -312,12 +307,17 @@ const About = () => {
                                     {Array.map((item, index) => (
                                         <Col key={index}>
                                             <Card>
-                                                <img src={item.img} className="img-fluid senior-img" />
-                                                <Card.Body>
+                                                <div className='senior-img'>
+                                                    <img src={item.img} className="img-fluid" />
+                                                </div>
+
+                                                <Card.Body className='main-cards'>
                                                     <Card.Title className='sen-title'>{item.title}</Card.Title>
                                                     <Card.Text className='sen-name'>
                                                         {item.name}
-                                                        <GrLinkedinOption className='icon' />
+                                                        <a href={item.link} target="_blank">
+                                                            <GrLinkedinOption className='icon' />
+                                                        </a>
                                                     </Card.Text>
                                                 </Card.Body>
                                             </Card>
@@ -381,7 +381,9 @@ const About = () => {
                                                     <Card.Title className='sen-title'>{item.title}</Card.Title>
                                                     <Card.Text className='sen-name'>
                                                         {item.name}
-                                                        <GrLinkedinOption className='icon' />
+                                                        <a href={item.link} target="_blank">
+                                                            <GrLinkedinOption className='icon' />
+                                                        </a>
                                                     </Card.Text>
                                                 </Card.Body>
                                             </Card>
@@ -424,6 +426,15 @@ const About = () => {
                                         <img src={imgteam8} className="img-fluid item2" />
                                         <img src={imgteam9} className="img-fluid item3" />
                                     </Carousel.Item>
+                                    <Carousel.Item className='carouselitem2'>
+                                        <img src={imgteam10} className="img-fluid item1" />
+                                        <img src={imgteam11} className="img-fluid item2" />
+                                        <img src={imgteam12} className="img-fluid item3" />
+                                    </Carousel.Item>
+                                    <Carousel.Item className='carouselitem2'>
+                                        <img src={imgteam13} className="img-fluid item1" />
+
+                                    </Carousel.Item>
                                 </Carousel>
 
 
@@ -436,30 +447,31 @@ const About = () => {
                             <div className="col-10 mx-auto mt-5">
                                 <h2 className=" text-center here">Here are our services in action</h2>
                                 <h1 className="mt-2 text-center">Take a look at some of what we do.</h1>
-                                <a className="cmp-btn2 mt-5" href="/our-services">View all our work <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="cmp-btn__icon" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></a>
-                                <div className="row bg-white bg mt-5">
+                                <a className="cmp-btn2 mt-5" onClick={() => navigate("/services")}>View all our work <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="cmp-btn__icon" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></a>
+                                <div className="row bg-sam mt-5">
 
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
 
 
-                                        <h1 className="petro">Petromark</h1>
-                                        <h5 className="mt-2 Plat">Patagonian created a platform <br /> that led Petromark to its <br /> digital transformation process</h5>
-                                        <p className="we">We developed an entire platform that enabled <br /> Petromark to track and report their non destructive <br /> testing projects in their clients oilfields.</p>
-                                        <div className="mt-3 mb-5">
-                                            <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
-                                        </div>
+                                        <h1 className="petro">Repaircms</h1>
+                                        <h6 className="mt-2 Plat">TechCreator created a platform  that led PetronWorks to its  digital transformation process</h6>
+                                        <p className="we lead">We developed an entire platform that enabled  Petromark to track and report their non destructive  testing projects in their clients oilfields.</p>
+
+                                        {/* <div className="mt-3 mb-5">
+        <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
+    </div> */}
 
                                     </div>
-                                    <div className="col-lg-5 col-md-12 col-sm-12 pt-5 header-img">
+                                    <div className="col-lg-5 col-md-12 col-sm-12 header-img">
 
-                                        <div className="img13">
+                                        <div className="img13 mt-3">
 
-                                            <img src={img13} className="img-fluid " alt="img13" />
+                                            <img src={repairimg} className="img-fluid pt-5" alt="img13" />
                                         </div>
-                                        <div className="img14">
-                                            <img src={img14} className="img-fluid" alt="img14" />
+                                        {/* <div className="img14">
+        <img src={img14} className="img-fluid" alt="img14" />
 
-                                        </div>
+    </div> */}
 
 
                                     </div>
@@ -471,31 +483,60 @@ const About = () => {
                     </div>
 
 
+                    <div className="row text-white  rounded">
+                        <Fade bottom delay={500} duration={2000}>
+                            <div className="col-10 mx-auto mt-5">
+                                <div className="row bg-sam mt-5">
+                                    <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+                                        <h2 className="petro">PatronWorks</h2>
+                                        <h6 className="mt-2 Plat">Fast Reaction and Agility for <br /> Covid-19 relief</h6>
+                                        <p className="we lead">We built, in record time, an interactive map for local communities to find scarce resources and assistance for COVID-19 relief.</p>
+                                        {/* <div className="mb-5">
+    <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
+</div> */}
+                                    </div>
+                                    <div className="col-lg-5 col-md-12 col-sm-12 header-img">
+
+                                        <div className="img13 mt-3">
+
+                                            <img src={patronimg} className="img-fluid pt-5" alt="img13" />
+                                        </div>
+                                        {/* <div className="img14">
+          <img src={img14} className="img-fluid" alt="img14" />
+
+         </div> */}
 
 
+                                    </div>
+                                </div>
+                            </div>
+                        </Fade>
+                    </div>
 
 
                     <div className="row text-white  rounded">
-                        <Fade bottom duration={2000}>
-                            <div className="col-10 mx-auto">
-                                <div className="row bg-white bg mt-5">
+                        <Fade bottom delay={500} duration={2000}>
+                            <div className="col-10 mx-auto mt-5">
+                                <div className="row bg-sam mt-5">
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                                        <h2 className="petro">Interamerican Development Bank</h2>
-                                        <h5 className="mt-2 Plat">Fast Reaction and Agility for <br /> Covid-19 relief</h5>
-                                        <p className="we">We built, in record time, an interactive map for local <br /> communities to find scarce resources and assistance <br /> for COVID-19 relief.</p>
-                                        <div className="mt-3 mb-5">
-                                            <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
-                                        </div>
+                                        <h2 className="petro">Sallon</h2>
+                                        <h6 className="mt-2 Plat">Fast Reaction and Agility for <br /> Covid-19 relief</h6>
+                                        <p className="we lead">We built, in record time, an interactive map for local communities to find scarce resources and assistance for COVID-19 relief.</p>
+                                        {/* <div className="mb-5">
+    <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
+</div> */}
                                     </div>
-                                    <div className="col-lg-5 col-md-12 col-sm-12 pt-5 header-img">
-                                        <div className="img13">
+                                    <div className="col-lg-5 col-md-12 col-sm-12 header-img">
 
-                                            <img src={img13} className="img-fluid " alt="img13" />
-                                        </div>
-                                        <div className="img14">
-                                            <img src={img14} className="img-fluid" alt="img14" />
+                                        <div className="img13 mt-3">
 
+                                            <img src={saloonimg} className="img-fluid pt-5" alt="img13" />
                                         </div>
+                                        {/* <div className="img14">
+            <img src={img14} className="img-fluid" alt="img14" />
+
+          </div> */}
+
 
                                     </div>
                                 </div>
@@ -507,34 +548,34 @@ const About = () => {
 
 
             <div className='proimg'>
-  <div className="col">
-    <h1 className="pro-mains text-center my-5">
-      Our Projects
-    </h1>
-  </div>
-  <div className="container d-md-flex">
-  <div className='row'>
-  {
-    projectInfo.map((projectInfo)=>{
-        return(
-            <div className="col-md-4 col-sm-12 cards container">
-      <img src={projectInfo.img} className=""/>
-      <div className="cards-body">
-        <h1 className="cards-title">{projectInfo.head}</h1>
-        <p className="cards-info">{projectInfo.para}</p>
-        <a className="cards-btn" href={projectInfo.link}>{projectInfo.btn}</a>
-      </div>
-    </div>
-        )
-    })
-  }
-   
-  
-   
-  
-  </div>
-  </div>
-</div>
+                <div className="col">
+                    <h1 className="pro-mains text-center my-5">
+                        Our Projects
+                    </h1>
+                </div>
+                <div className="container d-md-flex">
+                    <div className='row'>
+                        {
+                            projectInfo.map((projectInfo) => {
+                                return (
+                                    <div className="col-md-4 col-sm-12 cards container">
+                                        <img src={projectInfo.img} className="" />
+                                        <div className="cards-body">
+                                            <h1 className="cards-title">{projectInfo.head}</h1>
+                                            <p className="cards-info">{projectInfo.para}</p>
+                                            <a className="cards-btn" target="_blank" href={projectInfo.link}>{projectInfo.btn}</a>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+
+
+
+
+                    </div>
+                </div>
+            </div>
             <Career />
             <Footers />
 

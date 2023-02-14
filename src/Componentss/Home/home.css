@@ -20,6 +20,12 @@ animation: animateUser 5s linear infinite;
        
     }
 }
+.bg-sam{
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
 .home-main{
     padding-top: 100px;
 }
@@ -32,7 +38,7 @@ animation: animateUser 5s linear infinite;
     background-repeat: no-repeat;
     position: relative;
     vertical-align: middle;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
 
 .backgimg {
@@ -49,14 +55,18 @@ animation: animateUser 5s linear infinite;
     width: 80%;
 }
 
-.header-img img {
-    border: 50px solid white;
+.my-img {
+    border: 30px solid white;
+    box-shadow: 0 15px 32px rgb(122 130 171 / 20%);
+    border-radius: 8px;
 }
+
 
 .header-img .img3 {
     width: 450px;
     margin-top: -300px;
     position: relative;
+
 }
 
 
@@ -141,29 +151,80 @@ animation: animateUser 5s linear infinite;
     font-weight: 400;
 }
 
-.btn-con {
+.btn-con1 {
     padding: 16px 33px;
     background-color: #e56700;
     border-color: #e56700;
     border-radius: 30px;
     color: #fff;
     transition: 0.3s;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid #e56700;
+    transition: 0.5s;
+    
+}
+
+.btn-con1:hover {
+    background-color: #FFFFFF;
+    color: #e56700;
+
+}
+.btn-con2 {
+    padding: 16px 33px;
+    background-color: #e56700;
+    border-color: #e56700;
+    border-radius: 30px;
+    color: #fff;
+    transition: 0.3s;
+    display: none;
     font-size: 15px;
     font-weight: 600;
     border: 2px solid #e56700;
     transition: 0.5s;
 }
 
-.btn-con:hover {
-    background-color: #FFFFFF;
-    color: #e56700;
-
-}
 
 @media (min-width: 320px) and (max-width: 499px) {
     .head-btn {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+   
     }
+    .btn-con2 {
+        padding: 16px 33px;
+        background-color: #e56700;
+        border-color: #e56700;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 15px;
+        display: block;
+        font-weight: 600;
+        border: 2px solid #e56700;
+        transition: 0.5s;
+    }
+    .btn-con1 {
+        padding: 16px 33px;
+        background-color: #e56700;
+        border-color: #e56700;
+        border-radius: 30px;
+        color: #fff;
+        transition: 0.3s;
+        font-size: 15px;
+        font-weight: 600;
+        display: none;
+        border: 2px solid #e56700;
+        transition: 0.5s;
+    }
+    
+    
+    .btn-con2:hover {
+        background-color: #FFFFFF;
+        color: #e56700;
+    
+    }
+
 }
 
 .cmp-btn {
@@ -351,12 +412,13 @@ animation: animateUser 5s linear infinite;
     }
 
     .header-img .img3 {
-        width: 250px;
+        width: 245px;
         margin-left: -1%;
         margin-top: 10px;
         position: relative;
+        
     }
-
+   
     .header-img .img8 {
         border: none;
         width: 550px;
@@ -406,8 +468,8 @@ animation: animateUser 5s linear infinite;
         height: 9rem;
         background-image: url(/src/image/img11.webp);
         background-size: cover;
-        margin-top: -10%;
-        margin-left: 43%;
+        margin-top: -1%;
+        margin-left: 30%;
     }
 
     .abs {
@@ -477,10 +539,7 @@ animation: animateUser 5s linear infinite;
         margin-top: -30%;
     }
 
-    .bg {
-        height: 1000px;
-        /* margin-bottom: 5%; */
-    }
+
 
     .header-img .img13 {
         position: relative;
@@ -750,6 +809,7 @@ animation: animateUser 5s linear infinite;
     .bg {
         height: 1200px;
         /* margin-bottom: 5%; */
+        
     }
 
     .header-img .img13 {
@@ -846,7 +906,7 @@ animation: animateUser 5s linear infinite;
         height: 9rem;
         background-image: url(/src/image/img11.webp);
         background-size: cover;
-        margin-top: 40%;
+        margin-top: 38%;
         margin-left: -5%;
     }
 
@@ -875,9 +935,16 @@ animation: animateUser 5s linear infinite;
     }
 }
 
+.header-img .img3 img{
+    width: 100%;
+    height: auto;
+}
 
-
-
+.header-img .img6 img{
+    width: 100%;
+    height: auto;
+    
+}
 
 
 
@@ -892,7 +959,12 @@ animation: animateUser 5s linear infinite;
     vertical-align: middle;
     padding-bottom: 150px;
 }
-
+.hero-dev p{
+    font-size: 18px;
+}
+.clint-div{
+    padding-top: 50px;
+}
 .clint-div h3 {
     color: #44546f;
     font-weight: 600;

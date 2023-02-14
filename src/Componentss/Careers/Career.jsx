@@ -20,7 +20,7 @@ const Career = () =>{
                                     <p>Want to join our arcadian community?</p>
                                     <div className="div-btn pt-5 col-sm-12 ">
                                         <button className="btns1 m-3">View our job openings <MdKeyboardArrowRight className="md_icon" /></button>
-                                        <button className="btns2 m-3">Send resume <MdKeyboardArrowRight className="md_icon" /></button>
+                                       <button className="btns2 m-3">Send resume <MdKeyboardArrowRight className="md_icon" /></button>
                                     </div>
                                 </div>
 

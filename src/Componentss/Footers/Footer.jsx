@@ -39,12 +39,12 @@ const Footers = () => {
               </ul>
             </div>
             <div className="col-md-4 mb-4 mb-md-0  contect-div">
-              <p className="mb-4">Receive monthly updates through our Newsletter</p>
-              <button className="btn-jion">Jion <MdKeyboardArrowRight className="md_icon" /></button>
+              {/* <p className="mb-4">Receive monthly updates through our Newsletter</p>
+              <button className="btn-jion">Jion <MdKeyboardArrowRight className="md_icon" /></button> */}
               <div className="col mb-4 mb-md-0 mt-3 pt-4 abs">
                 <div className="col ">
                   <h3>JOIN OUR TEAM</h3>
-                  <span>jobs@patagonian.com</span>
+                  <span>saudkhanbpk@gmail.com</span>
                 </div>
       
               </div>
@@ -61,8 +61,8 @@ const Footers = () => {
         <div className="row p-1">
           <div className="col-md-3 col-sm-12 col-xs-12 text-center text-white ">
             <div className="fot">
-              <h4 className="mb-3">ARGENTINA</h4>
-              <a href="">
+              <h4 className="mb-3">Denmark</h4>
+              {/* <a href="">
                 General Roca
               </a>
               <a href="">
@@ -76,15 +76,15 @@ const Footers = () => {
               </a>
               <a href="">
                 Villa La Angostura
-              </a>
+              </a> */}
 
             </div>
           </div>
 
           <div className="col-md-3 col-sm-12 col-xs-12 text-center text-white">
             <div className="fot">
-              <h4 className="mb-3">COLOMBIA</h4>
-              <a href="">
+              <h4 className="mb-3">Austria</h4>
+              {/* <a href="">
                 Bogotá
               </a>
               <a href="">
@@ -95,7 +95,7 @@ const Footers = () => {
               </a>
               <a href="">
                 About us
-              </a>
+              </a> */}
 
             </div>
           </div>
@@ -105,9 +105,9 @@ const Footers = () => {
           <div className="col-md-3 col-sm-12 col-xs-12  text-white">
             <div className="fot">
               <h4 className="mb-3">UNITED STATES</h4>
-              <a href="">
+              {/* <a href="">
                 Miami, FL
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -138,8 +138,8 @@ const Footers = () => {
         </div>
       </div>
       <div className="container col-md-11 col-sm-12  text-center d-md-flex justify-content-between  ">
-        <h4 >Brains Pk</h4>
-        <p>&copy; 2023 BrainsPk. All rights reserved.</p>
+        <h4 >TechCreator</h4>
+        <p>&copy; 2023 TechCreator. All rights reserved.</p>
 
       </div>
       </Fade>

@@ -88,7 +88,7 @@ const Services = () => {
 
 
       <div class="container col-xxl-8 ">
-        <div class="row flex-lg-row align-items-center g-5 my-5">
+        <div class="row flex-lg-row align-items-center g-md-5 my-5">
           <div class="col-10 col-sm-8 col-lg-6 dev-img">
             <Fade left duration={2000}>
               <div>
@@ -119,7 +119,7 @@ const Services = () => {
       </div>
 
       <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-md-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6 dev-img1">
             <Fade right duration={2000}>
               <div>
@@ -153,7 +153,7 @@ const Services = () => {
 
 
       <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="row flex-lg-row align-items-center g-md-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6 dev-img2">
             <Fade left duration={2000}>
               <div>
