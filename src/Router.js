@@ -1,5 +1,5 @@
 import TopNav from './components/TopNav';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Home from './Componentss/Home/Home';
 import About from './Componentss/About/About';
@@ -11,7 +11,7 @@ const RouterPage = () =>
 {
     return (
         <>
-  <BrowserRouter>
+  <HashRouter>
   <Scrolltoup />
      <TopNav />
       <Routes>
@@ -20,7 +20,7 @@ const RouterPage = () =>
         <Route path='/services' element={<Services />} />
         <Route path='/contact'  element={<Contact />}/>
       </Routes>
-     </BrowserRouter>
+     </HashRouter>
         </>
     )
 }

@@ -30,7 +30,7 @@
 }
 
 .logo img {
-	width: 80px;
+	width: 130px;
 }
 .btn-nav{
 	align-items: center;
@@ -41,7 +41,7 @@
   font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 1rem;
   font-weight: 700;
-  line-height: 1.5;
+  lne-height: 1.5;
   text-decoration: none;
   text-transform: uppercase;
   outline: 0;
@@ -65,6 +65,6 @@
 @media (max-width:400px){
 	.btn-nav{
 		display: none;
-		background-color: red;
+	
 	}
 }

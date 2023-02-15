@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './TopNav.css';
-import logo from "../image/logo.png";
+import logo from "../image/techlogo.png";
 
 
 const TopNav = () => {
@@ -47,8 +47,8 @@ const TopNav = () => {
             ))
            }
           </Nav>
-          <Nav className="ms-auto ">
-            <Link to="/contact" className="btn-nav">CONTACT</Link>
+          <Nav className="ms-auto">
+            <NavLink to="/contact" className="btn-nav">CONTACT</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
