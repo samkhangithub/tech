@@ -143,6 +143,7 @@ const Home = () => {
                                         <div className="img8">
                                             <img src={img8} className="img-fluid" alt="img8" />
 
+                   
                                         </div>
                                         <div className="img3">
                                             <img src={img13} className="img-fluid img3 my-img" alt="img3" />
@@ -254,7 +255,7 @@ const Home = () => {
 
 
                                         <h1 className="petro">Repaircms</h1>
-                                        <h6 className="mt-2 Plat">TechCreator created a platform  that led PetronWorks to its  digital transformation process</h6>
+                                        <h6 className="mt-2 Plat">TechCreator created a platform  that led Repaircms to its  digital transformation process</h6>
                                         <p className="we lead">We developed an entire platform that enabled  Petromark to track and report their non destructive  testing projects in their clients oilfields.</p>
 
                                         {/* <div className="mt-3 mb-5">
@@ -289,8 +290,8 @@ const Home = () => {
                                 <div className="row bg-sam mt-5">
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                                         <h2 className="petro">PatronWorks</h2>
-                                        <h6 className="mt-2 Plat">Fast Reaction and Agility for <br /> Covid-19 relief</h6>
-                                        <p className="we lead">We built, in record time, an interactive map for local communities to find scarce resources and assistance for COVID-19 relief.</p>
+                                        <h6 className="mt-2 Plat">Point of sale system for retail businesses</h6>
+                                        <p className="we lead">Patronworks is a complete E-Commerce solution for your Restaurants, it provides a feature rich Point of Sale ( POS ) and a Customer app where users can explore and buy interesting food items.</p>
                                         {/* <div className="mb-5">
                                         <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
                                     </div> */}
@@ -320,8 +321,11 @@ const Home = () => {
                                 <div className="row bg-sam mt-5">
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                                         <h2 className="petro">Sallon</h2>
-                                        <h6 className="mt-2 Plat">Fast Reaction and Agility for <br /> Covid-19 relief</h6>
-                                        <p className="we lead">We built, in record time, an interactive map for local communities to find scarce resources and assistance for COVID-19 relief.</p>
+                                        <h6 className="mt-2 Plat">A spot where all your beauty appointments meet</h6>
+                                        <p className="we lead">Browse the top-rated options to find the services and
+professionals that are perfect for you.
+
+.</p>
                                         {/* <div className="mb-5">
                                         <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
                                     </div> */}
