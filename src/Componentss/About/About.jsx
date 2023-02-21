@@ -32,12 +32,11 @@ import imgteam6 from "../../image/ahmad.png";
 import imgteam7 from "../../image/Hamid.png";
 import imgteam8 from "../../image/ihtesham.png";
 import imgteam9 from "../../image/ihtizaz.png";
-import imgteam10 from "../../image/Sameer.png";
-import imgteam11 from "../../image/umar.png";
-import imgteam12 from "../../image/Wajahat.png";
-import imgteam13 from "../../image/luqman.png";
-
-
+import imgteam10 from "../../image/luqman.png";
+import imgteam11 from "../../image/ayaz.png";
+import imgteam12 from "../../image/sam.png";
+import imgteam13 from "../../image/sameer.png";
+import imgteam14 from "../../image/rehman.png";
 
 
 import Carousel from 'react-bootstrap/Carousel';
@@ -50,7 +49,14 @@ import Footers from '../Footers/Footer';
 import Fade from 'react-reveal/Fade';
 import { useNavigate } from 'react-router-dom';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
 const About = () => {
     const navigate = useNavigate();
@@ -404,12 +410,12 @@ const About = () => {
 
                     <div className="row rowteam mt-5">
                         <Fade bottom duration={2000}>
-                            <div className="col-12 mx-auto">
+                            <div className="col-12 mx-auto container-my">
                                 <div className='team'>
                                     <h2>Our Team</h2>
                                     <p>These are the people who get the job done</p>
                                 </div>
-
+                              
                                 <Carousel activeIndex={index} onSelect={handleSelect} className="slider2">
                                     <Carousel.Item className='carouselitem2'>
                                         <img src={imgteam1} className="img-fluid item1" />
@@ -433,7 +439,7 @@ const About = () => {
                                     </Carousel.Item>
                                     <Carousel.Item className='carouselitem2'>
                                         <img src={imgteam13} className="img-fluid item1" />
-
+                                        <img src={imgteam14} className="img-fluid item2" />
                                     </Carousel.Item>
                                 </Carousel>
 
@@ -454,7 +460,7 @@ const About = () => {
 
 
                                         <h1 className="petro">Repaircms</h1>
-                                        <h6 className="mt-2 Plat">TechCreator created a platform  that led PetronWorks to its  digital transformation process</h6>
+                                        <h6 className="mt-2 Plat">TechCreator created a platform  that led Repaircms to its  digital transformation process</h6>
                                         <p className="we lead">We developed an entire platform that enabled  Petromark to track and report their non destructive  testing projects in their clients oilfields.</p>
 
                                         {/* <div className="mt-3 mb-5">
@@ -489,8 +495,8 @@ const About = () => {
                                 <div className="row bg-sam mt-5">
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                                         <h2 className="petro">PatronWorks</h2>
-                                        <h6 className="mt-2 Plat">Fast Reaction and Agility for <br /> Covid-19 relief</h6>
-                                        <p className="we lead">We built, in record time, an interactive map for local communities to find scarce resources and assistance for COVID-19 relief.</p>
+                                        <h6 className="mt-2 Plat">Point of sale system for retail businesses</h6>
+                                        <p className="we lead">Patronworks is a complete E-Commerce solution for your Restaurants, it provides a feature rich Point of Sale ( POS ) and a Customer app where users can explore and buy interesting food items.</p>
                                         {/* <div className="mb-5">
     <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
 </div> */}
@@ -520,8 +526,9 @@ const About = () => {
                                 <div className="row bg-sam mt-5">
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                                         <h2 className="petro">Sallon</h2>
-                                        <h6 className="mt-2 Plat">Fast Reaction and Agility for <br /> Covid-19 relief</h6>
-                                        <p className="we lead">We built, in record time, an interactive map for local communities to find scarce resources and assistance for COVID-19 relief.</p>
+                                        <h6 className="mt-2 Plat">A spot where all your beauty appointments meet</h6>
+                                        <p className="we lead">Browse the top-rated options to find the services and
+professionals that are perfect for you.</p>
                                         {/* <div className="mb-5">
     <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
 </div> */}
