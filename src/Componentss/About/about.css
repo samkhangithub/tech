@@ -237,14 +237,16 @@
     overflow: hidden;
     height: 270px;
     border-bottom-right-radius: 12.5%;
-    background: linear-gradient(180deg,hsla(0,0%,100%,0) 42.71%,rgba(4,108,252,.8)) !important;
+    /* background: linear-gradient(180deg,hsla(0,0%,100%,0) 42.71%,rgba(4,108,252,.8)) !important; */
 }
 
 .senior-img:hover img{
      transform: scale(0.9);
      z-index: 1;
 }
-
+.two-img{
+    justify-content: center;
+}
 .main-cards {
     height: 108px;
     align-items: center;

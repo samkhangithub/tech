@@ -303,13 +303,13 @@ const About = () => {
                 <div className="container-fluid ">
                     <div className="row">
                         <Fade bottom duration={2000}>
-                            <div className="col-10 mx-auto">
+                            <div className="col-10 mx-auto justify-content-center">
                                 <div className='board'>
                                     <h2>Our Board</h2>
                                     <p>Meet the guys that are directing our efforts</p>
                                 </div>
 
-                                <Row xs={1} md={4} className="g-4">
+                                <Row xs={1} md={4} className="g-4 two-img">
                                     {Array.map((item, index) => (
                                         <Col key={index}>
                                             <Card>

@@ -57,62 +57,8 @@ const Footers = () => {
       </footer>
       </Fade>
 <Fade bottom duration={2000}>
-      <div className="container bg-white  text-dark py-5">
-        <div className="row p-1">
-          <div className="col-md-3 col-sm-12 col-xs-12 text-center text-white ">
-            <div className="fot">
-              <h4 className="mb-3">Denmark</h4>
-              {/* <a href="">
-                General Roca
-              </a>
-              <a href="">
-                Mendoza
-              </a>
-              <a href="">
-                Buenos Aires
-              </a>
-              <a href="h">
-                Rosario
-              </a>
-              <a href="">
-                Villa La Angostura
-              </a> */}
-
-            </div>
-          </div>
-
-          <div className="col-md-3 col-sm-12 col-xs-12 text-center text-white">
-            <div className="fot">
-              <h4 className="mb-3">Austria</h4>
-              {/* <a href="">
-                Bogotá
-              </a>
-              <a href="">
-                Cali
-              </a>
-              <a href="">
-                Medellín
-              </a>
-              <a href="">
-                About us
-              </a> */}
-
-            </div>
-          </div>
-
-
-
-          <div className="col-md-3 col-sm-12 col-xs-12  text-white">
-            <div className="fot">
-              <h4 className="mb-3">UNITED STATES</h4>
-              {/* <a href="">
-                Miami, FL
-              </a> */}
-            </div>
-          </div>
-
-
-          <div className="col-md-3 col-sm-12 col-xs-12 text-center">
+      <div className="container bg-white  text-dark py-5 d-flex justify-content-center">
+          <div className="col-md-3 col-sm-12 col-xs-12">
             <div className="">
 
               <div className="social-icons">
@@ -135,7 +81,7 @@ const Footers = () => {
 
 
 
-        </div>
+       
       </div>
       <div className="container col-md-11 col-sm-12  text-center d-md-flex justify-content-between  ">
         <h4 >TechCreator</h4>
