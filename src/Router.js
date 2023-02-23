@@ -1,26 +1,39 @@
-import TopNav from './components/TopNav';
+import TopNav from "./components/TopNav";
 import { HashRouter, Routes, Route } from "react-router-dom";
 
-import Home from './Componentss/Home/Home';
-import About from './Componentss/About/About';
-import Services from './Componentss/Our Services/Services';
-import Contact from './Componentss/Contacts/Contact';
-import Scrolltoup from './Componentss/Scrool/Scrool';
-const RouterPage = () =>
-{
-    return (
-        <>
-  <HashRouter>
-  <Scrolltoup />
-     <TopNav />
-      <Routes>
-        <Route path='/' element= {<Home />} />
-        <Route path='/about' element= {<About />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/contact'  element={<Contact />}/>
-      </Routes>
-     </HashRouter>
-        </>
-    )
-}
+import Home from "./Componentss/Home/Home";
+import About from "./Componentss/About/About";
+import Services from "./Componentss/Our Services/Services";
+import Contact from "./Componentss/Contacts/Contact";
+import Scrolltoup from "./Componentss/Scrool/Scrool";
+import Blog from "./Componentss/Blog/Blog";
+import BlogContentPage from "./Componentss/BlogContentPage/BlogContentPage";
+import useFetch from "../src/hooks/useFetcgh";
+const RouterPage = () => {
+  let { loading, data, error } = useFetch(
+    "http://localhost:1337/api/blogs?populate=*"
+  );
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error!</p>;
+  console.log("data :", data);
+  return (
+    <>
+      <HashRouter>
+        <Scrolltoup />
+        <TopNav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog blogs={data ? data : ""} />} />
+          <Route
+            path="/blogc/:id"
+            element={<BlogContentPage blogs={data ? data : ""} />}
+          />
+        </Routes>
+      </HashRouter>
+    </>
+  );
+};
 export default RouterPage;
