@@ -35,7 +35,7 @@ import imgteam9 from "../../image/ihtizaz.png";
 import imgteam10 from "../../image/luqman.png";
 import imgteam11 from "../../image/ayaz.png";
 import imgteam12 from "../../image/sam.png";
-import imgteam13 from "../../image/sameer.png";
+// import imgteam13 from "../../image/sameer.png";
 import imgteam14 from "../../image/rehman.png";
 
 
@@ -438,7 +438,7 @@ const About = () => {
                                         <img src={imgteam12} className="img-fluid item3" />
                                     </Carousel.Item>
                                     <Carousel.Item className='carouselitem2'>
-                                        <img src={imgteam13} className="img-fluid item1" />
+                                        <img src={imgteam12} className="img-fluid item1" />
                                         <img src={imgteam14} className="img-fluid item2" />
                                     </Carousel.Item>
                                 </Carousel>
