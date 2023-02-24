@@ -14,7 +14,7 @@ const RouterPage = () => {
     "http://localhost:1337/api/blogs?populate=*"
   );
   if (loading) return <p>Loading...</p>;
-  // if (error) return <p>Error!</p>;
+  if (error) return <p>Error!</p>;
   console.log("data :", data);
   return (
     <>
