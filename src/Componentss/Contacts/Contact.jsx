@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import './contact.css';
-import contact from '../../image/contact.svg';
+import "./contact.css";
+import contact from "../../image/contact.svg";
 import { useFormik } from "formik";
 import Footers from "../Footers/Footer";
 import { signUpSchema } from "../../schemeas";
@@ -8,9 +8,10 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { GrTwitter } from "react-icons/gr";
-import Fade from 'react-reveal/Fade';
-import { useRef } from 'react';
-import emailjs from 'emailjs-com'
+import Fade from "react-reveal/Fade";
+import { useRef } from "react";
+import emailjs from "emailjs-com";
+import { Helmet } from "react-helmet";
 const initialValues = {
   name: "",
   email: "",
@@ -19,41 +20,57 @@ const initialValues = {
   location: "",
 };
 
-
 const Contact = () => {
-
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_ljl7dzo', 'template_azji8xv', form.current, 'V3m6c5qimGtsOA6yF')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
-      e.target.reset();
-
+    emailjs
+      .sendForm(
+        "service_ljl7dzo",
+        "template_azji8xv",
+        form.current,
+        "V3m6c5qimGtsOA6yF"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
   };
 
   const [message, setSentMessage] = useState(false);
 
-  const { values, errors, touched, handleBlur, handleChange, handleSubmit } = useFormik({
-    initialValues: initialValues,
-    validationSchema: signUpSchema,
-    onSubmit: (value, action) => {
-      console.log(value);
-      action.resetForm();
-    }
-  });
+  const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
+    useFormik({
+      initialValues: initialValues,
+      validationSchema: signUpSchema,
+      onSubmit: (value, action) => {
+        console.log(value);
+        action.resetForm();
+      },
+    });
   console.log(errors);
-
-
-
 
   return (
     <>
+      <Helmet>
+        <title>Contact - Techcreator Software House</title>
+        <meta
+          name="description"
+          content="We have been providing quality services since 2001. We provide our clients with complete end-to-end solutions. We offer customized solutions according to their needs."
+        />
+        <meta
+          name="keywords"
+          content="techcreator, techcreatorsofwarehouse, sofwarehouse, appsdevelopment, softwareindustry, swabisoftwarehouse, techcreatorabout"
+        />
+        <link rel="canonical" href="techcreator.co/contact" />
+      </Helmet>
       {/* <section className="contact-main">
         <div className="container-fluid">
           <div className="row">
@@ -76,34 +93,37 @@ const Contact = () => {
 
       </section> */}
 
-
-
-      <section id="header" className="d-flex align-items-center contact-main text-white">
-
+      <section
+        id="header"
+        className="d-flex align-items-center contact-main text-white"
+      >
         <div className="container-fluid ">
-          <div className="row" style={{ marginTop: "15%", marginBottom: "15%" }}>
+          <div
+            className="row"
+            style={{ marginTop: "15%", marginBottom: "15%" }}
+          >
             <Fade left delay={500} duration={3000}>
               <div className="col-10 mx-auto">
                 <div className="row">
                   <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                    <h1 className='about'> <strong>Contact Us</strong></h1>
-
+                    <h1 className="about">
+                      {" "}
+                      <strong>Contact Us</strong>
+                    </h1>
                   </div>
 
                   <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
                     <h2>Want to Say Something?</h2>
-                    <p className='we-about lead'>We are here to respond on your querries.</p>
+                    <p className="we-about lead">
+                      We are here to respond on your querries.
+                    </p>
                   </div>
                 </div>
-
               </div>
             </Fade>
-
           </div>
         </div>
       </section>
-
-
 
       <div className="container-fluid">
         <div className="row">
@@ -114,14 +134,10 @@ const Contact = () => {
                   <img src={contact} />
                 </div>
               </Fade>
-
             </div>
           </div>
         </div>
       </div>
-
-
-
 
       <div>
         <div>
@@ -132,11 +148,10 @@ const Contact = () => {
                   <div className="card card-shadow border-0 mb-4">
                     <div className="row">
                       <div className="col-lg-8">
-
                         <div className="contact-box p-4">
                           <h4 className="title">Contact Us</h4>
 
-                          <form onSubmit={sendEmail}ref={form}>
+                          <form onSubmit={sendEmail} ref={form}>
                             <div className="row">
                               <div className="col-lg-6 form">
                                 <div className="form-group mt-3">
@@ -151,7 +166,8 @@ const Contact = () => {
                                     onBlur={handleBlur}
                                   />
                                   {errors.name && touched.name ? (
-                                    <p>{errors.name}</p>) : null}
+                                    <p>{errors.name}</p>
+                                  ) : null}
                                 </div>
                               </div>
                               <div className="col-lg-6 form">
@@ -167,8 +183,8 @@ const Contact = () => {
                                     onBlur={handleBlur}
                                   />
                                   {errors.email && touched.email ? (
-                                    <p>{errors.email}</p>) : null}
-
+                                    <p>{errors.email}</p>
+                                  ) : null}
                                 </div>
                               </div>
                               <div className="col-lg-6 form">
@@ -184,8 +200,8 @@ const Contact = () => {
                                     onBlur={handleBlur}
                                   />
                                   {errors.phone && touched.phone ? (
-                                    <p>{errors.phone}</p>) : null}
-
+                                    <p>{errors.phone}</p>
+                                  ) : null}
                                 </div>
                               </div>
                               <div className="col-lg-6 form">
@@ -201,8 +217,8 @@ const Contact = () => {
                                     onBlur={handleBlur}
                                   />
                                   {errors.location && touched.location ? (
-                                    <p>{errors.location}</p>) : null}
-
+                                    <p>{errors.location}</p>
+                                  ) : null}
                                 </div>
                               </div>
                               <div className="col-lg-12 form">
@@ -218,19 +234,16 @@ const Contact = () => {
                                     onBlur={handleBlur}
                                   />
                                   {errors.message && touched.message ? (
-                                    <p>{errors.message}</p>) : null}
-
+                                    <p>{errors.message}</p>
+                                  ) : null}
                                 </div>
                               </div>
                               <div className="col-lg-12">
                                 <button
                                   type="submit"
-                                
                                   className="btn-sub btn btn-danger-gradiant mt-4 mb-3 text-white border-0 py-2 px-3"
-                          
                                 >
                                   <a>
-
                                     SUBMIT NOW <i className="ti-arrow-right" />
                                   </a>
                                 </button>
@@ -243,12 +256,11 @@ const Contact = () => {
                               className="contact-box-text"
                               style={{ color: "black" }}
                             >
-                              Thank you for Contacting us. We will get in touch with
-                              you as soon as possible.
+                              Thank you for Contacting us. We will get in touch
+                              with you as soon as possible.
                             </p>
                           )}
                         </div>
-
                       </div>
                       <div
                         className="col-lg-4 bg-image"
@@ -275,21 +287,31 @@ const Contact = () => {
                           </p>
                           <div className="col-md-3 col-sm-12 col-xs-12 text-center">
                             <div className="">
-
                               <div className="d-flex">
-                                <a href="https://www.facebook.com/brainspkpage" className="p-2">
+                                <a
+                                  href="https://www.facebook.com/brainspkpage"
+                                  className="p-2"
+                                >
                                   <FaFacebook className="conicon" />
                                 </a>
-                                <a href="https://www.linkedin.com/company/brainspk/" className="p-2">
+                                <a
+                                  href="https://www.linkedin.com/company/brainspk/"
+                                  className="p-2"
+                                >
                                   <FaLinkedinIn className="conicon " />
                                 </a>
-                                <a href="https://www.instagram.com/brainspk2021/" className="p-2">
+                                <a
+                                  href="https://www.instagram.com/brainspk2021/"
+                                  className="p-2"
+                                >
                                   <FaInstagram className="conicon " />
                                 </a>
-                                <a href="https://www.instagram.com/brainspk2021/" className="p-2">
+                                <a
+                                  href="https://www.instagram.com/brainspk2021/"
+                                  className="p-2"
+                                >
                                   <GrTwitter className="conicon " />
                                 </a>
-
                               </div>
                             </div>
                           </div>
@@ -306,7 +328,7 @@ const Contact = () => {
 
       <Footers />
     </>
-  )
+  );
 };
 
 export default Contact;

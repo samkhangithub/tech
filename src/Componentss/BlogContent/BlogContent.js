@@ -1,6 +1,7 @@
 import react, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import "./BlogContent.css";
 const BlogContent = ({ blogs }) => {
   const [blog, setBlog] = useState("");
   const [firstImage, setFirstImage] = useState("");
@@ -21,38 +22,38 @@ const BlogContent = ({ blogs }) => {
 
   return (
     <>
-      <div className="w-full pb-10 bg-[#f9f9f9]">
-        <div className="max-w-[1240px] mx-auto">
+      <div className=" class_blogc_a w-full pb-10 bg-[#f9f9f9]">
+        <div className=" class_blogc_b max-w-[1240px] mx-auto">
           <div
-            className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 ss:grid-cols-1
+            className="class_blogc_c grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 ss:grid-cols-1
             md:gap-x-8 sm:gap-y-8 ss:gap-y-8 px-4 sm:pt-20 md:mt-0 ss:pt-20 text-black"
           >
-            <div className="col-span-2 ">
+            <div className=" class_blogc_d col-span-2 ">
               <img
-                className="h-56 w-full object-cover"
+                className=" class_blogc_e h-56 w-full object-cover"
                 src={`http://localhost:1337${firstImage}`}
               />
-              <h1 className="font-bold text-2xl my-1 pt-5">
+              <h1 className="class_blogc_f font-bold text-2xl my-1 pt-5">
                 {blog?.attributes?.blogTitle}
               </h1>
-              <div className="pt-5">
-                <ReactMarkdown className="line-break">
+              <div className="class_blogc_g pt-5">
+                <ReactMarkdown className="class_blogc_h line-break">
                   {blog?.attributes?.blogContent}
                 </ReactMarkdown>
               </div>
             </div>
 
-            <div className="items-center w-full bg-white rounded-xl drop-shadow-md py-5 max-h-[250px] flex flex-col items-center justify-center">
+            <div className="class_blogc_i items-center w-full bg-white rounded-xl drop-shadow-md py-5 max-h-[250px] flex flex-col items-center justify-center">
               <div>
                 <img
-                  className="p-2 w-32 h-32 rounded-full mx-auto object-cover "
+                  className=" class_blogc_j p-2 w-32 h-32 rounded-full mx-auto object-cover "
                   src={`http://localhost:1337${secondImage}`}
                 />
 
-                <h1 className="font-bold text-2xl text-center text-gray-900 pt-3">
+                <h1 className="class_blogc_k font-bold text-2xl text-center text-gray-900 pt-3">
                   {blog?.attributes?.authorName}
                 </h1>
-                <p className="text-center text-gray-900 font-medium">
+                <p className="class_blogc_m text-center text-gray-900 font-medium">
                   {blog?.attributes?.authorDesc}
                 </p>
               </div>
