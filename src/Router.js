@@ -1,5 +1,5 @@
 import TopNav from "./components/TopNav";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, BrowserRouter } from "react-router-dom";
 
 import Home from "./Componentss/Home/Home";
 import About from "./Componentss/About/About";
@@ -14,11 +14,11 @@ const RouterPage = () => {
     "http://localhost:1337/api/blogs?populate=*"
   );
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error!</p>;
+  // if (error) return <p>Error!</p>;
   console.log("data :", data);
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
         <Scrolltoup />
         <TopNav />
         <Routes>
@@ -32,7 +32,7 @@ const RouterPage = () => {
             element={<BlogContentPage blogs={data ? data : ""} />}
           />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 };
