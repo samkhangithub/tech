@@ -127,7 +127,7 @@ const Home = () => {
 
 
                                         <h1 className="mt-3 Develop">Software Development</h1>
-                                        <p className="mt-2 Over ">With over 5+ years of experience in software product development, we provide scalable solutions to companies ranging from startups to Fortune 500. Combining top diverse  talent and a long track record of success, we're ready to help our clients bring their ideas to life.</p>
+                                        <p className="mt-2 Over ">With over 8+ years of experience in software product development, we provide scalable solutions to companies ranging from startups to Fortune 500. Combining top diverse  talent and a long track record of success, we're ready to help our clients bring their ideas to life.</p>
                                         {/* <div className="mt-3 mb-5">
                                             <a href="" className="Getbtn">SEE SERVICES <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
                                         </div> */}

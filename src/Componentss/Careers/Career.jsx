@@ -7,8 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 const Career = () => {
-    const [show, setShow] = useState(false);
-
+  const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
     return (
@@ -59,7 +58,7 @@ const Career = () => {
                                                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                                             <Form.Control
                                                                 type="text"
-                                                                placeholder="Profeesional Profile URL"
+                                                                placeholder="Professional Profile URL"
                                                                 autoFocus
                                                             />
                                                         </Form.Group>
@@ -68,6 +67,7 @@ const Career = () => {
                                                                 type="text"
                                                                 placeholder="Phone"
                                                                 autoFocus
+                                                        
                                                             />
                                                         </Form.Group>
                                                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
