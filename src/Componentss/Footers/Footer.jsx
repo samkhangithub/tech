@@ -44,9 +44,9 @@ const Footers = () => {
               <div className="col mb-4 mb-md-0 mt-3 pt-4 abs">
                 <div className="col ">
                   <h3>JOIN OUR TEAM</h3>
-                  <span>saudkhanbpk@gmail.com</span>
+                  <a href="mailto:saudkhanbpk@gmail.com" className="text-white">saudkhanbpk@gmail.com</a>
                 </div>
-      
+    
               </div>
             </div>
 
