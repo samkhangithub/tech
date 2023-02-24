@@ -1,0 +1,25 @@
+.class-main {
+  @apply w-full bg-[#f9f9f9] py-[50px] mt-10;
+}
+.image {
+  @apply h-56 w-full object-cover;
+}
+.class_b {
+  @apply max-w-[1240px] mx-auto;
+}
+.class_c {
+  @apply grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2  gap-8 px-4 text-black;
+  @layer ss:grid-cols-1;
+}
+.class_d {
+  @apply bg-white rounded-xl overflow-hidden drop-shadow-md;
+}
+.class-e {
+  @apply p-8;
+}
+.class-f {
+  @apply font-bold text-2xl my-1;
+}
+.class-g {
+  @apply text-gray-600 text-base;
+}
