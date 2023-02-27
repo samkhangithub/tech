@@ -1,90 +1,90 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  .md_icon {
-    margin-left: 5px;
-  }
-  .footer-39201 h3 {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 20px;
-  }
-  
-  .footer-39201 .nav-links li {
-    display: block;
-    
-  }
-  
-  .footer-39201 .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .footer-39201 .nav-links li a:hover {
-    color: #fff;
-    opacity: 0.5;
-  }
-.nav-links{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.md_icon {
+  margin-left: 5px;
+}
+.footer-39201 h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-39201 .nav-links li {
+  display: block;
+}
+
+.footer-39201 .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-39201 .nav-links li a:hover {
+  color: #fff;
+  opacity: 0.5;
+}
+.nav-links {
   padding-left: 100px;
 }
-  .contect-div .btn-jion{
-    width: 100px;
-    height: 45px;
-    background-color: #e56700;
-    border-color: #e56700;
-    border-radius: 20px;
-    color: #fff;
-    transition: 0.3s;
-    font-size: 15px;
-    font-weight: 600;
-     border: 2px solid #e56700;
-  }
-  .contect-div .btn-jion:hover{
-    background-color: #fff;
-    color: #e56700;
-    border-color: #e56700;
-  }
-  
-  
-.abs h3{
+.contect-div .btn-jion {
+  width: 100px;
+  height: 45px;
+  background-color: #e56700;
+  border-color: #e56700;
+  border-radius: 20px;
+  color: #fff;
+  transition: 0.3s;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid #e56700;
+}
+.contect-div .btn-jion:hover {
+  background-color: #fff;
+  color: #e56700;
+  border-color: #e56700;
+}
+
+.abs h3 {
   margin-left: -3px;
 }
-  
-  /* 2nd footer   */
-  
-  .fot {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /* padding-left: 50px; */
-  }
-  
-  .fot a {
-    text-decoration: none;
-    color: gray;
-    font-size: 14px;
-    font-weight: 400;
-    cursor: pointer;
-  }
-  
-  .fot h4 {
-    color: #15284b;
-  }
-  
-  .conicon {
-    font-size: 30px;
-    color: #44546f;
-    transition: 0.3s;
-  }
-  
-  .conicon:hover {
-   color: #e56700;
-  }
-  
-  .social-icons {
-    margin-top: 80px;
-  
-  }
+
+/* 2nd footer   */
+
+.fot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* padding-left: 50px; */
+}
+
+.fot a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.fot h4 {
+  color: #15284b;
+}
+
+.conicon {
+  font-size: 30px;
+  color: #44546f;
+  transition: 0.3s;
+}
+
+.conicon:hover {
+  color: #e56700;
+}
+
+.social-icons {
+  margin-top: 80px;
+}
+.logofot {
+  width: 120px;
+}
