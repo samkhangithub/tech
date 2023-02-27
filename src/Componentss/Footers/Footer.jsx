@@ -7,7 +7,9 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { GrTwitter } from "react-icons/gr";
 import Fade from "react-reveal/Fade";
 import logofot from "../../image/techlogo.png";
-
+import {MdLocationOn} from 'react-icons/md';
+import {MdEmail} from 'react-icons/md';
+import {BsTelephoneFill} from 'react-icons/bs';
 const Footers = () => {
   return (
     <>
@@ -54,10 +56,12 @@ const Footers = () => {
                     <h3 className="mb-4">CONTACT</h3>
                     <div className="d-flex">
                       <div>
-                        <i className="fa-solid fa-location-dot me-2"></i>
+                        <MdLocationOn/>
                       </div>
+                      &nbsp;
+                   
                       <div>
-                        <p>
+                          <p> 
                           Tech Creator, Near Muneer Hospital Mardan,
                           Road, Swabi,
                         </p>
@@ -66,11 +70,11 @@ const Footers = () => {
 
                     <div className="d-flex">
                       <div>
-                        {" "}
-                        <i className="fas fa-envelope me-2"></i>
+                        <MdEmail/>
                       </div>
+                      &nbsp;
                       <div>
-                        <a
+                           <a
                           href="mailto:saudkhanbpk@gmail.com"
                           className="text-white"
                         >
@@ -81,11 +85,11 @@ const Footers = () => {
 
                     <div className="d-flex pt-3">
                       <div>
-                        {" "}
-                        <i className="fas fa-phone me-2"></i>
+                  <BsTelephoneFill/>
                       </div>
+                      &nbsp;
                       <div>
-                        <p>0347 1914920</p>
+                            <p>0347 1914920</p>
                       </div>
                     </div>
                   </div>
