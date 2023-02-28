@@ -1,4 +1,4 @@
-import TopNav from "./components/TopNav";
+import TopNav from "./Navbar/TopNav";
 import { HashRouter, Routes, Route, BrowserRouter } from "react-router-dom";
 
 import Home from "./Componentss/Home/Home";
