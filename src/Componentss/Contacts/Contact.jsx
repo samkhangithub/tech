@@ -81,7 +81,7 @@ const Contact = () => {
         <title>Contact - Techcreator Software House</title>
         <meta
           name="description"
-          content="We have been providing quality services since 2001. We provide our clients with complete end-to-end solutions. We offer customized solutions according to their needs."
+          content="If you are interested in contacting us, please fill in the contact form and we will get back to you as soon as we can."
         />
         <meta
           name="keywords"
@@ -170,114 +170,114 @@ const Contact = () => {
                           <h4 className="title">Contact Us</h4>
 
                           <Formik
-                        initialValues={defaultValue}
-                        validationSchema={validationSchema}
-                        onSubmit={sendEmail}
-                      >
-                        {({
-                          values,
-                          errors,
-                          touched,
-                          handleChange,
-                          handleBlur,
-                          handleSubmit,
-                          isSubmitting,
-                        }) => (
-                          <form onSubmit={handleSubmit} ref={form}>
-                            <div className="row">
-                              <div className="col-lg-6">
-                                <div className="form-group mt-3">
-                                  <input
-                                    className="form-control"
-                                    type="text"
-                                    placeholder="Name"
-                                    name="name"
-                                    id="name"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                  />
-                                  <p className="text-danger">
-                                    <ErrorMessage name="name" />
-                                  </p>
+                            initialValues={defaultValue}
+                            validationSchema={validationSchema}
+                            onSubmit={sendEmail}
+                          >
+                            {({
+                              values,
+                              errors,
+                              touched,
+                              handleChange,
+                              handleBlur,
+                              handleSubmit,
+                              isSubmitting,
+                            }) => (
+                              <form onSubmit={handleSubmit} ref={form}>
+                                <div className="row">
+                                  <div className="col-lg-6">
+                                    <div className="form-group mt-3">
+                                      <input
+                                        className="form-control"
+                                        type="text"
+                                        placeholder="Name"
+                                        name="name"
+                                        id="name"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                      />
+                                      <p className="text-danger">
+                                        <ErrorMessage name="name" />
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div className="col-lg-6">
+                                    <div className="form-group mt-3">
+                                      <input
+                                        className="form-control"
+                                        type="text"
+                                        placeholder="Email"
+                                        id="email"
+                                        name="email"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                      />
+                                      <p className="text-danger">
+                                        <ErrorMessage name="email" />
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div className="col-lg-6">
+                                    <div className="form-group mt-3">
+                                      <input
+                                        className="form-control"
+                                        type="text"
+                                        placeholder="Phone"
+                                        id="phone"
+                                        name="phone"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                      />
+                                      <p className="text-danger">
+                                        <ErrorMessage name="phone" />
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div className="col-lg-6">
+                                    <div className="form-group mt-3">
+                                      <input
+                                        className="form-control"
+                                        type="text"
+                                        placeholder="Location"
+                                        id="location"
+                                        name="location"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                      />
+                                      <p className="text-danger">
+                                        <ErrorMessage name="location" />
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div className="col-lg-12">
+                                    <div className="form-group mt-3">
+                                      <input
+                                        className="form-control"
+                                        type="text"
+                                        placeholder="Message"
+                                        id="message"
+                                        name="message"
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                      />
+                                      <p className="text-danger">
+                                        <ErrorMessage name="message" />
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div className="col-lg-12 pt-3">
+                                    <button
+                                      type="submit"
+                                      className="contact-btn"
+                                      disabled={isSubmitting}
+                                    >
+                                      SUBMIT NOW
+                                    </button>
+                                  </div>
                                 </div>
-                              </div>
-                              <div className="col-lg-6">
-                                <div className="form-group mt-3">
-                                  <input
-                                    className="form-control"
-                                    type="text"
-                                    placeholder="Email"
-                                    id="email"
-                                    name="email"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                  />
-                                  <p className="text-danger">
-                                    <ErrorMessage name="email" />
-                                  </p>
-                                </div>
-                              </div>
-                              <div className="col-lg-6">
-                                <div className="form-group mt-3">
-                                  <input
-                                    className="form-control"
-                                    type="text"
-                                    placeholder="Phone"
-                                    id="phone"
-                                    name="phone"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                  />
-                                  <p className="text-danger">
-                                    <ErrorMessage name="phone" />
-                                  </p>
-                                </div>
-                              </div>
-                              <div className="col-lg-6">
-                                <div className="form-group mt-3">
-                                  <input
-                                    className="form-control"
-                                    type="text"
-                                    placeholder="Location"
-                                    id="location"
-                                    name="location"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                  />
-                                  <p className="text-danger">
-                                    <ErrorMessage name="location" />
-                                  </p>
-                                </div>
-                              </div>
-                              <div className="col-lg-12">
-                                <div className="form-group mt-3">
-                                  <input
-                                    className="form-control"
-                                    type="text"
-                                    placeholder="Message"
-                                    id="message"
-                                    name="message"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                  />
-                                  <p className="text-danger">
-                                    <ErrorMessage name="message" />
-                                  </p>
-                                </div>
-                              </div>
-                              <div className="col-lg-12 pt-3">
-                                <button
-                                  type="submit"
-                                  className="contact-btn"
-                                  disabled={isSubmitting}
-                                >
-                                    SUBMIT NOW
-                                </button>
-                              </div>
-                            </div>
-                          </form>
-                        )}
-                      </Formik>
+                              </form>
+                            )}
+                          </Formik>
 
                           {message && (
                             <p
@@ -619,7 +619,6 @@ export default Contact;
 //         </div>
 //       </div>
 
-      
 //     </div>
 //   );
 // }

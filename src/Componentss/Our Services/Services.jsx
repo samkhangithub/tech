@@ -110,7 +110,7 @@ const Services = () => {
         <title>Services - Techcreator Software House</title>
         <meta
           name="description"
-          content="We have been providing quality services since 2001. We provide our clients with complete end-to-end solutions. We offer customized solutions according to their needs."
+          content="At Techcreator, we offer a wide range of products and services in the fields of software development, data analytics, embedded systems, and artificial intelligence. Our goal is to use technology to create a better future for everyone."
         />
         <meta
           name="keywords"
