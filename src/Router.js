@@ -8,12 +8,13 @@ import Scrolltoup from "./Componentss/Scrool/Scrool";
 import Blog from "./Componentss/Blog/Blog";
 import BlogContentPage from "./Componentss/BlogContentPage/BlogContentPage";
 import useFetch from "../src/hooks/useFetcgh";
+import { BACKEND_URL, BACKEND_URL2 } from "./helper";
 const RouterPage = () => {
   let { loading, data, error } = useFetch(
-    "http://localhost:1337/api/blogs?populate=*"
+    `${BACKEND_URL}/api/blogs?populate=*`
   );
   if (loading) return <p>Loading...</p>;
-  // if (error) return <p>Error!</p>;
+  if (error) return <p>Error!</p>;
   console.log("data :", data);
   return (
     <>
