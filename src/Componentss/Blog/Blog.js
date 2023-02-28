@@ -5,14 +5,14 @@ import "./Blog.css";
 
 const Blog = ({ blogs }) => {
   console.log("Blog Object :", blogs);
-  // console.log(blogs);
+  console.log(blogs);
 
   const [firstImage, setFirstImage] = useState("");
   useEffect(() => {
     handle();
   }, []);
   const handle = () => {
-    setFirstImage(blogs.data[0]?.attributes?.coverImg.data?.attributes.url);
+    // setFirstImage(blogs.data[0]?.attributes?.coverImg.data?.attributes.url);
   };
 
   return (
@@ -38,7 +38,8 @@ const Blog = ({ blogs }) => {
                 <div className=" class_d bg-white rounded-xl overflow-hidden drop-shadow-md">
                   <img
                     className="image h-56 w-full object-cover"
-                    src={`http://localhost:1337${blog.attributes?.coverImg.data?.attributes.url}`}
+                    // src={`http://localhost:1337${blog.attributes?.coverImg.data?.attributes.url}`}
+                    // src={blog.attributes.coverImg.data.attributes.url}
                   />
                   <div className=" class-e p-8">
                     <h3 className="class-f font-bold text-2xl my-1">

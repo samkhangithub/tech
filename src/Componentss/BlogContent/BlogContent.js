@@ -14,10 +14,11 @@ const BlogContent = ({ blogs }) => {
   }, []);
   const handle = () => {
     let arr = blogs.blogs.data?.find((elm) => elm.id == id);
+
     setBlog(arr);
 
-    setFirstImage(arr?.attributes?.coverImg.data?.attributes.url);
-    setSecondImage(arr?.attributes.authorImg.data.attributes.url);
+    // setFirstImage(arr?.attributes?.coverImg.data?.attributes.url);
+    // setSecondImage(arr?.attributes.authorImg.data.attributes.url);
   };
 
   return (
