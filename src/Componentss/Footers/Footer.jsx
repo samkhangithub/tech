@@ -14,7 +14,7 @@ const Footers = () => {
   return (
     <>
       <Fade bottom duration={2000}>
-        <footer className="footer-39201 bg-primary text-white">
+        <footer className="footer-39201 bg-primary text-white mt-5">
           <div className="container py-5">
             <div className="row">
               <div className="col-md-4">
