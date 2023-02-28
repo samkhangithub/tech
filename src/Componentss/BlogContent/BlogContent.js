@@ -16,9 +16,10 @@ const BlogContent = ({ blogs }) => {
     let arr = blogs.blogs.data?.find((elm) => elm.id == id);
 
     setBlog(arr);
+    // attributes.coverImg.data.attributes.url
 
-    // setFirstImage(arr?.attributes?.coverImg.data?.attributes.url);
-    // setSecondImage(arr?.attributes.authorImg.data.attributes.url);
+    setFirstImage(arr?.attributes?.coverImg.data?.attributes.url);
+    setSecondImage(arr?.attributes.authorImg.data.attributes.url);
   };
 
   return (
@@ -32,7 +33,7 @@ const BlogContent = ({ blogs }) => {
             <div className=" class_blogc_d col-span-2 ">
               <img
                 className=" class_blogc_e h-56 w-full object-cover"
-                src={`http://localhost:1337${firstImage}`}
+                src={firstImage}
               />
               <h1 className="class_blogc_f font-bold text-2xl my-1 pt-5">
                 {blog?.attributes?.blogTitle}
@@ -48,7 +49,7 @@ const BlogContent = ({ blogs }) => {
               <div>
                 <img
                   className=" class_blogc_j p-2 w-32 h-32 rounded-full mx-auto object-cover "
-                  src={`http://localhost:1337${secondImage}`}
+                  src={secondImage}
                 />
 
                 <h1 className="class_blogc_k font-bold text-2xl text-center text-gray-900 pt-3">

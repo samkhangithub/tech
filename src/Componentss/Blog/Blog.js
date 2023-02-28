@@ -52,7 +52,7 @@ const Blog = ({ blogs }) => {
                     <img
                       className="image h-56 w-full object-cover"
                       // src={`http://localhost:1337${blog.attributes?.coverImg.data?.attributes.url}`}
-                      // src={blog.attributes.coverImg.data.attributes.url}
+                      src={blog.attributes.coverImg.data.attributes.url}
                     />
                     <div className=" class-e p-8">
                       <h3 className="class-f font-bold text-2xl my-1">
