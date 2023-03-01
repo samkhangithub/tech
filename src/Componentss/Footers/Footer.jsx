@@ -7,9 +7,9 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { GrTwitter } from "react-icons/gr";
 import Fade from "react-reveal/Fade";
 import logofot from "../../image/techlogo.png";
-import {MdLocationOn} from 'react-icons/md';
-import {MdEmail} from 'react-icons/md';
-import {BsTelephoneFill} from 'react-icons/bs';
+import { MdLocationOn } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
+import { BsTelephoneFill } from "react-icons/bs";
 const Footers = () => {
   return (
     <>
@@ -25,7 +25,7 @@ const Footers = () => {
                   customized solutions according to their needs.
                 </p>
               </div>
-              <div className="col-md-3 mb-4 mb-md-0 offset-1">
+              <div className="col-md-3 mb-4 mb-md-0">
                 <h3>OUR COMPANY</h3>
                 <ul className="list-unstyled nav-links">
                   <li>
@@ -56,12 +56,11 @@ const Footers = () => {
                     <h3 className="mb-4">CONTACT</h3>
                     <div className="d-flex">
                       <div>
-                        <MdLocationOn/>
+                        <MdLocationOn />
                       </div>
                       &nbsp;
-                   
                       <div>
-                          <p> 
+                        <p>
                           Tech Creator, Near Muneer Hospital Mardan,
                           Road, Swabi,
                         </p>
@@ -70,11 +69,11 @@ const Footers = () => {
 
                     <div className="d-flex">
                       <div>
-                        <MdEmail/>
+                        <MdEmail />
                       </div>
                       &nbsp;
                       <div>
-                           <a
+                        <a
                           href="mailto:saudkhanbpk@gmail.com"
                           className="text-white"
                         >
@@ -85,11 +84,11 @@ const Footers = () => {
 
                     <div className="d-flex pt-3">
                       <div>
-                  <BsTelephoneFill/>
+                        <BsTelephoneFill />
                       </div>
                       &nbsp;
                       <div>
-                            <p>0347 1914920</p>
+                        <p>0347 1914920</p>
                       </div>
                     </div>
                   </div>
