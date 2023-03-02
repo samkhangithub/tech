@@ -12,7 +12,6 @@
 }
 .class_c {
   @layer ss:grid-cols-1;
-  border: 2px solid;
 }
 .class_d {
   @apply bg-white rounded-xl overflow-hidden drop-shadow-md;
