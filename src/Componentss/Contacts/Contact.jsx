@@ -125,7 +125,6 @@ const Contact = () => {
                 <div className="row">
                   <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                     <h1 className="about">
-                      {" "}
                       <strong>Contact Us</strong>
                     </h1>
                   </div>
@@ -281,7 +280,7 @@ const Contact = () => {
 
                           {message && (
                             <p
-                              className="contact-box-text text-danger"
+                              className="contact-box-text pt-3"
                               style={{ color: "black" }}
                             >
                               Thank you for Contacting us. We will get in touch
@@ -298,16 +297,15 @@ const Contact = () => {
                         }}
                       >
                         <div className="detail-box p-4">
-                          <h5 className="text-white font-weight-light mb-3">
+                          <h2 className="text-white font-weight-light mb-3">
                             ADDRESS
-                          </h5>
+                          </h2>
                           <p className="text-white op-7">
-                            Sherdad Dheri Village Maneri Payan,
-                            <br /> Swabi, Khyber Pakhtunkhwa
+                          TechCreator Private Limited near Muneer Hospital, Mardan Road Swabi.
                           </p>
-                          <h5 className="text-white font-weight-light mb-3 mt-4">
+                          <h2 className="text-white font-weight-light mb-3 mt-4">
                             CALL US
-                          </h5>
+                          </h2>
                           <p className="text-white op-7">
                             +923488123407
                             <br />

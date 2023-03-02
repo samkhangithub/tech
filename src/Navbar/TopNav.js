@@ -20,10 +20,10 @@ const TopNav = () => {
       path: "/services",
       name: "Services",
     },
-    {
-      path: "/contact",
-      name: "Contact",
-    },
+    // {
+    //   path: "/contact",
+    //   name: "Contact",
+    // },
     {
       path: "/blog",
       name: "Blog",
@@ -32,7 +32,7 @@ const TopNav = () => {
 
   return (
     <>
-      <Navbar bg="primary" expand="lg" fixed="top" className="main-nav py-0">
+      <Navbar bg="primary" expand="lg" fixed="top" className="main-nav py-2">
         <Container>
           <NavLink to="/" className="logo">
             <img src={logo} />
