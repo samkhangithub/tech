@@ -143,7 +143,7 @@ animation: animateUser 5s linear infinite;
 }
 
 .min-head h2 {
-    font-size: 45px;
+    font-size: 25px;
     font-weight: 400;
 }
 
@@ -961,10 +961,10 @@ animation: animateUser 5s linear infinite;
 .clint-div{
     padding-top: 50px;
 }
-.clint-div h3 {
+.clint-div h2 {
     color: #44546f;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 20px;
 
 }
 
@@ -987,7 +987,7 @@ animation: animateUser 5s linear infinite;
 
 .box {
     width: 100%;
-    height: auto;
+    height: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1003,7 +1003,7 @@ animation: animateUser 5s linear infinite;
 
 }
 
-.box h5 {
+.box h2 {
     text-decoration: none;
     color: #15284b;
     font-size: 17px;
@@ -1023,7 +1023,7 @@ animation: animateUser 5s linear infinite;
     letter-spacing: 0.2rem;
 }
 
-.count h1 {
+.count h2 {
     color: #e56700;
     font-size: 50px;
 }
@@ -1078,9 +1078,10 @@ animation: animateUser 5s linear infinite;
 
 }
 
-.proj-header h3 {
+.proj-header h2 {
     color: rgb(85, 84, 84);
     font-weight: 350;
+    font-size: 30px;
 }
 
 .bold {

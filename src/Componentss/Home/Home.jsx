@@ -19,7 +19,7 @@ import './home.css';
 
 import Marquee from 'react-fast-marquee';
 import image4 from "../../image/quote.webp";
-import imgs2 from '../../image/Patronwork logo.png';
+import imgs2 from '../../image/Patronlogo.png';
 import imgs3 from '../../image/logo-white.png';
 import imgs4 from '../../image/saloonlogo.png';
 import imgs5 from '../../image/BelgiumImmo.png';
@@ -43,12 +43,13 @@ import Fade from 'react-reveal/Fade';
 
 
 import cardimg1 from '../../image/saloonlogo.png';
-import cardimg2 from '../../image/Patronwork logo.png';
+import cardimg2 from '../../image/Patronlogo.png';
 import cardimg3 from '../../image/logo-white.png';
 const boxInfo = [
-    { img: cardimg1, para: "The fact that they’ve been with us from the start and were patient, supportive, committed, and flexible is excellent.", link: "Arben", span: "Founder & CEO" },
-    { img: cardimg2, para: "We have had a good collaboration and we can talk openly about topics that are working well and also the ones that aren't.", link: "Norman moore", span: "CTO" },
-    { img: cardimg3, para: "We have had a good collaboration and we can talk openly about topics that are working well and also the ones that aren't.", link: "Zafar", span: " CEO" }
+    { img: cardimg1, para: "Everyone at TechCreator has been an excellent communicator with no surprises in billing or delivery.", link: "Arben", span: "Founder & CEO" },
+    { img: cardimg3, para: "The fact that they’ve been with us from the start and were patient, supportive, committed, and flexible is excellent.", link: "Zafar", span: " CEO" },
+    { img: cardimg2, para: "We were hesitant to switch to a new POS system, but we are so glad we chose Techcreator.", link: "Norman moore", span: "CTO" },
+
 ]
 
 
@@ -69,7 +70,7 @@ const Home = () => {
                                     <div className="min-head col-lg-6 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column ">
                                         <h1 className=""> Building great <br /> digital solutions</h1>
 
-                                        <h4 className="pt-3">Software Development Outsourcing</h4>
+                                        <h2 className="pt-3">Software Development Outsourcing</h2>
                                         <p className="pt-2 lead">Welcome to TechCreator Private Limited. We are the best software Company to provide you with the best and most holistic business solutions for companies, institutions, products, and brands.</p>
                                         <div className="mt-3 col-sm-12">
 
@@ -126,7 +127,7 @@ const Home = () => {
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column  fade__bottom">
 
 
-                                        <h1 className="mt-3 Develop">Software Development</h1>
+                                        <h2 className="mt-3 Develop">Software Development</h2>
                                         <p className="mt-2 Over ">With over 8+ years of experience in software product development, we provide scalable solutions to companies ranging from startups to Fortune 500. Combining top diverse  talent and a long track record of success, we're ready to help our clients bring their ideas to life.</p>
                                         {/* <div className="mt-3 mb-5">
                                             <a href="" className="Getbtn">SEE SERVICES <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
@@ -184,7 +185,7 @@ const Home = () => {
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-end text-end  flex-column">
 
 
-                                        <h1 className="mt-5 Develop">Software Product <br /> Discovery</h1>
+                                        <h2 className="mt-5 Develop">Software Product <br /> Discovery</h2>
                                         <p className="mt-5 Over">We help our clients weed out unnecessary scope by  understanding users' problems and opportunities before we set out to solve them. A good Product Discovery ensures a project is on the right track, reducing risks and uncertainty, and builds  solid foundation to grow any product.</p>
                                         {/* <div className="mt-3 mb-5">
                                             <a href="" className="Getbtn">SEE SERVICES  <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
@@ -204,7 +205,7 @@ const Home = () => {
                             <div className="row abs">
                                 <Fade bottom delay={500} duration={3000}>
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                                        <h1 className="mt-3 Develop">Talent<br /> Augmentation</h1>
+                                        <h2 className="mt-3 Develop">Talent<br /> Augmentation</h2>
                                         <p className="mt-5 Over">We have a top-class talent pool ready to jump on any new  challenge. We scale our client's delivery capacity with the right skills, reducing the time to market for any new product or functionality.</p>
                                         {/* <div className="mt-3 mb-5">
                                             <a href="" className="Getbtn">SEE SERVICES <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
@@ -247,16 +248,16 @@ const Home = () => {
                         <Fade bottom duration={2000}>
                             <div className="col-10 mx-auto mt-5">
                                 <h2 className=" text-center here">Here are our services in action</h2>
-                                <h1 className="mt-2 text-center">Take a look at some of what we do.</h1>
+                                <h2 className="mt-2 text-center">Take a look at some of what we do.</h2>
                                 <a className="cmp-btn2 mt-5" onClick={() => navigate("/services")}>View all our work <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="cmp-btn__icon" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></a>
                                 <div className="row bg-sam mt-5">
 
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
 
 
-                                        <h1 className="petro">Repaircms</h1>
-                                        <h6 className="mt-2 Plat">TechCreator created a platform  that led Repaircms to its  digital transformation process</h6>
-                                        <p className="we lead">We developed an entire platform that enabled  Petromark to track and report their non destructive  testing projects in their clients oilfields.</p>
+                                        <h3 className="petro">Repaircms</h3>
+                                        <h3 className="mt-2 Plat">TechCreator created a platform  that led Repaircms to its  digital transformation process</h3>
+                                        <p className="we lead">The fact that they’ve been with us from the start and were patient, supportive, committed, and flexible is excellent.</p>
 
                                         {/* <div className="mt-3 mb-5">
                                             <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
@@ -290,8 +291,8 @@ const Home = () => {
                                 <div className="row bg-sam mt-5">
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                                         <h2 className="petro">PatronWorks</h2>
-                                        <h6 className="mt-2 Plat">Point of sale system for retail businesses</h6>
-                                        <p className="we lead">Patronworks is a complete E-Commerce solution for your Restaurants, it provides a feature rich Point of Sale ( POS ) and a Customer app where users can explore and buy interesting food items.</p>
+                                        <h3 className="mt-2 Plat">Point of sale system for retail businesses</h3>
+                                        <p className="we lead">We were hesitant to switch to a new POS system, but we are so glad we chose Techcreator.</p>
                                         {/* <div className="mb-5">
                                         <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
                                     </div> */}
@@ -321,11 +322,8 @@ const Home = () => {
                                 <div className="row bg-sam mt-5">
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                                         <h2 className="petro">Sallon</h2>
-                                        <h6 className="mt-2 Plat">A spot where all your beauty appointments meet</h6>
-                                        <p className="we lead">Browse the top-rated options to find the services and
-professionals that are perfect for you.
-
-.</p>
+                                        <h3 className="mt-2 Plat">A spot where all your beauty appointments meet</h3>
+                                        <p className="we lead">Everyone at TechCreator has been an excellent communicator with no surprises in billing or delivery.</p>
                                         {/* <div className="mb-5">
                                         <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
                                     </div> */}
@@ -355,7 +353,7 @@ professionals that are perfect for you.
 
             <Fade bottom duration={2000}>
                 <div className="col-md-12 clint-div text-center pt-5 my-5">
-                    <h5>CLIENT TESTIMONIALS</h5>
+                    <h2>CLIENT TESTIMONIALS</h2>
                     <h3>What they say about us</h3>
                 </div>
             </Fade>
@@ -371,7 +369,7 @@ professionals that are perfect for you.
                                             <div className="box p-4 bg-white text-dark">
                                                 <img src={item.img} className=" img-div pt-3" />
                                                 <p className="">{item.para}</p>
-                                                <h5> <img src={image4} className="img-quote" /><img src={image4} className="img-quote" />  {item.link}</h5>
+                                                <h2> <img src={image4} className="img-quote" /><img src={image4} className="img-quote" />  {item.link}</h2>
                                                 <span>{item.span}</span>
                                             </div>
                                         </div>
@@ -385,15 +383,15 @@ professionals that are perfect for you.
                             <Fade bottom duration={2000}>
                                 <div className=" d-md-flex col-10 mx-auto">
                                     <div className="col-md-4 col-sm-12 count">
-                                        <h1>+<span>50</span><span className="my-span">CLIENTS</span> </h1>
+                                        <h2>+<span>50</span><span className="my-span">CLIENTS</span> </h2>
                                     </div>
 
                                     <div className="col-md-4 col-sm-12 count">
-                                        <h1>+<span>10</span><span className="my-span">COUNTRIES</span> </h1>
+                                        <h2>+<span>10</span><span className="my-span">COUNTRIES</span> </h2>
                                     </div>
 
                                     <div className="col-md-4 col-sm-12 count">
-                                        <h1>+<span>100</span><span className="my-span">PRODUCTS</span> </h1>
+                                        <h2>+<span>100</span><span className="my-span">PRODUCTS</span> </h2>
                                     </div>
                                 </div>
                             </Fade>
@@ -437,7 +435,7 @@ professionals that are perfect for you.
                         <div className="col-10 mx-auto ">
                             <div className="row">
                                 <div className="col-lg-6 col-md-12 col-sm-12 pt-5 pt-lg-0  proj-header ">
-                                    <h3>Ready to tell us about <span className="bold">your project?</span></h3>
+                                    <h2>Ready to tell us about <span className="bold">your project?</span></h2>
                                 </div>
 
                                 <div className="pro-main col-lg-6 col-md-12 col-sm-12  d-md-flex  justify-content-end">

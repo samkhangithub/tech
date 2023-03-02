@@ -150,19 +150,16 @@ const Services = () => {
               <div className="col-10 mx-auto">
                 <div className="row">
                   <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                    <h1 className="about">
-                      {" "}
+                    <h1 className="services">
                       <strong>Our Services</strong>
                     </h1>
                   </div>
 
-                  <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
+                  <div className="col-lg-7 col-md-12 col-sm-12">
                     <p className="we-about lead">
-                      At Brains,Pk, We specialize in products and services that
-                      span over several domains like Software Applications, Data
-                      analytics, Embedded Systems and Artificial Intelligence
-                      smart solutions with unified goal of realizing the dreams
-                      of a better tomorrow through technology.
+                    At Techcreator, we offer a wide range of products and services in the fields
+                    of software development, data analytics, embedded systems, and artificial intelligence.
+                    Our goal is to use technology to create a better future for everyone.
                     </p>
                   </div>
                 </div>
@@ -184,10 +181,10 @@ const Services = () => {
           <div class="col-lg-6">
             <Fade bottom duration={2000}>
               <div>
-                <h1 class="display-5 fw-bold lh-1 mb-3 text-primary ">
+                <h2 class="display-5 fw-bold lh-1 mb-3 text-primary ">
                   Software
                   <br /> Development
-                </h1>
+                </h2>
                 <p class="lead">
                   We have a top-class talent pool ready to jump on any new
                   challenge. We scale our client's delivery capacity with the
@@ -224,10 +221,10 @@ const Services = () => {
           <div class="col-lg-6 soft-pro">
             <Fade bottom duration={2000}>
               <div>
-                <h1 class="display-5 fw-bold lh-1 mb-3 text-primary ">
+                <h2 class="display-5 fw-bold lh-1 mb-3 text-primary ">
                   Software Product
                   <br /> Discovery
-                </h1>
+                </h2>
                 <p class="lead">
                   We help our clients weed out unnecessary scope by
                   understanding users' problems and opportunities before we set
@@ -264,10 +261,10 @@ const Services = () => {
           <div class="col-lg-6 pb-5">
             <Fade bottom>
               <div>
-                <h1 class="display-5 fw-bold lh-1 mb-3 text-primary ">
+                <h2 class="display-5 fw-bold lh-1 mb-3 text-primary ">
                   Talent
                   <br /> Augmentation
-                </h1>
+                </h2>
                 <p class="lead">
                   We have a top-class talent pool ready to jump on any new
                   challenge. We scale our client's delivery capacity with the
@@ -288,7 +285,7 @@ const Services = () => {
         <div className="container">
           <Fade bottom duration={2000}>
             <div className="head">
-              <p>RELATED SERVICES</p>
+              <h2>RELATED SERVICES</h2>
             </div>
           </Fade>
           <div className="row">
@@ -298,7 +295,7 @@ const Services = () => {
                   <div className="col-md-4 col-sm-12 py-5">
                     <div className="card-ser p-4 bg-white text-dark card-dev">
                       <img src={item.img} className="pt-3" />
-                      <h3 className="pt-4">{item.header}</h3>
+                      <h2 className="pt-4">{item.header}</h2>
                       <span className=" pt-4">{item.para}</span>
                       {/* <a href="">{item.btn}  <MdKeyboardArrowRight className="md_icon" /></a> */}
                     </div>

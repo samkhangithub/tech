@@ -71,7 +71,7 @@
 
 .conicon {
   font-size: 30px;
-  color: #44546f;
+  color: #fff;
   transition: 0.3s;
 }
 
@@ -79,9 +79,9 @@
   color: #e56700;
 }
 
-.social-icons {
-  margin-top: 80px;
-}
+/* .social-icons {
+  margin-top: 15px;
+} */
 .logofot {
   width: 120px;
 }

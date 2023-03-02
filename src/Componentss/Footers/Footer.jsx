@@ -10,6 +10,7 @@ import logofot from "../../image/techlogo.png";
 import { MdLocationOn } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 const Footers = () => {
   return (
     <>
@@ -18,7 +19,9 @@ const Footers = () => {
           <div className="container py-5">
             <div className="row">
               <div className="col-md-4">
-                <img src={logofot} className="logofot" />
+                <NavLink to="/">
+                <img src={logofot} className="logofot" /> 
+                </NavLink>
                 <p className="pt-4">
                   We have been providing quality services since 2001. We provide
                   our clients with complete end-to-end solutions. We offer
@@ -26,26 +29,34 @@ const Footers = () => {
                 </p>
               </div>
               <div className="col-md-3 mb-4 mb-md-0">
-                <h3>OUR COMPANY</h3>
-                <ul className="list-unstyled nav-links">
+                <h3>Useful Links</h3>
+                <ul className="list-unstyled nav-links ">
+                <NavLink to="/">
+                <li>
+                    <a style={{color:"white"}}>Home</a>
+                    </li>
+                  </NavLink>
+                  <NavLink to="/about">
                   <li>
-                    <a href="#">Our Services</a>
-                  </li>
+                    <a style={{color:"white"}}>About</a>
+                    </li>
+                  </NavLink>
+                  <NavLink to="/services">
                   <li>
-                    <a href="#">Industries</a>
-                  </li>
+                    <a style={{color:"white"}}>Our Services</a>
+                    </li>
+                  </NavLink>
+                  <NavLink to="/contact">
                   <li>
-                    <a href="#">Blog</a>
-                  </li>
+                    <a style={{color:"white"}}>Contact</a>
+                    </li>
+                  </NavLink>
+                  <NavLink to="/blog">
                   <li>
-                    <a href="#">About us</a>
-                  </li>
-                  <li>
-                    <a href="#">Careers</a>
-                  </li>
-                  <li>
-                    <a href="#">Contact</a>
-                  </li>
+                    <a style={{color:"white"}}>Blog</a>
+                    </li>
+                  </NavLink>
+                 
                 </ul>
               </div>
               <div className="col-md-4 mb-md-0  contect-div">
@@ -60,14 +71,13 @@ const Footers = () => {
                       </div>
                       &nbsp;
                       <div>
-                        <p>
-                          Tech Creator, Near Muneer Hospital Mardan,
-                          Road, Swabi,
-                        </p>
+                        <a href="https://goo.gl/maps/9jGNEgeX2fomX5CMA" target="_blank" style={{color:"white"}}>
+                        TechCreator Private Limited near Muneer Hospital, Mardan Road Swabi.
+                        </a>
                       </div>
                     </div>
 
-                    <div className="d-flex">
+                    <div className="d-flex pt-2">
                       <div>
                         <MdEmail />
                       </div>
@@ -82,56 +92,84 @@ const Footers = () => {
                       </div>
                     </div>
 
-                    <div className="d-flex pt-3">
+                    <div className="d-flex pt-2">
                       <div>
                         <BsTelephoneFill />
                       </div>
                       &nbsp;
                       <div>
-                        <p>0347 1914920</p>
+                        <a href="tel:+92-347 1914920" style={{color:"white"}}>0347 1914920</a>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </Fade>
-      <Fade bottom duration={2000}>
-        <div className="container bg-white  text-dark py-5 d-flex justify-content-center">
-          <div className="col-md-3 col-sm-12 col-xs-12 ">
-            <div className="">
-              <div className="social-icons ">
-                <a href="https://www.facebook.com/brainspkpage" className="p-2">
+                    <div>
+                    {/* <div className="social-icons">
+                <a href="https://www.facebook.com/techcreatorfb/" className="p-2" target="_blank">
                   <FaFacebook className="conicon" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/brainspk/"
+                  href="https://linkedin.com/company/techcreator"
                   className="p-2"
+                  target="_blank"
                 >
-                  <FaLinkedinIn className="conicon " />
+                  <FaLinkedinIn className="conicon" />
                 </a>
                 <a
                   href="https://www.instagram.com/brainspk2021/"
                   className="p-2"
+                  target="_blank"
                 >
                   <FaInstagram className="conicon " />
                 </a>
                 <a
                   href="https://www.instagram.com/brainspk2021/"
                   className="p-2"
+                  target="_blank"
+                >
+                  <GrTwitter className="conicon " />
+                </a>
+              </div> */}
+            
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr style={{border:"1px solid", color:"#fff"}} className="mt-3"/>
+            </div>
+            <div>
+            <div className="col-md-11 col-sm-12  text-center d-md-flex justify-content-between">
+            <p>&copy; 2023 TechCreator. All rights reserved.</p>
+            <div className="social-icons">
+                <a href="https://www.facebook.com/techcreatorfb/" className="p-2" target="_blank">
+                  <FaFacebook className="conicon" />
+                </a>
+                <a
+                  href="https://linkedin.com/company/techcreator"
+                  className="p-2"
+                  target="_blank"
+                >
+                  <FaLinkedinIn className="conicon" />
+                </a>
+                <a
+                  href="https://instagram.com/techcreatorco"
+                  className="p-2"
+                  target="_blank"
+                >
+                  <FaInstagram className="conicon " />
+                </a>
+                <a
+                  href="https://twitter.com/techcreatorco"
+                  className="p-2"
+                  target="_blank"
                 >
                   <GrTwitter className="conicon " />
                 </a>
               </div>
+        
+        </div>
             </div>
           </div>
-        </div>
-        <div className="container col-md-11 col-sm-12  text-center d-md-flex justify-content-between  ">
-          <h4>TechCreator</h4>
-          <p>&copy; 2023 TechCreator. All rights reserved.</p>
-        </div>
+          
+        </footer>
       </Fade>
     </>
   );

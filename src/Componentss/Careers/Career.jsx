@@ -21,7 +21,7 @@ const Career = () => {
                                 <div className="row">
                                     <div className="col-lg-6 col-md-12 col-sm-12 pt-5 pt-lg-0 div-header  d-flex justify-content-center flex-column">
 
-                                        <h6>CAREERS</h6>
+                                        <h1>CAREERS</h1>
                                         <p>Want to join our arcadian community?</p>
                                         <div className="div-btn pt-5 col-sm-12 ">
                                             {/* <button className="btns1 m-3">View our job openings <MdKeyboardArrowRight className="md_icon" /></button> */}

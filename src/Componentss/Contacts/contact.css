@@ -41,7 +41,9 @@ border-radius: 5px;
   padding: 11px 20px;
   border-radius: 6px;
 }
-
+.detail-box h2{
+  font-size: 20px;
+}
 @media screen and (max-width : 480px){
   .cont-img img{
     width: 200px;

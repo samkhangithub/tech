@@ -23,20 +23,22 @@ import imgpro12 from "../../image/khpalmart.webp";
 import imgpro13 from "../../image/petron1.png";
 import imgpro14 from "../../image/repair1.png";
 import imgpro15 from "../../image/saloon1.png";
-import imgteam1 from "../../image/mustafa.png";
-import imgteam2 from "../../image/romi.jpg";
-import imgteam3 from "../../image/saad.png";
-import imgteam4 from "../../image/Imran.png";
-import imgteam5 from "../../image/Aqib.png";
+import imgteam1 from "../../image/Imran.png";
+import imgteam2 from "../../image/Sameer.png";
+import imgteam3 from "../../image/sam.png";
+import imgteam4 from "../../image/saad.png";
+import imgteam5 from "../../image/romi.jpg";
 import imgteam6 from "../../image/ahmad.png";
 import imgteam7 from "../../image/Hamid.png";
-import imgteam8 from "../../image/ihtesham.png";
+import imgteam8 from "../../image/rehman.png";
 import imgteam9 from "../../image/ihtizaz.png";
 import imgteam10 from "../../image/luqman.png";
 import imgteam11 from "../../image/ayaz.png";
-import imgteam12 from "../../image/sam.png";
-// import imgteam13 from "../../image/sameer.png";
-import imgteam14 from "../../image/rehman.png";
+import imgteam12 from "../../image/mustafa.png";
+import imgteam13 from "../../image/ihtesham.png";
+import imgteam14 from "../../image/Aqib.png";
+
+
 
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
@@ -214,6 +216,7 @@ const About = () => {
       para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
       btn: "Go To Website",
     },
+
   ];
   return (
     <>
@@ -240,8 +243,7 @@ const About = () => {
                 <div className="row">
                   <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                     <h1 className="about">
-                      {" "}
-                      <strong>About Us</strong>
+                      About Us
                     </h1>
                   </div>
 
@@ -277,11 +279,11 @@ const About = () => {
                       className="slider"
                     >
                       <Carousel.Item className="carouselitem">
-                        <h3 className="slidetitle1">
+                        <h2 className="slidetitle1">
                           WE ARE
                           <br />
                           <strong>GEEKS</strong>
-                        </h3>
+                        </h2>
                         <p className="slidepara1">
                           We live and breath technology. We keep ourselves
                           updated: try new components, study new languages and
@@ -289,11 +291,11 @@ const About = () => {
                         </p>
                       </Carousel.Item>
                       <Carousel.Item className="carouselitem">
-                        <h3 className="slidetitle1">
+                        <h2 className="slidetitle1">
                           WE ARE A
                           <br />
                           <strong>TEAM</strong>
-                        </h3>
+                        </h2>
                         <p className="slidepara1">
                           We focus on integral solutions, exploring various
                           perspectives to solve a problem. Our work is the
@@ -301,11 +303,11 @@ const About = () => {
                         </p>
                       </Carousel.Item>
                       <Carousel.Item className="carouselitem">
-                        <h3 className="slidetitle1">
+                        <h2 className="slidetitle1">
                           WE ARE
                           <br />
                           <strong>AGNOSTIC</strong>
-                        </h3>
+                        </h2>
                         <p className="slidepara1">
                           We have experience in multiple technologies and
                           methodologies, which gives us the ability to think on
@@ -419,7 +421,7 @@ const About = () => {
             <Fade bottom duration={2000}>
               <div className="col-10 mx-auto justify-content-center">
                 <div className="board">
-                  <h2>Our Board</h2>
+                  <h2>Board Of Directors</h2>
                   <p>Meet the guys that are directing our efforts</p>
                 </div>
 
@@ -430,8 +432,20 @@ const About = () => {
                         <div className="senior-img">
                           <img src={item.img} className="img-fluid" />
                         </div>
-
                         <Card.Body className="main-cards">
+                          <Card.Text className="sen-name">
+                          <div className="d-flex flex-column spac-main">
+                           <p className="p-0 m-0" style={{color:"#8a94a5"}}> {item.title}</p>
+                           <p className="p-0 m-0" style={{color:"#000"}}> {item.name}</p>
+                            </div>
+                            <div>
+                            <a href={item.link} target="_blank" className="icon">
+                              <GrLinkedinOption />
+                            </a>
+                            </div>
+                          </Card.Text>
+                        </Card.Body>
+                        {/* <Card.Body className="main-cards">
                           <Card.Title className="sen-title">
                             {item.title}
                           </Card.Title>
@@ -441,7 +455,7 @@ const About = () => {
                               <GrLinkedinOption className="icon" />
                             </a>
                           </Card.Text>
-                        </Card.Body>
+                        </Card.Body> */}
                       </Card>
                     </Col>
                   ))}
@@ -449,7 +463,7 @@ const About = () => {
               </div>
             </Fade>
           </div>
-          <div className="row">
+          {/* <div className="row">
             <Fade bottom duration={2000}>
               <div className="col-10 mx-auto">
                 <Carousel
@@ -474,14 +488,14 @@ const About = () => {
                 </Carousel>
               </div>
             </Fade>
-          </div>
+          </div> */}
 
           <div className="row ">
             <Fade bottom duration={2000}>
               <div className="col-10 mx-auto senior-main">
                 <div className="Senior">
                   <h2>Senior Management</h2>
-                  <p>Where stretegic decisions take place</p>
+                  <p>Where Strategic decisions take place</p>
                 </div>
 
                 <Row xs={1} md={4} className="g-4">
@@ -491,16 +505,18 @@ const About = () => {
                         <div className="senior-img">
                           <img src={item.img} className="img-fluid" />
                         </div>
-
+                      
                         <Card.Body className="main-cards">
-                          <Card.Title className="sen-title">
-                            {item.title}
-                          </Card.Title>
                           <Card.Text className="sen-name">
-                            {item.name}
-                            <a href={item.link} target="_blank">
-                              <GrLinkedinOption className="icon" />
+                          <div className="d-flex flex-column spac-main">
+                           <p className="p-0 m-0" style={{color:"#8a94a5"}}> {item.title}</p>
+                           <p className="p-0 m-0" style={{color:"#000"}}> {item.name}</p>
+                            </div>
+                            <div>
+                            <a href={item.link} target="_blank" className="icon">
+                              <GrLinkedinOption />
                             </a>
+                            </div>
                           </Card.Text>
                         </Card.Body>
                       </Card>
@@ -524,7 +540,7 @@ const About = () => {
                 <Carousel
                   activeIndex={index}
                   onSelect={handleSelect}
-                  className="slider2"
+                  className="slider2 container"
                 >
                   <Carousel.Item className="carouselitem2">
                     <img src={imgteam1} className="img-fluid item1" />
@@ -547,7 +563,7 @@ const About = () => {
                     <img src={imgteam12} className="img-fluid item3" />
                   </Carousel.Item>
                   <Carousel.Item className="carouselitem2">
-                    <img src={imgteam12} className="img-fluid item1" />
+                    <img src={imgteam13} className="img-fluid item1" />
                     <img src={imgteam14} className="img-fluid item2" />
                   </Carousel.Item>
                 </Carousel>
@@ -558,68 +574,43 @@ const About = () => {
           <div className="row mt-5 backgimg text-white  rounded">
             <Fade bottom duration={2000}>
               <div className="col-10 mx-auto mt-5">
-                <h2 className=" text-center here">
-                  Here are our services in action
-                </h2>
-                <h1 className="mt-2 text-center">
-                  Take a look at some of what we do.
-                </h1>
-                <a
-                  className="cmp-btn2 mt-5"
-                  onClick={() => navigate("/services")}
-                >
-                  View all our work{" "}
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 20 20"
-                    class="cmp-btn__icon"
-                    height="1.3em"
-                    width="1.3em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </a>
+                <h2 className=" text-center here">Here are our services in action</h2>
+                <h2 className="mt-2 text-center">Take a look at some of what we do.</h2>
+                <a className="cmp-btn2 mt-5" onClick={() => navigate("/services")}>View all our work <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="cmp-btn__icon" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></a>
                 <div className="row bg-sam mt-5">
+
                   <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                    <h1 className="petro">Repaircms</h1>
-                    <h6 className="mt-2 Plat">
-                      TechCreator created a platform that led Repaircms to its
-                      digital transformation process
-                    </h6>
-                    <p className="we lead">
-                      We developed an entire platform that enabled Petromark to
-                      track and report their non destructive testing projects in
-                      their clients oilfields.
-                    </p>
+
+
+                    <h3 className="petro">Repaircms</h3>
+                    <h3 className="mt-2 Plat">TechCreator created a platform  that led Repaircms to its  digital transformation process</h3>
+                    <p className="we lead">We developed an entire platform that enabled  Petromark to track and report their non destructive  testing projects in their clients oilfields.</p>
 
                     {/* <div className="mt-3 mb-5">
-        <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
-    </div> */}
+                                            <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
+                                        </div> */}
+
                   </div>
                   <div className="col-lg-5 col-md-12 col-sm-12 header-img">
+
                     <div className="img13 mt-3">
-                      <img
-                        src={repairimg}
-                        className="img-fluid pt-5"
-                        alt="img13"
-                      />
+
+                      <img src={repairimg} className="img-fluid pt-5" alt="img13" />
                     </div>
                     {/* <div className="img14">
-        <img src={img14} className="img-fluid" alt="img14" />
+                                            <img src={img14} className="img-fluid" alt="img14" />
 
-    </div> */}
+                                        </div> */}
+
+
                   </div>
+
                 </div>
+
               </div>
             </Fade>
           </div>
+
 
           <div className="row text-white  rounded">
             <Fade bottom delay={500} duration={2000}>
@@ -627,36 +618,30 @@ const About = () => {
                 <div className="row bg-sam mt-5">
                   <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                     <h2 className="petro">PatronWorks</h2>
-                    <h6 className="mt-2 Plat">
-                      Point of sale system for retail businesses
-                    </h6>
-                    <p className="we lead">
-                      Patronworks is a complete E-Commerce solution for your
-                      Restaurants, it provides a feature rich Point of Sale (
-                      POS ) and a Customer app where users can explore and buy
-                      interesting food items.
-                    </p>
+                    <h3 className="mt-2 Plat">Point of sale system for retail businesses</h3>
+                    <p className="we lead">Patronworks is a complete E-Commerce solution for your Restaurants, it provides a feature rich Point of Sale ( POS ) and a Customer app where users can explore and buy interesting food items.</p>
                     {/* <div className="mb-5">
-    <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
-</div> */}
+                                        <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
+                                    </div> */}
                   </div>
                   <div className="col-lg-5 col-md-12 col-sm-12 header-img">
+
                     <div className="img13 mt-3">
-                      <img
-                        src={patronimg}
-                        className="img-fluid pt-5"
-                        alt="img13"
-                      />
+
+                      <img src={patronimg} className="img-fluid pt-5" alt="img13" />
                     </div>
                     {/* <div className="img14">
-          <img src={img14} className="img-fluid" alt="img14" />
+                                              <img src={img14} className="img-fluid" alt="img14" />
 
-         </div> */}
+                                             </div> */}
+
+
                   </div>
                 </div>
               </div>
             </Fade>
           </div>
+
 
           <div className="row text-white  rounded">
             <Fade bottom delay={500} duration={2000}>
@@ -664,29 +649,25 @@ const About = () => {
                 <div className="row bg-sam mt-5">
                   <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                     <h2 className="petro">Sallon</h2>
-                    <h6 className="mt-2 Plat">
-                      A spot where all your beauty appointments meet
-                    </h6>
-                    <p className="we lead">
-                      Browse the top-rated options to find the services and
-                      professionals that are perfect for you.
-                    </p>
+                    <h3 className="mt-2 Plat">A spot where all your beauty appointments meet</h3>
+                    <p className="we lead">Browse the top-rated options to find the services and
+                      professionals that are perfect for you.</p>
                     {/* <div className="mb-5">
-    <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
-</div> */}
+                                        <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
+                                    </div> */}
                   </div>
                   <div className="col-lg-5 col-md-12 col-sm-12 header-img">
+
                     <div className="img13 mt-3">
-                      <img
-                        src={saloonimg}
-                        className="img-fluid pt-5"
-                        alt="img13"
-                      />
+
+                      <img src={saloonimg} className="img-fluid pt-5" alt="img13" />
                     </div>
                     {/* <div className="img14">
-            <img src={img14} className="img-fluid" alt="img14" />
+                                                <img src={img14} className="img-fluid" alt="img14" />
 
-          </div> */}
+                                              </div> */}
+
+
                   </div>
                 </div>
               </div>
@@ -706,7 +687,7 @@ const About = () => {
                 <div className="col-md-4 col-sm-12 cards container">
                   <img src={projectInfo.img} className="" />
                   <div className="cards-body">
-                    <h1 className="cards-title">{projectInfo.head}</h1>
+                    <h2 className="cards-title">{projectInfo.head}</h2>
                     <p className="cards-info">{projectInfo.para}</p>
                     <a
                       className="cards-btn"
