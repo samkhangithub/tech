@@ -7,6 +7,12 @@
     background-repeat: no-repeat;
    
 }
+.about h1{
+  font: size 40px; ;
+}
+.cont-head h2{
+  font-size: 30px;
+}
 .main-card{
   box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
   0 32px 64px -48px rgba(0, 0, 0, 0.5);

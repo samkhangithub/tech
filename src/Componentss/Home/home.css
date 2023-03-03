@@ -140,10 +140,11 @@ animation: animateUser 5s linear infinite;
 
 .min-head h1 {
     font-weight: 700;
+    font-size: 40px;
 }
 
 .min-head h2 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 400;
 }
 
@@ -275,7 +276,7 @@ animation: animateUser 5s linear infinite;
     margin-bottom: 16px;
     color: #15284b;
     font-weight: 800;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .Over {
@@ -298,10 +299,9 @@ animation: animateUser 5s linear infinite;
 
 .here {
     margin-top: 10%;
-    font-size: 25px;
+    font-size: 30px;
     opacity: 0.6;
 }
-
 .petro {
     color: #8a94a5;
     margin-left: 2%;
@@ -311,7 +311,6 @@ animation: animateUser 5s linear infinite;
 
 .Plat {
     color: #313d52;
-
     font-size: 30px;
     font-weight: 400;
     margin-left: 2%;
@@ -477,12 +476,12 @@ animation: animateUser 5s linear infinite;
         margin-bottom: 16px;
         color: #15284b;
         font-weight: 800;
-        font-size: 38px;
+        font-size: 30px;
     }
 
     .here {
         margin-top: 25%;
-        font-size: 17px;
+        /* font-size: 17px; */
     }
 
     .cmp-btn2 {
@@ -958,22 +957,25 @@ animation: animateUser 5s linear infinite;
 .hero-dev p{
     font-size: 18px;
 }
+.hero-dev h3{
+    font-size: 20px;
+    color: #545c68;
+}
 .clint-div{
     padding-top: 50px;
 }
 .clint-div h2 {
     color: #44546f;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 30px;
 
 }
 
-.clint-div h5 {
+.clint-div h3 {
     color: #44546f;
-    font-weight: 400;
     letter-spacing: .1em;
     font-family: Lato, sans-serif;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .img-div {
@@ -1023,7 +1025,7 @@ animation: animateUser 5s linear infinite;
     letter-spacing: 0.2rem;
 }
 
-.count h2 {
+.count p {
     color: #e56700;
     font-size: 50px;
 }
@@ -1078,7 +1080,7 @@ animation: animateUser 5s linear infinite;
 
 }
 
-.proj-header h2 {
+.proj-header p {
     color: rgb(85, 84, 84);
     font-weight: 350;
     font-size: 30px;

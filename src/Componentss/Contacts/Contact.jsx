@@ -129,7 +129,7 @@ const Contact = () => {
                     </h1>
                   </div>
 
-                  <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
+                  <div className="col-lg-7 col-md-12 col-sm-12 mb-5 cont-head">
                     <h2>Want to Say Something?</h2>
                     <p className="we-about lead">
                       We are here to respond on your querries.
@@ -166,7 +166,7 @@ const Contact = () => {
                     <div className="row">
                       <div className="col-lg-8">
                         <div className="contact-box p-4">
-                          <h4 className="title">Contact Us</h4>
+                          <h2 className="title">Contact Us</h2>
 
                           <Formik
                             initialValues={defaultValue}
@@ -297,15 +297,15 @@ const Contact = () => {
                         }}
                       >
                         <div className="detail-box p-4">
-                          <h2 className="text-white font-weight-light mb-3">
+                          <h3 className="text-white font-weight-light mb-3" style={{fontSize:"20px"}}>
                             ADDRESS
-                          </h2>
+                          </h3>
                           <p className="text-white op-7">
                           TechCreator Private Limited near Muneer Hospital, Mardan Road Swabi.
                           </p>
-                          <h2 className="text-white font-weight-light mb-3 mt-4">
+                          <h3 className="text-white font-weight-light mb-3 mt-4" style={{fontSize:"20px"}}>
                             CALL US
-                          </h2>
+                          </h3>
                           <p className="text-white op-7">
                             +923488123407
                             <br />
