@@ -124,7 +124,7 @@ const Contact = () => {
                 <div className="row">
                   <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                     <h1 className="about">
-                      <strong>Contact Us</strong>
+                     Contact Us
                     </h1>
                   </div>
 
