@@ -19,7 +19,7 @@ function App() {
             },
 
             description:
-              "At BrainsPK, we offer a wide range of products and services in the fields of software development, data analytics, embedded systems, and artificial intelligence. Our goal is to use technology to create a better future for everyone.",
+              "At TechCreator, we offer a wide range of products and services in the fields of software development, data analytics, embedded systems, and artificial intelligence. Our goal is to use technology to create a better future for everyone.",
             potentialAction: {
               "@type": "Continue the Conversation",
               name: "Continue the Conversation",
