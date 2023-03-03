@@ -31,11 +31,6 @@ import Career from "../Careers/Career";
 import Footers from "../Footers/Footer"
 import { useNavigate } from "react-router-dom";
 import Fade from 'react-reveal/Fade';
-
-
-
-
-
 // import { FaFacebook } from "react-icons/fa";
 // import { FaInstagram } from "react-icons/fa";
 // import { FaLinkedinIn } from "react-icons/fa";
@@ -68,8 +63,8 @@ const Home = () => {
                             <div className="row">
                                 <Fade left duration={2000}>
                                     <div className="min-head col-lg-6 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column ">
-                                        <h1 className=""> Building great <br /> digital solutions</h1>
-                                        <h2 className="pt-3">Software Development Outsourcing</h2>
+                                        <h1>Building great <br /> digital solutions</h1>
+                                        <h3 className="pt-3">Software Development Outsourcing</h3>
                                         <p className="pt-2 lead">Welcome to TechCreator Private Limited. We are the best software Company to provide you with the best and most holistic business solutions for companies, institutions, products, and brands.</p>
                                         <div className="mt-3 col-sm-12">
 
@@ -106,7 +101,7 @@ const Home = () => {
                                 </Fade>
                                 <Fade bottom delay={2000} duration={3000}>
                                     <div className="col-lg-5 col-md-12 col-sm-12 hero-dev  d-flex justify-content-center flex-column">
-                                        <h3 className="pt-5">SOFTWARE OUTSOURCING SERVICES</h3>
+                                        <h4 className="pt-5">SOFTWARE OUTSOURCING SERVICES</h4>
                                         <p className="pt-3">TechCreator as a team of passionate developers of great technology products. Our holistic expertise in software solutions allows us to intervene in all stages of our client's projects, don't matter their size..</p>
                                     </div>
                                 </Fade>
@@ -125,7 +120,7 @@ const Home = () => {
                             <div className="row abs">
                                 <Fade bottom delay={500} duration={3000}>
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column  fade__bottom">
-                                        <h1 className="mt-3 Develop">Software Development</h1>
+                                        <h2 className="mt-3 Develop">Software Development</h2>
                                         <p className="mt-2 Over ">With over 8+ years of experience in software product development, we provide scalable solutions to companies ranging from startups to Fortune 500. Combining top diverse  talent and a long track record of success, we're ready to help our clients bring their ideas to life.</p>
                                         {/* <div className="mt-3 mb-5">
                                             <a href="" className="Getbtn">SEE SERVICES <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
@@ -183,7 +178,7 @@ const Home = () => {
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-end text-end  flex-column">
 
 
-                                        <h1 className="mt-5 Develop">Software Product <br /> Discovery</h1>
+                                        <h2 className="mt-5 Develop">Software Product <br /> Discovery</h2>
                                         <p className="mt-5 Over">We help our clients weed out unnecessary scope by  understanding users' problems and opportunities before we set out to solve them. A good Product Discovery ensures a project is on the right track, reducing risks and uncertainty, and builds  solid foundation to grow any product.</p>
                                         {/* <div className="mt-3 mb-5">
                                             <a href="" className="Getbtn">SEE SERVICES  <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
@@ -203,7 +198,7 @@ const Home = () => {
                             <div className="row abs">
                                 <Fade bottom delay={500} duration={3000}>
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                                        <h1 className="mt-3 Develop">Talent<br /> Augmentation</h1>
+                                        <h2 className="mt-3 Develop">Talent<br /> Augmentation</h2>
                                         <p className="mt-5 Over">We have a top-class talent pool ready to jump on any new  challenge. We scale our client's delivery capacity with the right skills, reducing the time to market for any new product or functionality.</p>
                                         {/* <div className="mt-3 mb-5">
                                             <a href="" className="Getbtn">SEE SERVICES <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
@@ -246,7 +241,7 @@ const Home = () => {
                         <Fade bottom duration={2000}>
                             <div className="col-10 mx-auto mt-5">
                                 <h2 className=" text-center here">Here are our services in action</h2>
-                                <h2 className="mt-2 text-center">Take a look at some of what we do.</h2>
+                                <h3 className="mt-2 text-center take">Take a look at some of what we do.</h3>
                                 <a className="cmp-btn2 mt-5" onClick={() => navigate("/services")}>View all our work <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="cmp-btn__icon" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></a>
                                 <div className="row bg-sam mt-5">
  
@@ -254,7 +249,7 @@ const Home = () => {
 
 
                                         <p className="petro">Repaircms</p>
-                                        <h2 className="mt-2 Plat">TechCreator created a platform  that led Repaircms to its  digital transformation process</h2>
+                                        <p className="mt-2 Plat">TechCreator created a platform  that led Repaircms to its  digital transformation process</p>
                                         <p className="we lead">The fact that they’ve been with us from the start and were patient, supportive, committed, and flexible is excellent.</p>
 
                                         {/* <div className="mt-3 mb-5">
@@ -289,7 +284,7 @@ const Home = () => {
                                 <div className="row bg-sam mt-5">
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                                         <p className="petro">PatronWorks</p>
-                                        <h2 className="mt-2 Plat">Point of sale system for retail businesses</h2>
+                                        <p className="mt-2 Plat">Point of sale system for retail businesses</p>
                                         <p className="we lead">We were hesitant to switch to a new POS system, but we are so glad we chose Techcreator.</p>
                                         {/* <div className="mb-5">
                                         <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
@@ -320,7 +315,7 @@ const Home = () => {
                                 <div className="row bg-sam mt-5">
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                                         <p className="petro">Sallon</p>
-                                        <h2 className="mt-2 Plat">A spot where all your beauty appointments meet</h2>
+                                        <p className="mt-2 Plat">A spot where all your beauty appointments meet</p>
                                         <p className="we lead">Everyone at TechCreator has been an excellent communicator with no surprises in billing or delivery.</p>
                                         {/* <div className="mb-5">
                                         <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
@@ -367,7 +362,7 @@ const Home = () => {
                                             <div className="box p-4 bg-white text-dark">
                                                 <img src={item.img} className=" img-div pt-3" />
                                                 <p className="">{item.para}</p>
-                                                <h2> <img src={image4} className="img-quote" /><img src={image4} className="img-quote" />  {item.link}</h2>
+                                                <a> <img src={image4} className="img-quote" /><img src={image4} className="img-quote" />  {item.link}</a>
                                                 <span>{item.span}</span>
                                             </div>
                                         </div>

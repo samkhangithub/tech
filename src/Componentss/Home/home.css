@@ -140,10 +140,10 @@ animation: animateUser 5s linear infinite;
 
 .min-head h1 {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 50px;
 }
 
-.min-head h2 {
+.min-head h3 {
     font-size: 30px;
     font-weight: 400;
 }
@@ -299,8 +299,11 @@ animation: animateUser 5s linear infinite;
 
 .here {
     margin-top: 10%;
-    font-size: 30px;
+    font-size: 40px;
     opacity: 0.6;
+}
+.take{
+    font-size: 30px;
 }
 .petro {
     color: #8a94a5;
@@ -957,7 +960,7 @@ animation: animateUser 5s linear infinite;
 .hero-dev p{
     font-size: 18px;
 }
-.hero-dev h3{
+.hero-dev h4{
     font-size: 20px;
     color: #545c68;
 }

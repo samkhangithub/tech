@@ -29,7 +29,7 @@ const Footers = () => {
                 </p>
               </div>
               <div className="col-md-3 mb-4 mb-md-0">
-                <h3>Useful Links</h3>
+                <h4>Useful Links</h4>
                 <ul className="list-unstyled nav-links ">
                 <NavLink to="/">
                 <li>
@@ -64,7 +64,7 @@ const Footers = () => {
               <button className="btn-jion">Jion <MdKeyboardArrowRight className="md_icon" /></button> */}
                 <div className="col mb-4 mb-md-0 abs">
                   <div className="col ">
-                    <h3 className="mb-4">CONTACT</h3>
+                    <h4 className="mb-4">CONTACT</h4>
                     <div className="d-flex">
                       <div>
                         <MdLocationOn />

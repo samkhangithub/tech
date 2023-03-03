@@ -22,7 +22,7 @@ const Career = () => {
                                     <div className="col-lg-6 col-md-12 col-sm-12 pt-5 pt-lg-0 div-header  d-flex justify-content-center flex-column">
 
                                         <p>CAREERS</p>
-                                        <h2>Want to join our arcadian community?</h2>
+                                        <h3>Want to join our arcadian community?</h3>
                                         <div className="div-btn pt-5 col-sm-12 ">
                                             {/* <button className="btns1 m-3">View our job openings <MdKeyboardArrowRight className="md_icon" /></button> */}
                                             <button className="btns2 m-3" onClick={handleShow}>

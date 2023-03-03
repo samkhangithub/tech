@@ -183,10 +183,10 @@ const Services = () => {
           <div class="col-lg-6">
             <Fade bottom duration={2000}>
               <div className="soft">
-                <h1 class="display-5 fw-bold lh-1 mb-3 text-primary">
+                <h2 class="display-5 fw-bold lh-1 mb-3 text-primary">
                   Software
                   <br /> Development
-                </h1>
+                </h2>
                 <p class="lead">
                   We have a top-class talent pool ready to jump on any new
                   challenge. We scale our client's delivery capacity with the
@@ -223,10 +223,10 @@ const Services = () => {
           <div class="col-lg-6 soft-pro">
             <Fade bottom duration={2000}>
               <div className="pro">
-                <h1 class="display-5 fw-bold lh-1 mb-3 text-primary ">
+                <h2 class="display-5 fw-bold lh-1 mb-3 text-primary ">
                   Software Product
                   <br /> Discovery
-                </h1>
+                </h2>
                 <p class="lead">
                   We help our clients weed out unnecessary scope by
                   understanding users' problems and opportunities before we set
@@ -263,10 +263,10 @@ const Services = () => {
           <div class="col-lg-6 pb-5">
             <Fade bottom>
               <div className="talent">
-                <h1 class="display-5 fw-bold lh-1 mb-3 text-primary ">
+                <h2 class="display-5 fw-bold lh-1 mb-3 text-primary ">
                   Talent
                   <br /> Augmentation
-                </h1>
+                </h2>
                 <p class="lead">
                   We have a top-class talent pool ready to jump on any new
                   challenge. We scale our client's delivery capacity with the
@@ -287,7 +287,7 @@ const Services = () => {
         <div className="container">
           <Fade bottom duration={2000}>
             <div className="head">
-              <h3>RELATED SERVICES</h3>
+              <h4>RELATED SERVICES</h4>
 
             </div>
           </Fade>
@@ -296,9 +296,9 @@ const Services = () => {
               return (
                 <Fade bottom duration={1000}>
                   <div className="col-md-4 col-sm-12 py-5">
-                    <div className="card-ser p-4 bg-white text-dark card-dev">
+                    <div className="card-ser p-4 bg-white text-dark">
                       <img src={item.img} className="pt-3" />
-                      <h2 className="pt-4">{item.header}</h2>
+                      <h4 className="pt-4">{item.header}</h4>
                       <span className=" pt-4">{item.para}</span>
                       {/* <a href="">{item.btn}  <MdKeyboardArrowRight className="md_icon" /></a> */}
                     </div>

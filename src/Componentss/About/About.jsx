@@ -277,7 +277,8 @@ const About = () => {
                         <h2 className="slidetitle1">
                           WE ARE
                           <br />
-                          <strong>GEEKS</strong>
+                          <br />
+                          GEEKS
                         </h2>
                         <p className="slidepara1">
                           We live and breath technology. We keep ourselves
@@ -416,7 +417,7 @@ const About = () => {
             <Fade bottom duration={2000}>
               <div className="col-10 mx-auto justify-content-center">
                 <div className="board">
-                  <h2>Board Of Directors</h2>
+                  <h3>Board Of Directors</h3>
                   <p>Meet the guys that are directing our efforts</p>
                 </div>
 
@@ -502,7 +503,7 @@ const About = () => {
             <Fade bottom duration={2000}>
               <div className="col-10 mx-auto senior-main">
                 <div className="Senior">
-                  <h2>Senior Management</h2>
+                  <h3>Senior Management</h3>
                   <p>Where Strategic decisions take place</p>
                 </div>
 
@@ -554,7 +555,7 @@ const About = () => {
             <Fade bottom duration={2000}>
               <div className="col-12 mx-auto container-my">
                 <div className="team">
-                  <h2>Our Team</h2>
+                  <h3>Our Team</h3>
                   <p>These are the people who get the job done</p>
                 </div>
 
@@ -592,13 +593,54 @@ const About = () => {
             </Fade>
           </div>
 
-          <div className="row text-white  rounded">
+          <div className="row mt-5 backgimg text-white  rounded">
+                        <Fade bottom duration={2000}>
+                            <div className="col-10 mx-auto mt-5">
+                                <h2 className=" text-center here">Here are our services in action</h2>
+                                <h3 className="mt-2 text-center take">Take a look at some of what we do.</h3>
+                                <a className="cmp-btn2 mt-5" onClick={() => navigate("/services")}>View all our work <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="cmp-btn__icon" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></a>
+                                <div className="row bg-sam mt-5">
+ 
+                                    <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+
+
+                                        <p className="petro">Repaircms</p>
+                                        <p className="mt-2 Plat">TechCreator created a platform  that led Repaircms to its  digital transformation process</p>
+                                        <p className="we lead">The fact that they’ve been with us from the start and were patient, supportive, committed, and flexible is excellent.</p>
+
+                                        {/* <div className="mt-3 mb-5">
+                                            <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
+                                        </div> */}
+
+                                    </div>
+                                    <div className="col-lg-5 col-md-12 col-sm-12 header-img">
+
+                                        <div className="img13 mt-3">
+
+                                            <img src={repairimg} className="img-fluid pt-5" alt="img13" />
+                                        </div>
+                                        {/* <div className="img14">
+                                            <img src={img14} className="img-fluid" alt="img14" />
+
+                                        </div> */}
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </Fade>
+                    </div>
+
+
+                    <div className="row text-white  rounded">
                         <Fade bottom delay={500} duration={2000}>
                             <div className="col-10 mx-auto mt-5">
                                 <div className="row bg-sam mt-5">
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                                         <p className="petro">PatronWorks</p>
-                                        <h2 className="mt-2 Plat">Point of sale system for retail businesses</h2>
+                                        <p className="mt-2 Plat">Point of sale system for retail businesses</p>
                                         <p className="we lead">We were hesitant to switch to a new POS system, but we are so glad we chose Techcreator.</p>
                                         {/* <div className="mb-5">
                                         <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
@@ -629,7 +671,7 @@ const About = () => {
                                 <div className="row bg-sam mt-5">
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                                         <p className="petro">Sallon</p>
-                                        <h2 className="mt-2 Plat">A spot where all your beauty appointments meet</h2>
+                                        <p className="mt-2 Plat">A spot where all your beauty appointments meet</p>
                                         <p className="we lead">Everyone at TechCreator has been an excellent communicator with no surprises in billing or delivery.</p>
                                         {/* <div className="mb-5">
                                         <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
@@ -654,7 +696,6 @@ const About = () => {
                     </div>
                 </div>
             </section>
-
       <div className="proimg">
         <div className="col">
           <h2 className="pro-mains text-center my-5">Our Projects</h2>

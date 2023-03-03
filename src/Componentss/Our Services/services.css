@@ -1,5 +1,5 @@
 .services{
-    font-size: 40px;
+    font-size: 50px;
     text-align: end;
     font-weight: 700;
 
@@ -27,7 +27,7 @@
     color: #7a82ab;
     letter-spacing: .1em;
 }
-.head h3{
+.head h4{
     font-size: 20px;
 }
 .soft-pro{
@@ -45,13 +45,13 @@ transition: 0.5s;
     padding-top: 50px;
     
 }
-.soft h1{
+.soft h2{
     font-size: 40px;
 }
-.pro h1{
+.pro h2{
     font-size: 40px;
 }
-.talent h1{
+.talent h2{
     font-size: 40px;
 }
 .card-ser{
@@ -69,7 +69,7 @@ transition: 0.5s;
  
     font-size: 20px;
   }
-.card-ser h2{
+.card-ser h4{
     font-size: 22px;
     line-height: 32px;
     color: #44546F;
@@ -80,7 +80,7 @@ transition: 0.5s;
     color: #44546F;
     padding: 0px 15px 0px 15px;
 }
-.card-dev img {
+.card-ser img {
     width: 65px;
     padding-left: 13px;
 }
