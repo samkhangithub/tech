@@ -173,6 +173,8 @@
     text-align: center;
     margin-top: 10%;
     margin-bottom: 7%;
+}
+.board h2{
     font-size: 30px;
 }
 .board p{
@@ -228,9 +230,11 @@
     text-align: center;
     margin-top: -3%;
     margin-bottom: 7%;
+}
+.Senior h2{
     font-size: 30px;
 }
-.Senior{
+.Senior p{
     font-size: 20px;
 }
 .rowteam {
@@ -241,6 +245,8 @@
 .team {
     text-align: center;
     margin-top: 5%;
+}
+.team h2{
     font-size: 30px;
 }
 .team p{

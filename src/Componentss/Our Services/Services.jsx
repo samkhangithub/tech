@@ -107,7 +107,7 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Services - Techcreator Software House</title>
+        <title>Services - Techcreator Software Company</title>
         <meta
           name="description"
           content="At Techcreator, we offer a wide range of products and services in the fields of software development, data analytics, embedded systems, and artificial intelligence. Our goal is to use technology to create a better future for everyone."
@@ -157,9 +157,11 @@ const Services = () => {
 
                   <div className="col-lg-7 col-md-12 col-sm-12">
                     <p className="we-about lead">
-                    At Techcreator, we offer a wide range of products and services in the fields
-                    of software development, data analytics, embedded systems, and artificial intelligence.
-                    Our goal is to use technology to create a better future for everyone.
+                      At Techcreator, we offer a wide range of products and
+                      services in the fields of software development, data
+                      analytics, embedded systems, and artificial intelligence.
+                      Our goal is to use technology to create a better future
+                      for everyone.
                     </p>
                   </div>
                 </div>

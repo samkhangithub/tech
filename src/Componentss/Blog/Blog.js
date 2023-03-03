@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import Footers from "../Footers/Footer";
 import "./Blog.css";
 
 const Blog = ({ blogs }) => {
@@ -31,7 +32,7 @@ const Blog = ({ blogs }) => {
       </Helmet>
       <div className="main_class">
         <Helmet>
-          <title>Blog - Techcreator Software House</title>
+          <title>Blog - Techcreator Software Company</title>
           <meta
             name="description"
             content="We have been providing quality services since 2001. We provide our clients with complete end-to-end solutions. We offer customized solutions according to their needs."
@@ -69,6 +70,7 @@ const Blog = ({ blogs }) => {
           </div>
         </div>
       </div>
+      <Footers />
     </>
   );
 };

@@ -2,6 +2,7 @@ import react, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import "./BlogContent.css";
+import Footers from "../Footers/Footer";
 const BlogContent = ({ blogs }) => {
   const [blog, setBlog] = useState("");
   const [firstImage, setFirstImage] = useState("");
@@ -63,6 +64,7 @@ const BlogContent = ({ blogs }) => {
           </div>
         </div>
       </div>
+      {/* <Footers /> */}
     </>
   );
 };

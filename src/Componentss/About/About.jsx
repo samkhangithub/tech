@@ -38,8 +38,6 @@ import imgteam12 from "../../image/mustafa.png";
 import imgteam13 from "../../image/ihtesham.png";
 import imgteam14 from "../../image/Aqib.png";
 
-
-
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
@@ -216,12 +214,11 @@ const About = () => {
       para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
       btn: "Go To Website",
     },
-
   ];
   return (
     <>
       <Helmet>
-        <title>About - Techcreator Software House</title>
+        <title>About - Techcreator Software Company</title>
         <meta
           name="description"
           content="We have been providing quality services since 2001. We provide our clients with complete end-to-end solutions. We offer customized solutions according to their needs."
@@ -242,9 +239,7 @@ const About = () => {
               <div className="col-10 mx-auto">
                 <div className="row">
                   <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                    <h1 className="about">
-                      About Us
-                    </h1>
+                    <h1 className="about">About Us</h1>
                   </div>
 
                   <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
@@ -434,14 +429,27 @@ const About = () => {
                         </div>
                         <Card.Body className="main-cards">
                           <Card.Text className="sen-name">
-                          <div className="d-flex flex-column spac-main">
-                           <p className="p-0 m-0" style={{color:"#8a94a5"}}> {item.title}</p>
-                           <p className="p-0 m-0" style={{color:"#000"}}> {item.name}</p>
+                            <div className="d-flex flex-column spac-main">
+                              <p
+                                className="p-0 m-0"
+                                style={{ color: "#8a94a5" }}
+                              >
+                                {" "}
+                                {item.title}
+                              </p>
+                              <p className="p-0 m-0" style={{ color: "#000" }}>
+                                {" "}
+                                {item.name}
+                              </p>
                             </div>
                             <div>
-                            <a href={item.link} target="_blank" className="icon">
-                              <GrLinkedinOption />
-                            </a>
+                              <a
+                                href={item.link}
+                                target="_blank"
+                                className="icon"
+                              >
+                                <GrLinkedinOption />
+                              </a>
                             </div>
                           </Card.Text>
                         </Card.Body>
@@ -505,17 +513,30 @@ const About = () => {
                         <div className="senior-img">
                           <img src={item.img} className="img-fluid" />
                         </div>
-                      
+
                         <Card.Body className="main-cards">
                           <Card.Text className="sen-name">
-                          <div className="d-flex flex-column spac-main">
-                           <p className="p-0 m-0" style={{color:"#8a94a5"}}> {item.title}</p>
-                           <p className="p-0 m-0" style={{color:"#000"}}> {item.name}</p>
+                            <div className="d-flex flex-column spac-main">
+                              <p
+                                className="p-0 m-0"
+                                style={{ color: "#8a94a5" }}
+                              >
+                                {" "}
+                                {item.title}
+                              </p>
+                              <p className="p-0 m-0" style={{ color: "#000" }}>
+                                {" "}
+                                {item.name}
+                              </p>
                             </div>
                             <div>
-                            <a href={item.link} target="_blank" className="icon">
-                              <GrLinkedinOption />
-                            </a>
+                              <a
+                                href={item.link}
+                                target="_blank"
+                                className="icon"
+                              >
+                                <GrLinkedinOption />
+                              </a>
                             </div>
                           </Card.Text>
                         </Card.Body>
@@ -532,7 +553,7 @@ const About = () => {
           <div className="row rowteam mt-5">
             <Fade bottom duration={2000}>
               <div className="col-12 mx-auto container-my">
-                <div className="team ">
+                <div className="team">
                   <h2>Our Team</h2>
                   <p>These are the people who get the job done</p>
                 </div>

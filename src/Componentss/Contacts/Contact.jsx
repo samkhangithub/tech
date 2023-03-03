@@ -77,7 +77,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact - Techcreator Software House</title>
+        <title>Contact - Techcreator Software Company</title>
         <meta
           name="description"
           content="If you are interested in contacting us, please fill in the contact form and we will get back to you as soon as we can."
@@ -300,7 +300,8 @@ const Contact = () => {
                             ADDRESS
                           </h3>
                           <p className="text-white op-7">
-                          TechCreator Private Limited near Muneer Hospital, Mardan Road Swabi.
+                            TechCreator Private Limited near Muneer Hospital,
+                            Mardan Road Swabi.
                           </p>
                           <h3 className="text-white font-weight-light mb-3 mt-4" style={{fontSize:"20px"}}>
                             CALL US
