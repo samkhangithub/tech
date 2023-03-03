@@ -16,13 +16,13 @@ const Footers = () => {
     <>
       <Fade bottom duration={2000}>
         <footer className="footer-39201 bg-primary text-white mt-5">
-          <div className="container py-5">
+          <div className="container pt-5">
             <div className="row">
               <div className="col-md-4">
                 <NavLink to="/">
                 <img src={logofot} className="logofot" /> 
                 </NavLink>
-                <p className="pt-4">
+                <p className="">
                   We have been providing quality services since 2001. We provide
                   our clients with complete end-to-end solutions. We offer
                   customized solutions according to their needs.
@@ -102,32 +102,6 @@ const Footers = () => {
                       </div>
                     </div>
                     <div>
-                    {/* <div className="social-icons">
-                <a href="https://www.facebook.com/techcreatorfb/" className="p-2" target="_blank">
-                  <FaFacebook className="conicon" />
-                </a>
-                <a
-                  href="https://linkedin.com/company/techcreator"
-                  className="p-2"
-                  target="_blank"
-                >
-                  <FaLinkedinIn className="conicon" />
-                </a>
-                <a
-                  href="https://www.instagram.com/brainspk2021/"
-                  className="p-2"
-                  target="_blank"
-                >
-                  <FaInstagram className="conicon " />
-                </a>
-                <a
-                  href="https://www.instagram.com/brainspk2021/"
-                  className="p-2"
-                  target="_blank"
-                >
-                  <GrTwitter className="conicon " />
-                </a>
-              </div> */}
             
                     </div>
                   </div>

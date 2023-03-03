@@ -182,11 +182,11 @@ const Services = () => {
           </div>
           <div class="col-lg-6">
             <Fade bottom duration={2000}>
-              <div>
-                <h2 class="display-5 fw-bold lh-1 mb-3 text-primary ">
+              <div className="soft">
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-primary">
                   Software
                   <br /> Development
-                </h2>
+                </h1>
                 <p class="lead">
                   We have a top-class talent pool ready to jump on any new
                   challenge. We scale our client's delivery capacity with the
@@ -222,11 +222,11 @@ const Services = () => {
 
           <div class="col-lg-6 soft-pro">
             <Fade bottom duration={2000}>
-              <div>
-                <h2 class="display-5 fw-bold lh-1 mb-3 text-primary ">
+              <div className="pro">
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-primary ">
                   Software Product
                   <br /> Discovery
-                </h2>
+                </h1>
                 <p class="lead">
                   We help our clients weed out unnecessary scope by
                   understanding users' problems and opportunities before we set
@@ -262,11 +262,11 @@ const Services = () => {
           </div>
           <div class="col-lg-6 pb-5">
             <Fade bottom>
-              <div>
-                <h2 class="display-5 fw-bold lh-1 mb-3 text-primary ">
+              <div className="talent">
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-primary ">
                   Talent
                   <br /> Augmentation
-                </h2>
+                </h1>
                 <p class="lead">
                   We have a top-class talent pool ready to jump on any new
                   challenge. We scale our client's delivery capacity with the
@@ -287,7 +287,8 @@ const Services = () => {
         <div className="container">
           <Fade bottom duration={2000}>
             <div className="head">
-              <h2>RELATED SERVICES</h2>
+              <h3>RELATED SERVICES</h3>
+
             </div>
           </Fade>
           <div className="row">

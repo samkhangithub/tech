@@ -592,149 +592,72 @@ const About = () => {
             </Fade>
           </div>
 
-          <div className="row mt-5 backgimg text-white  rounded">
-            <Fade bottom duration={2000}>
-              <div className="col-10 mx-auto mt-5">
-                <h2 className=" text-center here">
-                  Here are our services in action
-                </h2>
-                <h2 className="mt-2 text-center">
-                  Take a look at some of what we do.
-                </h2>
-                <a
-                  className="cmp-btn2 mt-5"
-                  onClick={() => navigate("/services")}
-                >
-                  View all our work{" "}
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 20 20"
-                    class="cmp-btn__icon"
-                    height="1.3em"
-                    width="1.3em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </a>
-                <div className="row bg-sam mt-5">
-                  <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                    <h3 className="petro">Repaircms</h3>
-                    <h3 className="mt-2 Plat">
-                      TechCreator created a platform that led Repaircms to its
-                      digital transformation process
-                    </h3>
-                    <p className="we lead">
-                      We developed an entire platform that enabled Petromark to
-                      track and report their non destructive testing projects in
-                      their clients oilfields.
-                    </p>
-
-                    {/* <div className="mt-3 mb-5">
-                                            <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
-                                        </div> */}
-                  </div>
-                  <div className="col-lg-5 col-md-12 col-sm-12 header-img">
-                    <div className="img13 mt-3">
-                      <img
-                        src={repairimg}
-                        className="img-fluid pt-5"
-                        alt="img13"
-                      />
-                    </div>
-                    {/* <div className="img14">
-                                            <img src={img14} className="img-fluid" alt="img14" />
-
-                                        </div> */}
-                  </div>
-                </div>
-              </div>
-            </Fade>
-          </div>
-
           <div className="row text-white  rounded">
-            <Fade bottom delay={500} duration={2000}>
-              <div className="col-10 mx-auto mt-5">
-                <div className="row bg-sam mt-5">
-                  <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                    <h2 className="petro">PatronWorks</h2>
-                    <h3 className="mt-2 Plat">
-                      Point of sale system for retail businesses
-                    </h3>
-                    <p className="we lead">
-                      Patronworks is a complete E-Commerce solution for your
-                      Restaurants, it provides a feature rich Point of Sale (
-                      POS ) and a Customer app where users can explore and buy
-                      interesting food items.
-                    </p>
-                    {/* <div className="mb-5">
+                        <Fade bottom delay={500} duration={2000}>
+                            <div className="col-10 mx-auto mt-5">
+                                <div className="row bg-sam mt-5">
+                                    <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+                                        <p className="petro">PatronWorks</p>
+                                        <h2 className="mt-2 Plat">Point of sale system for retail businesses</h2>
+                                        <p className="we lead">We were hesitant to switch to a new POS system, but we are so glad we chose Techcreator.</p>
+                                        {/* <div className="mb-5">
                                         <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
                                     </div> */}
-                  </div>
-                  <div className="col-lg-5 col-md-12 col-sm-12 header-img">
-                    <div className="img13 mt-3">
-                      <img
-                        src={patronimg}
-                        className="img-fluid pt-5"
-                        alt="img13"
-                      />
-                    </div>
-                    {/* <div className="img14">
+                                    </div>
+                                    <div className="col-lg-5 col-md-12 col-sm-12 header-img">
+
+                                        <div className="img13 mt-3">
+
+                                            <img src={patronimg} className="img-fluid pt-5" alt="img13" />
+                                        </div>
+                                        {/* <div className="img14">
                                               <img src={img14} className="img-fluid" alt="img14" />
 
                                              </div> */}
-                  </div>
-                </div>
-              </div>
-            </Fade>
-          </div>
 
-          <div className="row text-white  rounded">
-            <Fade bottom delay={500} duration={2000}>
-              <div className="col-10 mx-auto mt-5">
-                <div className="row bg-sam mt-5">
-                  <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                    <h2 className="petro">Sallon</h2>
-                    <h3 className="mt-2 Plat">
-                      A spot where all your beauty appointments meet
-                    </h3>
-                    <p className="we lead">
-                      Browse the top-rated options to find the services and
-                      professionals that are perfect for you.
-                    </p>
-                    {/* <div className="mb-5">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </Fade>
+                    </div>
+
+
+                    <div className="row text-white  rounded">
+                        <Fade bottom delay={500} duration={2000}>
+                            <div className="col-10 mx-auto mt-5">
+                                <div className="row bg-sam mt-5">
+                                    <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+                                        <p className="petro">Sallon</p>
+                                        <h2 className="mt-2 Plat">A spot where all your beauty appointments meet</h2>
+                                        <p className="we lead">Everyone at TechCreator has been an excellent communicator with no surprises in billing or delivery.</p>
+                                        {/* <div className="mb-5">
                                         <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
                                     </div> */}
-                  </div>
-                  <div className="col-lg-5 col-md-12 col-sm-12 header-img">
-                    <div className="img13 mt-3">
-                      <img
-                        src={saloonimg}
-                        className="img-fluid pt-5"
-                        alt="img13"
-                      />
-                    </div>
-                    {/* <div className="img14">
+                                    </div>
+                                    <div className="col-lg-5 col-md-12 col-sm-12 header-img">
+
+                                        <div className="img13 mt-3">
+
+                                            <img src={saloonimg} className="img-fluid pt-5" alt="img13" />
+                                        </div>
+                                        {/* <div className="img14">
                                                 <img src={img14} className="img-fluid" alt="img14" />
 
                                               </div> */}
-                  </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </Fade>
+                    </div>
                 </div>
-              </div>
-            </Fade>
-          </div>
-        </div>
-      </section>
+            </section>
 
       <div className="proimg">
         <div className="col">
-          <h1 className="pro-mains text-center my-5">Our Projects</h1>
+          <h2 className="pro-mains text-center my-5">Our Projects</h2>
         </div>
         <div className="container d-md-flex">
           <div className="row">
