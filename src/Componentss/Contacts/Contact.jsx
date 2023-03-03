@@ -22,7 +22,6 @@ const initialValues = {
 
 const Contact = () => {
   const [message, setSentMessage] = useState(false);
-  const [done, setDone] = useState(false);
   const form = useRef();
 
   const defaultValue = {
