@@ -132,12 +132,9 @@ const Home = () => {
                                 </Fade>
                                 <div className="col-lg-5 col-md-12 col-sm-12  header-img mb-5">
                                     <Fade right duration={2000}>
-
                                         <div className="img11"></div>
                                         <div className="img8">
                                             <img src={img8} className="img-fluid" alt="img8" />
-
-                   
                                         </div>
                                         <div className="img3">
                                             <img src={img13} className="img-fluid img3 my-img" alt="img3" />

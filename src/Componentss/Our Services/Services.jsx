@@ -151,8 +151,9 @@ const Services = () => {
                 <div className="row">
                   <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                     <h1 className="services">
-                      <strong>Our Services</strong>
+                      Our Services
                     </h1>
+                    
                   </div>
 
                   <div className="col-lg-7 col-md-12 col-sm-12">
@@ -299,7 +300,7 @@ const Services = () => {
                     <div className="card-ser p-4 bg-white text-dark">
                       <img src={item.img} className="pt-3" />
                       <h4 className="pt-4">{item.header}</h4>
-                      <span className=" pt-4">{item.para}</span>
+                      <span className="pt-4">{item.para}</span>
                       {/* <a href="">{item.btn}  <MdKeyboardArrowRight className="md_icon" /></a> */}
                     </div>
                   </div>
