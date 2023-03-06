@@ -10,12 +10,15 @@ const Career = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const [firstName, setFirstName] = useState("");
+  const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [profile, setProfile] = useState("");
-  const [phone, setPhone] = useState;
-  console.log(firstName);
+  const [phone, setPhone] = useState("");
+  const submit_btn = () => {
+    console.log(name, lastName, email, profile, phone);
+  };
+
   return (
     <>
       <div className="container-fluid bg-white py-5 ">
@@ -45,8 +48,8 @@ const Career = () => {
                               <Form.Control
                                 type="text"
                                 placeholder="First Name"
-                                value={firstName}
-                                onChange={(e) => setFirstName(e.target.value)}
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
                                 autoFocus
                               />
                             </Form.Group>
@@ -57,6 +60,8 @@ const Career = () => {
                               <Form.Control
                                 type="text"
                                 placeholder="Last Name"
+                                value={lastName}
+                                onChange={(e) => setLastName(e.target.value)}
                                 autoFocus
                               />
                             </Form.Group>
@@ -67,6 +72,8 @@ const Career = () => {
                               <Form.Control
                                 type="email"
                                 placeholder="Email Address"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                                 autoFocus
                               />
                             </Form.Group>
@@ -77,6 +84,8 @@ const Career = () => {
                               <Form.Control
                                 type="text"
                                 placeholder="Professional Profile URL"
+                                value={profile}
+                                onChange={(e) => setProfile(e.target.value)}
                                 autoFocus
                               />
                             </Form.Group>
@@ -87,6 +96,8 @@ const Career = () => {
                               <Form.Control
                                 type="text"
                                 placeholder="Phone"
+                                value={phone}
+                                onChange={(e) => setPhone(e.target.value)}
                                 autoFocus
                               />
                             </Form.Group>
@@ -99,7 +110,9 @@ const Career = () => {
                           </Form>
                         </Modal.Body>
                         <Modal.Footer>
-                          <Button variant="secondary">Submit</Button>
+                          <Button variant="secondary" onClick={submit_btn}>
+                            Submit
+                          </Button>
                         </Modal.Footer>
                       </Modal>
                     </div>
