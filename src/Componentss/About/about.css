@@ -270,7 +270,7 @@
 }
 
 .main-cards {
-    height: 108px;
+    height: 120px;
     align-items: center;
 }
 
@@ -283,11 +283,12 @@
     text-decoration: underline;
 }
 .sen-name {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     padding-top: 8px;
     align-items: center;
     font-size: 15px;
+    text-align: center;
 }
 
 .icon{
@@ -436,8 +437,6 @@
     background: #14171838;
     border-radius: 15px;
     color: #fff;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     transition: 1s;
     padding: 30px;
@@ -477,3 +476,6 @@
 .cards-btn:hover {
     color: #fff;
 }
+
+
+

@@ -166,9 +166,6 @@ const Home = () => {
                                         <div className="img10">
                                             <img src={img10} className="img-fluid" alt="img10" />
                                         </div>
-
-
-
                                     </Fade>
                                 </div>
                                 <Fade bottom delay={500} duration={3000}>
