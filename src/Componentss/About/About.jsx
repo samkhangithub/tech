@@ -129,7 +129,7 @@ const About = () => {
       img: imgpro3,
       link: "https://www.behance.net/gallery/92378157/Rasoya-App?tracking_source=project_owner_other_projects",
       head: "Rasoyia",
-      para: "Buy, sell & share with your community", 
+      para: "A rasoiya can also be a caterer who provides food for events such as weddings, parties, and corporate meetings.", 
       btn: "Go To Website",
     },
     {

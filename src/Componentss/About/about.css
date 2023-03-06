@@ -455,7 +455,7 @@
 
 .cards-info {
     font-size: 16px;
-    line-height: 25px;
+    /* line-height: 25px; */
     margin: 40px 0;
     font-weight: 400;
 }
