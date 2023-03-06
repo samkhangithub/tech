@@ -288,7 +288,7 @@ const Services = () => {
         <div className="container">
           <Fade bottom duration={2000}>
             <div className="head">
-              <h4>RELATED SERVICES</h4>
+              <h2>RELATED SERVICES</h2>
 
             </div>
           </Fade>
@@ -299,7 +299,7 @@ const Services = () => {
                   <div className="col-md-4 col-sm-12 py-5">
                     <div className="card-ser p-4 bg-white text-dark">
                       <img src={item.img} className="pt-3" />
-                      <h4 className="pt-4">{item.header}</h4>
+                      <h3 className="pt-4">{item.header}</h3>
                       <span className="pt-4">{item.para}</span>
                       {/* <a href="">{item.btn}  <MdKeyboardArrowRight className="md_icon" /></a> */}
                     </div>

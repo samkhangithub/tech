@@ -38,6 +38,9 @@ import imgteam12 from "../../image/mustafa.png";
 import imgteam13 from "../../image/ihtesham.png";
 import imgteam14 from "../../image/Aqib.png";
 
+import mala from '../../image/london.png';
+
+
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
@@ -112,75 +115,74 @@ const About = () => {
       img: imgpro1,
       link: "https://www.travcont.com/",
       head: "Travcont",
-      para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+      para: "Travcont provide complete satisfaction for every traveler. We recognize that good service is more than competitive pricing",
       btn: "Go To Website",
     },
     {
       img: imgpro2,
       link: "https://risetech.pk/",
       head: "Ristech",
-      para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+      para: "Modern web design and development using the latest web frameworks for providing the best user experience and the best performance.",
       btn: "Go To Website",
     },
     {
       img: imgpro3,
       link: "https://www.behance.net/gallery/92378157/Rasoya-App?tracking_source=project_owner_other_projects",
       head: "Rasoyia",
-      para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+      para: "Buy, sell & share with your community", 
       btn: "Go To Website",
     },
     {
       img: imgpro4,
       link: "https://www.behance.net/gallery/92378157/Rasoya-App?tracking_source=project_owner_other_projects",
-      link: "https://www.upwork.com/o/companies/~010359a829c900bed1/portfolio/project/1484076208918925312",
       head: "Mobile & Laptop Services",
-      para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+      para: "This service enables users to make payments and transfer money using their mobile devices.",
       btn: "Go To Website",
     },
     {
       img: imgpro5,
       link: "https://www.upwork.com/o/companies/~010359a829c900bed1/portfolio/project/1484076208918925312",
       head: "Adda Bazar",
-      para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+      para: " With the rise of e-commerce, some Adda bazar projects have moved online. These platforms connect small businesses and artisans with customers all over the world.",
       btn: "Go To Website",
     },
     {
       img: imgpro6,
       link: "https://www.behance.net/gallery/92465019/Bubbles-Laundry-App?tracking_source=project_owner_other_projects",
       head: "Bubbles Laundry",
-      para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+      para: "Bubbles Laundry may need to upgrade its laundry facilities to improve the quality of its services and increase efficiency. ",
       btn: "Go To Website",
     },
     {
       img: imgpro7,
       link: "https://www.behance.net/gallery/89606661/Mosafir-App-for-Mobilink-Jazz?tracking_source=project_owner_other_projects",
       head: "Musafir App",
-      para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+      para: "Musafir App is easy to use for booking both International as well as domestic flights, hotel bookings, holidays & packages booking",
       btn: "Go To Website",
     },
     {
       img: imgpro8,
       link: "https://www.behance.net/gallery/92140709/Gratitude",
       head: "Gratitude-Selfcare",
-      para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+      para: "During your self-care routine, express gratitude for the opportunity to take care of yourself.",
       btn: "Go To Website",
     },
     {
       img: imgpro9,
       link: "https://traffikinfoo.netlify.app/",
       head: "Traffic Info",
-      para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+      para: "This refers to a situation where the volume of vehicles on a particular road is higher than usual, causing delays and slow-moving traffic.",
       btn: "Go To Website",
     },
     {
       img: imgpro10,
       link: "https://pakfon.com/",
       head: "Pakfone",
-      para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+      para: "Pakfones provides you world class mobile repair services, if you're in search of best mobile repair center in Pakistan,",
       btn: "Go To Website",
     },
     {
-      img: imgpro11,
+      img: imgpro12,
       link: "https://khpalmart.com/",
       head: "Khpal Mart",
       para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
@@ -197,21 +199,21 @@ const About = () => {
       img: imgpro13,
       link: "http://www.patronworks.net/home",
       head: "Patronworks",
-      para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+      para: "Patronworks is a complete E-Commerce solution for your Restaurants, ",
       btn: "Go To Website",
     },
     {
       img: imgpro14,
       link: "https://repaircms.com/de/",
       head: "Repaircms",
-      para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+      para: "The fact that they’ve been with us from the start and were patient, supportive, committed, and flexible is excellent.",
       btn: "Go To Website",
     },
     {
       img: imgpro15,
       link: "https://dancing-vacherin-e90755.netlify.app/",
       head: "Saloon",
-      para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+      para: "A spot where all your beauty appointments meet",
       btn: "Go To Website",
     },
   ];
@@ -522,11 +524,9 @@ const About = () => {
                                 className="p-0 m-0"
                                 style={{ color: "#8a94a5" }}
                               >
-                                {" "}
                                 {item.title}
                               </p>
                               <p className="p-0 m-0" style={{ color: "#000" }}>
-                                {" "}
                                 {item.name}
                               </p>
                             </div>
@@ -696,6 +696,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
+
       <div className="proimg">
         <div className="col">
           <h2 className="pro-mains text-center my-5">Our Projects</h2>
