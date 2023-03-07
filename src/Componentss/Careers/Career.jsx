@@ -10,13 +10,60 @@ const Career = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const [name, setName] = useState("");
+  const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [profile, setProfile] = useState("");
+  const [profile_URL, setProfile_URL] = useState("");
   const [phone, setPhone] = useState("");
-  const submit_btn = () => {
-    console.log(name, lastName, email, profile, phone);
+  const [fileCv, setFileCv] = useState("");
+  console.log("newFilwe", fileCv);
+  const submit_btn = async () => {
+    const data = new FormData();
+    data.append("file", fileCv);
+    data.append("upload_preset", "thepictures");
+    data.append("cloud_name", "dzvauvbk5");
+    // data.append("api_key", "237755194494673");
+    // data.append("api_secret", "z8Df55fpDuqmNtEL7WYo9uCxIUo");
+    fetch("https://api.cloudinary.com/v1_1/dzvauvbk5/image/upload", {
+      method: "post",
+      body: data,
+    })
+      .then((res) => res.json())
+      .then(async (data) => {
+        // fileUrl = data;
+        let fileUrl = data.url;
+        console.log(data);
+        console.log(firstName, lastName, email, profile_URL, phone);
+        let result = await fetch("http://localhost:3333/api/v1/register", {
+          method: "POST",
+          body: JSON.stringify({
+            firstName,
+            lastName,
+            email,
+            profile_URL,
+            phone,
+            fileUrl,
+          }),
+          headers: {
+            "content-type": "application/json",
+          },
+        });
+        result = await result.json();
+        console.log(result);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    // }).then((response) => {
+    //   return console.log("response :", response);
+    //   console.log(response);
+
+    //   if (response.ok) {
+    //     return response.json();
+    //   }
+    //   throw new Error(`Network response was not ok: ${response.status}`);
+    // });
+    // return console.log("file url :", fileUrl);
   };
 
   return (
@@ -48,8 +95,8 @@ const Career = () => {
                               <Form.Control
                                 type="text"
                                 placeholder="First Name"
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
+                                value={firstName}
+                                onChange={(e) => setFirstName(e.target.value)}
                                 autoFocus
                               />
                             </Form.Group>
@@ -84,8 +131,8 @@ const Career = () => {
                               <Form.Control
                                 type="text"
                                 placeholder="Professional Profile URL"
-                                value={profile}
-                                onChange={(e) => setProfile(e.target.value)}
+                                value={profile_URL}
+                                onChange={(e) => setProfile_URL(e.target.value)}
                                 autoFocus
                               />
                             </Form.Group>
@@ -105,7 +152,12 @@ const Career = () => {
                               className="mb-3"
                               controlId="exampleForm.ControlInput1"
                             >
-                              <Form.Control type="file" autoFocus />
+                              <Form.Control
+                                type="file"
+                                // value={fileCv}
+                                onChange={(e) => setFileCv(e.target.files[0])}
+                                autoFocus
+                              />
                             </Form.Group>
                           </Form>
                         </Modal.Body>
