@@ -93,9 +93,7 @@ const team = [
   },
   {
     img:imgteam11,
-    linkdin:"https://www.linkedin.com/in/saudkhan0039/",
-    twitter:"https://www.linkedin.com/in/saudkhan0039/",
-    inta:"https://www.linkedin.com/in/saudkhan0039/",
+    linkdin:"https://www.linkedin.com/in/muhammad-ayaz-4823b3251/",
     name:"Ayaz Khan",
     title:"React Developer"
   },
