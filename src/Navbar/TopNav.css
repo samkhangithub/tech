@@ -62,9 +62,9 @@
 	background-color: #e56700;
 	width: 2rem;
 }
-@media (max-width:400px){
+/* @media (max-width:400px){
 	.btn-nav{
 		display: none;
 	
 	}
-}
+} */

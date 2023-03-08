@@ -23,22 +23,6 @@ import imgpro12 from "../../image/khpalmart.webp";
 import imgpro13 from "../../image/petron1.png";
 import imgpro14 from "../../image/repair1.png";
 import imgpro15 from "../../image/saloon1.png";
-import imgteam1 from "../../image/Imran.png";
-import imgteam2 from "../../image/Sameer.png";
-import imgteam3 from "../../image/sam.png";
-import imgteam4 from "../../image/saad.png";
-import imgteam5 from "../../image/romi.jpg";
-import imgteam6 from "../../image/ahmad.png";
-import imgteam7 from "../../image/Hamid.png";
-import imgteam8 from "../../image/rehman.png";
-import imgteam9 from "../../image/ihtizaz.png";
-import imgteam10 from "../../image/luqman.png";
-import imgteam11 from "../../image/ayaz.png";
-import imgteam12 from "../../image/mustafa.png";
-import imgteam13 from "../../image/ihtesham.png";
-import imgteam14 from "../../image/Aqib.png";
-
-import mala from '../../image/london.png';
 
 
 import Carousel from "react-bootstrap/Carousel";
@@ -58,10 +42,15 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+
+
+
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
 import { Helmet } from "react-helmet";
+import Ourteam from "./Ourteam";
 
 const About = () => {
+  
   const navigate = useNavigate();
   const [index, setIndex] = useState(0);
 
@@ -551,47 +540,7 @@ const About = () => {
 
           <div></div>
 
-          <div className="row rowteam mt-5">
-            <Fade bottom duration={2000}>
-              <div className="col-12 mx-auto container-my">
-                <div className="team">
-                  <h3>Our Team</h3>
-                  <p>These are the people who get the job done</p>
-                </div>
-
-                <Carousel
-                  activeIndex={index}
-                  onSelect={handleSelect}
-                  className="slider2 container"
-                >
-                  <Carousel.Item className="carouselitem2">
-                    <img src={imgteam1} className="img-fluid item1" />
-                    <img src={imgteam2} className="img-fluid item2" />
-                    <img src={imgteam3} className="img-fluid item3" />
-                  </Carousel.Item>
-                  <Carousel.Item className="carouselitem2">
-                    <img src={imgteam4} className="img-fluid item1" />
-                    <img src={imgteam5} className="img-fluid item2" />
-                    <img src={imgteam6} className="img-fluid item3" />
-                  </Carousel.Item>
-                  <Carousel.Item className="carouselitem2">
-                    <img src={imgteam7} className="img-fluid item1" />
-                    <img src={imgteam8} className="img-fluid item2" />
-                    <img src={imgteam9} className="img-fluid item3" />
-                  </Carousel.Item>
-                  <Carousel.Item className="carouselitem2">
-                    <img src={imgteam10} className="img-fluid item1" />
-                    <img src={imgteam11} className="img-fluid item2" />
-                    <img src={imgteam12} className="img-fluid item3" />
-                  </Carousel.Item>
-                  <Carousel.Item className="carouselitem2">
-                    <img src={imgteam13} className="img-fluid item1" />
-                    <img src={imgteam14} className="img-fluid item2" />
-                  </Carousel.Item>
-                </Carousel>
-              </div>
-            </Fade>
-          </div>
+          <Ourteam />
 
           <div className="row mt-5 backgimg text-white  rounded">
                         <Fade bottom duration={2000}>

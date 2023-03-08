@@ -45,7 +45,7 @@ const cardInfo = [
   {
     img: card4,
     header: "User Interface",
-    para: "Our team of designers aim to transform the UI into what is called “emotional design”: Get the users to develop positive associations with",
+    para: "We will run the project using our own SCRUM method, which is a set of frameworks applied to incrementally",
     btn: "VIEW SERVICE DETAILS",
   },
   {
@@ -118,29 +118,8 @@ const Services = () => {
         />
         <link rel="canonical" href="techcreator.co/services" />
       </Helmet>
-      {/* <section className="servises-main">
-        <div className="container-fluid">
-          <div className="row">
-            <Fade left delay={500} duration={3000}>
-              <div className="col-10 mx-auto text-white">
-                <div className="row">
-                  <div className="col-lg-6 col-md-12 col-sm-12   d-flex justify-content-center flex-column">
-                    <h1 className="offset-md-6">Our<br /> services</h1>
-                  </div>
 
-                  <div className="col-lg-6 col-md-12 col-sm-12">
-                    <p>We are a Latin American company, based in non-traditional tech hubs, with an ever growing talent pool that is dedicated to building world class software development outsourcing services. Our service lines have been developed and tailored in accordance to what our clients need and the evolution of our still young and highly adaptive industry.</p>
-                  </div>
-                </div>
-              </div>
-            </Fade>
-          </div>
-        </div>
-
-
-      </section> */}
-
-      <section className="d-flex align-items-center servises-main text-white">
+      {/* <section className="d-flex align-items-center servises-main text-white">
         <div className="container-fluid ">
           <div
             className="row"
@@ -163,6 +142,32 @@ const Services = () => {
                       analytics, embedded systems, and artificial intelligence.
                       Our goal is to use technology to create a better future
                       for everyone.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Fade>
+          </div>
+        </div>
+      </section> */}
+      <section className="d-flex align-items-center aboutimg text-white">
+        <div className="container-fluid ">
+          <div
+            className="row"
+            style={{ marginTop: "15%", marginBottom: "15%" }}
+          >
+            <Fade left delay={500} duration={3000}>
+              <div className="col-10 mx-auto">
+                <div className="row">
+                  <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+                  <h1 className="services">
+                      Our Services
+                    </h1>
+                  </div>
+
+                  <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
+                  <p className="we-services lead">
+                  At Techcreator, we offer a wide range of products and services in the fields of software development, data analytics, embedded systems, and artificial intelligence. Our goal is to use technology to create a better future for everyone.
                     </p>
                   </div>
                 </div>

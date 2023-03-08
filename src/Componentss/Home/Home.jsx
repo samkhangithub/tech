@@ -51,6 +51,8 @@ const boxInfo = [
 
 
 const Home = () => {
+
+  
     const navigate = useNavigate();
 
     return (
@@ -151,7 +153,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="row mt-5">
+                    <div className="row ">
                         <div className="col-10 mx-auto mt-5">
                             <div className="row">
                                 <div className="col-lg-5 col-md-12 col-sm-12 pt-5 header-img">
@@ -240,8 +242,6 @@ const Home = () => {
                                 <div className="row bg-sam mt-5">
  
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-
-
                                         <p className="petro">Repaircms</p>
                                         <p className="mt-2 Plat">TechCreator created a platform  that led Repaircms to its  digital transformation process</p>
                                         <p className="we lead">The fact that they’ve been with us from the start and were patient, supportive, committed, and flexible is excellent.</p>
@@ -274,7 +274,7 @@ const Home = () => {
 
                     <div className="row text-white  rounded">
                         <Fade bottom delay={500} duration={2000}>
-                            <div className="col-10 mx-auto mt-5">
+                            <div className="col-10 mx-auto">
                                 <div className="row bg-sam mt-5">
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                                         <p className="petro">PatronWorks</p>
@@ -305,7 +305,7 @@ const Home = () => {
 
                     <div className="row text-white  rounded">
                         <Fade bottom delay={500} duration={2000}>
-                            <div className="col-10 mx-auto mt-5">
+                            <div className="col-10 mx-auto">
                                 <div className="row bg-sam mt-5">
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                                         <p className="petro">Sallon</p>

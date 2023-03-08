@@ -18,7 +18,7 @@ animation: animateUser 5s linear infinite;
 }
 .bg-sam{
     background-color: #fff;
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 50px;
     
 }
@@ -38,7 +38,7 @@ animation: animateUser 5s linear infinite;
 }
 
 .backgimg {
-    background-image: url(/src/image/img12.webp);
+    background-image: url(/src/image/img2.webp);
     /* width: 100%; */
     height: auto;
     background-size: cover;
@@ -992,7 +992,7 @@ animation: animateUser 5s linear infinite;
 
 .box {
     width: 100%;
-    height: 500px;
+    height: 520px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1056,6 +1056,7 @@ animation: animateUser 5s linear infinite;
         margin-bottom: 30px;
         text-align: center;
     }
+
 }
 
 /* Count CSS end */
@@ -1073,8 +1074,8 @@ animation: animateUser 5s linear infinite;
 }
 
 .mains {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: rgb(254, 250, 250);
 }
 
