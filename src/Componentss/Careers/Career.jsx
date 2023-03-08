@@ -34,20 +34,23 @@ const Career = () => {
         let fileUrl = data.url;
         console.log(data);
         console.log(firstName, lastName, email, profile_URL, phone);
-        let result = await fetch("http://localhost:3333/api/v1/register", {
-          method: "POST",
-          body: JSON.stringify({
-            firstName,
-            lastName,
-            email,
-            profile_URL,
-            phone,
-            fileUrl,
-          }),
-          headers: {
-            "content-type": "application/json",
-          },
-        });
+        let result = await fetch(
+          "https://techcreator-backend.herokuapp.com/api/v1/register",
+          {
+            method: "POST",
+            body: JSON.stringify({
+              firstName,
+              lastName,
+              email,
+              profile_URL,
+              phone,
+              fileUrl,
+            }),
+            headers: {
+              "content-type": "application/json",
+            },
+          }
+        );
         result = await result.json();
         console.log(result);
       })
