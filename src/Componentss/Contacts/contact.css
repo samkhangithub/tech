@@ -7,8 +7,24 @@
     background-repeat: no-repeat;
    
 }
-.about h1{
-  font: size 40px; ;
+.contact{
+  font-size: 50px;
+  text-align: end;
+  margin-right: 5%;
+  margin-bottom: 30%;
+  font-weight: 700;
+}
+@media screen and (max-width:490px){
+  .contact{
+    text-align: center;
+    font-size: 30px;
+  }
+  .cont-head h2{
+    text-align: center;
+  }
+  .cont-head p{
+    text-align: center;
+  }
 }
 .cont-head h2{
   font-size: 30px;

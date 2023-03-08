@@ -5,11 +5,15 @@
     margin-bottom: 30%;
     font-weight: 700;
 }
-
+@media screen and (max-width:490px){
+    .about{
+        text-align: center;
+    }
+}
 .aboutimg {
     background-image: url(/src/image/img2.webp);
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +32,7 @@
 
 .bg-sam {
     background-color: #fff;
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 50px;
 }
 
@@ -57,10 +61,7 @@
 
 }
 
-.carouselitem {
-    margin-top: 10%;
-    margin-left: 12%;
-}
+
 
 .slidepara1 {
     max-width: 560px;
@@ -174,17 +175,15 @@
     margin-top: 10%;
     margin-bottom: 7%;
 }
-.board h3{
+
+.board h3 {
     font-size: 30px;
 }
-.board p{
+
+.board p {
     font-size: 20px;
 }
-.carouselitem2 {
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .slidetitle2 {
     margin-bottom: 20px;
@@ -231,27 +230,17 @@
     margin-top: -3%;
     margin-bottom: 7%;
 }
-.Senior h3{
+
+.Senior h3 {
     font-size: 30px;
-}
-.Senior p{
-    font-size: 20px;
-}
-.rowteam {
-    background-color: #e5e5e5;
-    margin-top: 15%;
 }
 
-.team {
-    text-align: center;
-    margin-top: 5%;
-}
-.team h3{
-    font-size: 30px;
-}
-.team p{
+.Senior p {
     font-size: 20px;
 }
+
+
+
 .senior-img img {
     width: 100%;
     transition: 0.5s ease;
@@ -270,7 +259,7 @@
 }
 
 .main-cards {
-    height: 120px;
+    height: 170px;
     align-items: center;
 }
 
@@ -279,9 +268,11 @@
     font-size: 16px !important;
 
 }
-.spac-main:hover{
+
+.spac-main:hover {
     text-decoration: underline;
 }
+
 .sen-name {
     /* display: flex;
     justify-content: space-between; */
@@ -291,48 +282,16 @@
     text-align: center;
 }
 
-.icon{
+.icon {
     color: #1e78f7;
     font-size: 30px;
 
 }
 
-.item1 {
-    width: 30%;
-
-}
-
-.item2 {
-    width: 30%;
-    margin-left: 5%;
-    /* margin-bottom: 10%; */
-}
-
-.item3 {
-    width: 30%;
-    margin-left: 5%;
-}
 
 
 @media (min-width: 320px) and (max-width: 499px) {
-    .item1 {
-        width: 100%;
-        margin-bottom: 10%;
-    }
-
-    .item2 {
-        width: 30%;
-        margin-left: 5%;
-        margin-bottom: 10%;
-        display: none;
-    }
-
-    .item3 {
-        width: 30%;
-        margin-left: 5%;
-        display: none;
-    }
-
+    
     .triangleimg4 {
         width: 400px;
         margin-left: -8%;
@@ -476,6 +435,4 @@
 .cards-btn:hover {
     color: #fff;
 }
-
-
 
