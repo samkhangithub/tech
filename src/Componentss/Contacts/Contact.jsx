@@ -11,6 +11,8 @@ import { useRef } from "react";
 import emailjs from "emailjs-com";
 import { Helmet } from "react-helmet";
 import { Formik, Form, ErrorMessage } from "formik";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import * as yup from "yup";
 const initialValues = {
   name: "",
@@ -59,6 +61,7 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setSentMessage(true);
+          toast.success("Successful submitted");
           setTimeout(() => {
             setSentMessage(false);
           }, 2000);
@@ -109,7 +112,7 @@ const Contact = () => {
 
 
       </section> */}
-
+      <ToastContainer />
       <section
         id="header"
         className="d-flex align-items-center contact-main text-white"
@@ -123,9 +126,7 @@ const Contact = () => {
               <div className="col-10 mx-auto">
                 <div className="row">
                   <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                    <h1 className="contact">
-                     Contact Us
-                    </h1>
+                    <h1 className="contact">Contact Us</h1>
                   </div>
 
                   <div className="col-lg-7 col-md-12 col-sm-12 mb-5 cont-head">
@@ -296,14 +297,20 @@ const Contact = () => {
                         }}
                       >
                         <div className="detail-box p-4">
-                          <h3 className="text-white font-weight-light mb-3" style={{fontSize:"20px"}}>
+                          <h3
+                            className="text-white font-weight-light mb-3"
+                            style={{ fontSize: "20px" }}
+                          >
                             ADDRESS
                           </h3>
                           <p className="text-white op-7">
                             TechCreator Private Limited near Muneer Hospital,
                             Mardan Road Swabi.
                           </p>
-                          <h3 className="text-white font-weight-light mb-3 mt-4" style={{fontSize:"20px"}}>
+                          <h3
+                            className="text-white font-weight-light mb-3 mt-4"
+                            style={{ fontSize: "20px" }}
+                          >
                             CALL US
                           </h3>
                           <p className="text-white op-7">
