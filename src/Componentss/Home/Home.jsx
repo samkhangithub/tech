@@ -352,7 +352,7 @@ const Home = () => {
                             boxInfo.map((item) => {
                                 return (
                                     <Fade bottom duration={2000}>
-                                        <div className="col-md-4 col-sm-12 py-5">
+                                        <div className="col-md-6  col-lg-4 py-5">
                                             <div className="box p-4 bg-white text-dark">
                                                 <img src={item.img} className=" img-div pt-3" />
                                                 <p className="">{item.para}</p>

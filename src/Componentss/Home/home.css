@@ -372,7 +372,12 @@ animation: animateUser 5s linear infinite;
     background-color: #ffffff;
     color: #e56700;
 }
-
+/* @media screen and (max-width:768px) {
+    .cmp-btn2{
+        text-align: center;
+ border: 1px solid red;
+    }
+} */
 .header-img .img13 {
     position: relative;
     margin-left: -10%;
@@ -666,7 +671,7 @@ animation: animateUser 5s linear infinite;
         text-decoration: none;
         width: auto;
         text-align: center;
-        margin-left: 20% !important;
+        margin-left: 30% !important;
         border-color: #e56700;
     }
 
@@ -992,7 +997,7 @@ animation: animateUser 5s linear infinite;
 
 .box {
     width: 100%;
-    height: 520px;
+    height: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
