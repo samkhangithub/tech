@@ -585,7 +585,7 @@ const About = () => {
 
                     <div className="row text-white  rounded">
                         <Fade bottom delay={500} duration={2000}>
-                            <div className="col-10 mx-auto mt-5">
+                            <div className="col-10 mx-auto">
                                 <div className="row bg-sam mt-5">
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                                         <p className="petro">PatronWorks</p>
@@ -616,7 +616,7 @@ const About = () => {
 
                     <div className="row text-white  rounded">
                         <Fade bottom delay={500} duration={2000}>
-                            <div className="col-10 mx-auto mt-5">
+                            <div className="col-10 mx-auto">
                                 <div className="row bg-sam mt-5">
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                                         <p className="petro">Sallon</p>

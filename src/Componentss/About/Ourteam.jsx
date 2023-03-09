@@ -23,8 +23,6 @@ import { GrLinkedinOption } from "react-icons/gr";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { BsTwitter } from 'react-icons/bs';
-import { BsInstagram } from 'react-icons/bs';
 
 const team = [
   {
@@ -35,15 +33,13 @@ const team = [
   },
   {
     img:imgteam2,
-    linkdin:"https://www.linkedin.com/in/saudkhan0039/",
-    twitter:"https://www.linkedin.com/in/saudkhan0039/",
-    inta:"https://www.linkedin.com/in/saudkhan0039/",
+    linkdin:"https://www.linkedin.com/in/hamid-khan-b47b1b261/",
     name:"Hamid Khan",
     title:"React Developer"
   },
   {
     img:imgteam3,
-    linkdin:"https://www.linkedin.com/in/sameer-jan-660966251/",
+    linkdin:"https://www.linkedin.com/in/sameer-khan-660966251/",
     name:"Sameer Khan",
     title:"React Developer"
   },
@@ -117,9 +113,7 @@ const team = [
   },
   {
     img:imgteam15,
-    linkdin:"https://www.linkedin.com/in/saudkhan0039/",
-    twitter:"https://www.linkedin.com/in/saudkhan0039/",
-    inta:"https://www.linkedin.com/in/saudkhan0039/",
+    linkdin:"https://www.linkedin.com/in/abdul-basit-seo-2232b6220/",
     name:"Abdul Basit",
     title:"React Developer"
   },
