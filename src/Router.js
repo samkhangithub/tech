@@ -8,10 +8,10 @@ import Scrolltoup from "./Componentss/Scrool/Scrool";
 import Blog from "./Componentss/Blog/Blog";
 import BlogContentPage from "./Componentss/BlogContentPage/BlogContentPage";
 import useFetch from "../src/hooks/useFetcgh";
-import { BACKEND_URL, BACKEND_URL2 } from "./helper";
+// import { BACKEND_URL, BACKEND_URL2 } from "./helper";
 const RouterPage = () => {
   let { loading, data, error } = useFetch(
-    `${BACKEND_URL}/api/blogs?populate=*`
+    `${process.env.REACT_APP_STRAPI_URL}/api/blogs?populate=*`
   );
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error!</p>;

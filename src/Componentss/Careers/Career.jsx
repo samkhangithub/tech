@@ -6,6 +6,8 @@ import Fade from "react-reveal/Fade";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Career = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -16,15 +18,26 @@ const Career = () => {
   const [profile_URL, setProfile_URL] = useState("");
   const [phone, setPhone] = useState("");
   const [fileCv, setFileCv] = useState("");
+  const [loader, setLoader] = useState(false);
   console.log("newFilwe", fileCv);
+  console.log("env data", process.env.REACT_APP_API_URL);
   const submit_btn = async () => {
+    if (
+      !firstName ||
+      !lastName ||
+      !email ||
+      !profile_URL ||
+      !phone ||
+      !fileCv
+    ) {
+      return toast.error("please fill the form");
+    }
+    setLoader(true);
     const data = new FormData();
     data.append("file", fileCv);
     data.append("upload_preset", "thepictures");
     data.append("cloud_name", "dzvauvbk5");
-    // data.append("api_key", "237755194494673");
-    // data.append("api_secret", "z8Df55fpDuqmNtEL7WYo9uCxIUo");
-    fetch("https://api.cloudinary.com/v1_1/dzvauvbk5/image/upload", {
+    fetch(`${process.env.REACT_APP_CLOUDINARY_URL}image/upload`, {
       method: "post",
       body: data,
     })
@@ -35,7 +48,7 @@ const Career = () => {
         console.log(data);
         console.log(firstName, lastName, email, profile_URL, phone);
         let result = await fetch(
-          "https://techcreator-backend.herokuapp.com/api/v1/register",
+          `${process.env.REACT_APP_API_URL}/api/v1/register`,
           {
             method: "POST",
             body: JSON.stringify({
@@ -53,9 +66,12 @@ const Career = () => {
         );
         result = await result.json();
         console.log(result);
+        setLoader(false);
+        toast.success("Successful submitted");
       })
       .catch((err) => {
         console.log(err);
+        setLoader(false);
       });
     // }).then((response) => {
     //   return console.log("response :", response);
@@ -72,6 +88,7 @@ const Career = () => {
   return (
     <>
       <div className="container-fluid bg-white py-5 ">
+        <ToastContainer />
         <Fade bottom duration={2000}>
           <div className="container  main-div">
             <div className="row">
@@ -165,9 +182,21 @@ const Career = () => {
                           </Form>
                         </Modal.Body>
                         <Modal.Footer>
-                          <Button variant="secondary" onClick={submit_btn}>
+                          {loader ? (
+                            <Button className="btn btn-primary">
+                              Loading..
+                            </Button>
+                          ) : (
+                            <Button
+                              className="btn btn-primary"
+                              onClick={submit_btn}
+                            >
+                              Submit
+                            </Button>
+                          )}
+                          {/* <Button variant="secondary" onClick={submit_btn}>
                             Submit
-                          </Button>
+                          </Button> */}
                         </Modal.Footer>
                       </Modal>
                     </div>
