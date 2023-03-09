@@ -490,7 +490,7 @@ const About = () => {
             </Fade>
           </div> */}
 
-          <div className="row ">
+          <div className="row">
             <Fade bottom duration={2000}>
               <div className="col-10 mx-auto senior-main">
                 <div className="Senior">
@@ -501,7 +501,7 @@ const About = () => {
                 <Row xs={1} md={4} className="g-4">
                   {Senior.map((item, index) => (
                     <Col key={index}>
-                      <Card>
+                      <Card >
                         <div className="senior-img">
                           <img src={item.img} className="img-fluid" />
                         </div>
@@ -654,7 +654,7 @@ const About = () => {
           <div className="row">
             {projectInfo.map((projectInfo) => {
               return (
-                <div className="col-md-4 col-sm-12 cards container">
+                <div className="col-md-4 col-md-6 col-lg-4 cards container">
                   <img src={projectInfo.img} className="" />
                   <div className="cards-body">
                     <h2 className="cards-title">{projectInfo.head}</h2>

@@ -301,7 +301,7 @@ const Services = () => {
             {cardInfo.map((item) => {
               return (
                 <Fade bottom duration={1000}>
-                  <div className="col-md-4 col-sm-12 py-5">
+                  <div className="col-md-6 col-lg-4 py-5">
                     <div className="card-ser p-4 bg-white text-dark">
                       <img src={item.img} className="pt-3" />
                       <h3 className="pt-4">{item.header}</h3>

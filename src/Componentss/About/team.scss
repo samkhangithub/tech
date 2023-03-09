@@ -66,12 +66,14 @@
         }
     }
 }
-@media screen and (max-width:490px){
-    // .slick-next{
-    //     righ:-0px !important;
-    // }
+@media screen and (max-width:768px){
     .slick-non{
-        width: 300px !important;
+        width: 600px !important;
+    } 
+}
+@media screen and (max-width:490px){
+    .slick-non{
+        width: 250px !important;
     } 
 //     .slick-next{
 //   display: none;
