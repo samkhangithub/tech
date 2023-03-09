@@ -110,11 +110,11 @@ const Services = () => {
         <title>Services - Techcreator Software Company</title>
         <meta
           name="description"
-          content="At Techcreator, we offer a wide range of products and services in the fields of software development, data analytics, embedded systems, and artificial intelligence. Our goal is to use technology to create a better future for everyone."
+          content="At TechCreator Software House, we offer custom software development services and solutions to help your business succeed."
         />
         <meta
           name="keywords"
-          content="techcreator, techcreatorsofwarehouse, sofwarehouse, appsdevelopment, softwareindustry, swabisoftwarehouse, techcreatorabout"
+          content="techcreator, techcreator sofwarehouse, sofwarehouse, apps development, software industry, swabi software house, software development services"
         />
         <link rel="canonical" href="techcreator.co/services" />
       </Helmet>
@@ -160,14 +160,16 @@ const Services = () => {
               <div className="col-10 mx-auto">
                 <div className="row">
                   <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                  <h1 className="services">
-                      Our Services
-                    </h1>
+                    <h1 className="services">Our Services</h1>
                   </div>
 
                   <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
-                  <p className="we-services lead">
-                  At Techcreator, we offer a wide range of products and services in the fields of software development, data analytics, embedded systems, and artificial intelligence. Our goal is to use technology to create a better future for everyone.
+                    <p className="we-services lead">
+                      At Techcreator, we offer a wide range of products and
+                      services in the fields of software development, data
+                      analytics, embedded systems, and artificial intelligence.
+                      Our goal is to use technology to create a better future
+                      for everyone.
                     </p>
                   </div>
                 </div>
@@ -294,7 +296,6 @@ const Services = () => {
           <Fade bottom duration={2000}>
             <div className="head">
               <h2>RELATED SERVICES</h2>
-
             </div>
           </Fade>
           <div className="row">
