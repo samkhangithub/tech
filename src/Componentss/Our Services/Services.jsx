@@ -25,81 +25,58 @@ import { Helmet } from "react-helmet";
 
 const cardInfo = [
   {
-    img: card1,
-    header: "Software Maintenance",
-    para: "We make sure our client's software solutions work seamlessly. Our team takes care of the ongoing maintenance",
+    img: card10,
+    header: "Web Development",
+    para: "TechCreator provides top-notch web development services to create modern and functional websites that meet our clients' needs.",
     btn: "VIEW SERVICE DETAILS",
   },
   {
-    img: card2,
-    header: "Data Services",
-    para: "In this age data is the new oil. And as oil, data needs to be produced, refined and transported. Our experienced",
-    btn: "VIEW SERVICE DETAILS",
-  },
-  {
-    img: card3,
-    header: "Scrum Master",
-    para: "We will run the project using our own SCRUM method, which is a set of frameworks applied to incrementally",
+    img: card11,
+    header: "App Development",
+    para: "Our team of experienced developers uses the latest technologies and industry best practices to create high-quality mobile apps that exceed your expectations.",
     btn: "VIEW SERVICE DETAILS",
   },
   {
     img: card4,
-    header: "User Interface",
-    para: "We will run the project using our own SCRUM method, which is a set of frameworks applied to incrementally",
+    header: "UI/UX Design",
+    para: "Our expert designers use the latest UI/UX design principles to develop interfaces that are aesthetically pleasing, easy to use, and engaging.",
     btn: "VIEW SERVICE DETAILS",
   },
   {
-    img: card5,
-    header: "Data Science",
-    para: "Patagonian’s Data driven team will gather their experience and expertise to build the data science solutions that",
-    btn: "VIEW SERVICE DETAILS",
-  },
-  {
-    img: card6,
-    header: "Testing",
-    para: "Our Quality Control team will evaluate and deploy functional and system testing methodologies to your",
-    btn: "VIEW SERVICE DETAILS",
-  },
-  {
-    img: card7,
-    header: "QC/QA",
-    para: "We provide a comprehensive stand-alone Quality Control services making sure your software is fully functional, secure and reliable when it hits the",
-    btn: "VIEW SERVICE DETAILS",
-  },
-  {
-    img: card8,
-    header: "Branding",
-    para: "Our brand-strategy team knows your brand is not just choosing the right colors and a logotype. It’s your company´s entire identity.",
+    img: card13,
+    header: "Graphic Designing",
+    para: "Our graphic designers are passionate about creating stunning designs that captivate audiences and elevate brands.",
     btn: "VIEW SERVICE DETAILS",
   },
   {
     img: card9,
     header: "Project Management",
-    para: "Our Software Project Management team offers consulting services to improve your software development",
+    para: "Our experienced project managers work closely with clients to ensure that projects are completed on time, within budget, and to the highest standards.",
     btn: "VIEW SERVICE DETAILS",
   },
   {
-    img: card10,
-    header: "Development",
-    para: "We craft unique technological experiences to support your business needs. Web or mobile applications,",
+    img: card3,
+    header: "Scrum Master",
+    para: "With a focus on effective communication and project management, our Scrum Masters ensure that projects stay on track and are completed on time and within budget.",
+  },
+  {
+    img: card6,
+    header: "QA Testing",
+    para: "Our team of experienced testers uses the latest testing methodologies and tools to provide thorough testing that identifies defects and ensures that your software performs flawlessly.",
     btn: "VIEW SERVICE DETAILS",
   },
   {
-    img: card11,
-    header: "Architecture",
-    para: "Selecting the right set of tools, and setting the framework to ensure technical success in our products",
+    img: card1,
+    header: "Software Maintenance",
+    para: "Our team of experts offers timely and cost-effective maintenance solutions to keep your software up-to-date and secure.",
     btn: "VIEW SERVICE DETAILS",
   },
+
+  ,
   {
     img: card12,
     header: "DevOps",
-    para: "One common issue of software products are deficient, slow and unreliable release cycles. Our DevOps & SRE team help organizations to",
-    btn: "VIEW SERVICE DETAILS",
-  },
-  {
-    img: card13,
-    header: "User Experience",
-    para: "We aim to create products that solve real problems, focusing on maximizing satisfaction with the least effort",
+    para: "Our team of skilled engineers can help you integrate automation, testing, and deployment processes to ensure faster time-to-market and higher quality products.",
     btn: "VIEW SERVICE DETAILS",
   },
 ];
@@ -165,11 +142,17 @@ const Services = () => {
 
                   <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
                     <p className="we-services lead">
-                      At Techcreator, we offer a wide range of products and
-                      services in the fields of software development, data
-                      analytics, embedded systems, and artificial intelligence.
-                      Our goal is to use technology to create a better future
-                      for everyone.
+                      TechCreator offers top-notch web and mobile app
+                      development services to help businesses bring their ideas
+                      to life. Our experienced team of developers creates custom
+                      apps that are tailored to meet our clients' specific
+                      needs. We use the latest technologies and industry best
+                      practices to ensure that our apps are scalable, secure,
+                      and easy to use. Whether you need a simple mobile app or a
+                      complex web application, TechCreator has the expertise to
+                      deliver high-quality solutions that exceed your
+                      expectations. Contact us today to learn more about our web
+                      and mobile app development services.
                     </p>
                   </div>
                 </div>
@@ -191,15 +174,18 @@ const Services = () => {
           <div class="col-lg-6">
             <Fade bottom duration={2000}>
               <div className="soft">
-                <h2 class="display-5 fw-bold lh-1 mb-3 text-primary">
-                  Software
+                <h2 class=" display-5 fw-bold lh-1 mb-3 text-primary">
+                  TechCreator Software
                   <br /> Development
                 </h2>
                 <p class="lead">
-                  We have a top-class talent pool ready to jump on any new
-                  challenge. We scale our client's delivery capacity with the
-                  right skills, reducing the time to market for any new product
-                  or functionality.
+                  At TechCreator, we provide software development services using
+                  cutting-edge technologies such as React, Angular, and
+                  WordPress.Whether it's building a website with WordPress,
+                  developing a single-page application with React, or creating a
+                  robust enterprise application with Angular, we have the
+                  expertise to deliver high-quality solutions that exceed
+                  your expectations.
                 </p>
                 {/* <div className="pb-5 see-btn">
                   <a href="" className="dev-btn">SEE SERVICE <MdKeyboardArrowRight className="md_icon" /></a>
@@ -232,15 +218,18 @@ const Services = () => {
             <Fade bottom duration={2000}>
               <div className="pro">
                 <h2 class="display-5 fw-bold lh-1 mb-3 text-primary">
-                  Software Product
-                  <br /> Discovery
+                  TechCreator Software
+                  <br />
+                  Product Discovery
                 </h2>
                 <p class="lead">
-                  We help our clients weed out unnecessary scope by
-                  understanding users' problems and opportunities before we set
-                  out to solve them. A good Product Discovery ensures a project
-                  is on the right track, reducing risks and uncertainty, and
-                  builds a solid foundation to grow any product.
+                  TechCreator provides software product discovery services to
+                  help businesses identify and validate opportunities for new
+                  software products. Whether you're looking to develop a new
+                  product from scratch or improve an existing one, We can help
+                  you identify and validate the best opportunities. Contact us
+                  today to learn more about our software product
+                  discovery services.
                 </p>
                 {/* <div className="pb-5 see-btn">
                   <a href="" className="dev-btn">SEE SERVICE  <MdKeyboardArrowRight className="md_icon" /></a>
@@ -271,15 +260,17 @@ const Services = () => {
           <div class="col-lg-6 pb-5">
             <Fade bottom>
               <div className="talent">
-                <h2 class="display-5 fw-bold lh-1 mb-3 text-primary ">
-                  Talent
+                <h2 class="display-5 fw-bold lh-1 mb-3 text-primary">
+                  TechCreator Talent
                   <br /> Augmentation
                 </h2>
                 <p class="lead">
-                  We have a top-class talent pool ready to jump on any new
-                  challenge. We scale our client's delivery capacity with the
-                  right skills, reducing the time to market for any new product
-                  or functionality.
+                  We offer talent augmentation services to help software
+                  companies augment their existing teams with skilled and
+                  experienced developers. Whether you need additional resources
+                  for a short-term project or long-term support, TechCreator can
+                  help you augment your team with top-notch talent. Contact us
+                  today to learn more about our talent augmentation services.
                 </p>
                 {/* <div className="pb-5 see-btn">
                 <a href="" className="dev-btn">SEE SERVICE  <MdKeyboardArrowRight className="md_icon" /></a>
@@ -295,7 +286,9 @@ const Services = () => {
         <div className="container">
           <Fade bottom duration={2000}>
             <div className="head">
-              <h2>RELATED SERVICES</h2>
+              <h2 className="display-5 fw-bold lh-1 mb-3 text-primary ">
+                Our Expertise
+              </h2>
             </div>
           </Fade>
           <div className="row">

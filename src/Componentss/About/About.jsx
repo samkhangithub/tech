@@ -24,7 +24,6 @@ import imgpro13 from "../../image/petron1.png";
 import imgpro14 from "../../image/repair1.png";
 import imgpro15 from "../../image/saloon1.png";
 
-
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
@@ -42,15 +41,11 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-
-
-
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
 import { Helmet } from "react-helmet";
 import Ourteam from "./Ourteam";
 
 const About = () => {
-  
   const navigate = useNavigate();
   const [index, setIndex] = useState(0);
 
@@ -118,7 +113,7 @@ const About = () => {
       img: imgpro3,
       link: "https://www.behance.net/gallery/92378157/Rasoya-App?tracking_source=project_owner_other_projects",
       head: "Rasoyia",
-      para: "A rasoiya can also be a caterer who provides food for events such as weddings, parties, and corporate meetings.", 
+      para: "A rasoiya can also be a caterer who provides food for events such as weddings, parties, and corporate meetings.",
       btn: "Go To Website",
     },
     {
@@ -235,11 +230,17 @@ const About = () => {
 
                   <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
                     <p className="we-about lead">
-                      At TechCreator We specialize in products and services that
-                      span over several domains like Software Applications, Data
-                      analytics, Embedded Systems and Artificial Intelligence
-                      smart solutions with unified goal of realizing the dreams
-                      of a better tomorrow through technology.
+                      At TechCreator, we pride ourselves on creating custom
+                      software development solutions that help businesses
+                      achieve their unique objectives. Our expertise in the
+                      latest technologies and industry best practices allows us
+                      to create solutions that are scalable, reliable, and easy
+                      to use. Whether it's developing a custom software
+                      application, implementing a data analytics solution, or
+                      creating an intuitive TechCreator's UX/UI design,
+                      TechCreator has the expertise to help businesses succeed.
+                      Contact us today to learn more about our custom software
+                      development solutions.
                     </p>
                   </div>
                 </div>
@@ -415,7 +416,7 @@ const About = () => {
                 <Row xs={1} md={4} className="g-4 two-img">
                   {Array.map((item, index) => (
                     <Col key={index} className="col-md-6 col-lg-3">
-                      <Card >
+                      <Card>
                         <div className="senior-img">
                           <img src={item.img} className="img-fluid" />
                         </div>
@@ -497,7 +498,7 @@ const About = () => {
                   <h3>Senior Management</h3>
                   <p>Where Strategic decisions take place</p>
                 </div>
- 
+
                 <Row xs={1} md={4} className="g-4">
                   {Senior.map((item, index) => (
                     <Col key={index} className="col-md-6 col-lg-3">
@@ -543,108 +544,141 @@ const About = () => {
           <Ourteam />
 
           <div className="row mt-5 backgimg text-white  rounded">
-                        <Fade bottom duration={2000}>
-                            <div className="col-10 mx-auto mt-5">
-                                <h2 className=" text-center here">Here are our services in action</h2>
-                                <h3 className="mt-2 text-center take">Take a look at some of what we do.</h3>
-                                <a className="cmp-btn2 mt-5" onClick={() => navigate("/services")}>View all our work <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="cmp-btn__icon" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></a>
-                                <div className="row bg-sam mt-5">
- 
-                                    <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+            <Fade bottom duration={2000}>
+              <div className="col-10 mx-auto mt-5">
+                <h2 className=" text-center here">
+                  Here are our services in action
+                </h2>
+                <h3 className="mt-2 text-center take">
+                  Take a look at some of what we do.
+                </h3>
+                <a
+                  className="cmp-btn2 mt-5"
+                  onClick={() => navigate("/services")}
+                >
+                  View all our work{" "}
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    class="cmp-btn__icon"
+                    height="1.3em"
+                    width="1.3em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+                <div className="row bg-sam mt-5">
+                  <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+                    <p className="petro">Repaircms</p>
+                    <p className="mt-2 Plat">
+                      TechCreator created a platform that led Repaircms to its
+                      digital transformation process
+                    </p>
+                    <p className="we lead">
+                      The fact that they’ve been with us from the start and were
+                      patient, supportive, committed, and flexible is excellent.
+                    </p>
 
-
-                                        <p className="petro">Repaircms</p>
-                                        <p className="mt-2 Plat">TechCreator created a platform  that led Repaircms to its  digital transformation process</p>
-                                        <p className="we lead">The fact that they’ve been with us from the start and were patient, supportive, committed, and flexible is excellent.</p>
-
-                                        {/* <div className="mt-3 mb-5">
+                    {/* <div className="mt-3 mb-5">
                                             <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
                                         </div> */}
-
-                                    </div>
-                                    <div className="col-lg-5 col-md-12 col-sm-12 header-img">
-
-                                        <div className="img13 mt-3">
-
-                                            <img src={repairimg} className="img-fluid pt-5" alt="img13" />
-                                        </div>
-                                        {/* <div className="img14">
+                  </div>
+                  <div className="col-lg-5 col-md-12 col-sm-12 header-img">
+                    <div className="img13 mt-3">
+                      <img
+                        src={repairimg}
+                        className="img-fluid pt-5"
+                        alt="img13"
+                      />
+                    </div>
+                    {/* <div className="img14">
                                             <img src={img14} className="img-fluid" alt="img14" />
 
                                         </div> */}
+                  </div>
+                </div>
+              </div>
+            </Fade>
+          </div>
 
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </Fade>
-                    </div>
-
-
-                    <div className="row text-white  rounded">
-                        <Fade bottom delay={500} duration={2000}>
-                            <div className="col-10 mx-auto">
-                                <div className="row bg-sam mt-5">
-                                    <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                                        <p className="petro">PatronWorks</p>
-                                        <p className="mt-2 Plat">Point of sale system for retail businesses</p>
-                                        <p className="we lead">We were hesitant to switch to a new POS system, but we are so glad we chose Techcreator.</p>
-                                        {/* <div className="mb-5">
+          <div className="row text-white  rounded">
+            <Fade bottom delay={500} duration={2000}>
+              <div className="col-10 mx-auto">
+                <div className="row bg-sam mt-5">
+                  <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+                    <p className="petro">PatronWorks</p>
+                    <p className="mt-2 Plat">
+                      Point of sale system for retail businesses
+                    </p>
+                    <p className="we lead">
+                      We were hesitant to switch to a new POS system, but we are
+                      so glad we chose Techcreator.
+                    </p>
+                    {/* <div className="mb-5">
                                         <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
                                     </div> */}
-                                    </div>
-                                    <div className="col-lg-5 col-md-12 col-sm-12 header-img">
-
-                                        <div className="img13 mt-3">
-
-                                            <img src={patronimg} className="img-fluid pt-5" alt="img13" />
-                                        </div>
-                                        {/* <div className="img14">
+                  </div>
+                  <div className="col-lg-5 col-md-12 col-sm-12 header-img">
+                    <div className="img13 mt-3">
+                      <img
+                        src={patronimg}
+                        className="img-fluid pt-5"
+                        alt="img13"
+                      />
+                    </div>
+                    {/* <div className="img14">
                                               <img src={img14} className="img-fluid" alt="img14" />
 
                                              </div> */}
+                  </div>
+                </div>
+              </div>
+            </Fade>
+          </div>
 
-
-                                    </div>
-                                </div>
-                            </div>
-                        </Fade>
-                    </div>
-
-
-                    <div className="row text-white  rounded">
-                        <Fade bottom delay={500} duration={2000}>
-                            <div className="col-10 mx-auto">
-                                <div className="row bg-sam mt-5">
-                                    <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                                        <p className="petro">Sallon</p>
-                                        <p className="mt-2 Plat">A spot where all your beauty appointments meet</p>
-                                        <p className="we lead">Everyone at TechCreator has been an excellent communicator with no surprises in billing or delivery.</p>
-                                        {/* <div className="mb-5">
+          <div className="row text-white  rounded">
+            <Fade bottom delay={500} duration={2000}>
+              <div className="col-10 mx-auto">
+                <div className="row bg-sam mt-5">
+                  <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+                    <p className="petro">Sallon</p>
+                    <p className="mt-2 Plat">
+                      A spot where all your beauty appointments meet
+                    </p>
+                    <p className="we lead">
+                      Everyone at TechCreator has been an excellent communicator
+                      with no surprises in billing or delivery.
+                    </p>
+                    {/* <div className="mb-5">
                                         <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
                                     </div> */}
-                                    </div>
-                                    <div className="col-lg-5 col-md-12 col-sm-12 header-img">
-
-                                        <div className="img13 mt-3">
-
-                                            <img src={saloonimg} className="img-fluid pt-5" alt="img13" />
-                                        </div>
-                                        {/* <div className="img14">
+                  </div>
+                  <div className="col-lg-5 col-md-12 col-sm-12 header-img">
+                    <div className="img13 mt-3">
+                      <img
+                        src={saloonimg}
+                        className="img-fluid pt-5"
+                        alt="img13"
+                      />
+                    </div>
+                    {/* <div className="img14">
                                                 <img src={img14} className="img-fluid" alt="img14" />
 
                                               </div> */}
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </Fade>
-                    </div>
+                  </div>
                 </div>
-            </section>
+              </div>
+            </Fade>
+          </div>
+        </div>
+      </section>
 
       <div className="proimg">
         <div className="col">
