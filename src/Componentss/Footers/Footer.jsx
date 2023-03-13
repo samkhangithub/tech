@@ -1,6 +1,5 @@
 import React from "react";
 import "./footer.css";
-import { MdKeyboardArrowRight } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -60,8 +59,7 @@ const Footers = () => {
                 </ul>
               </div>
               <div className="col-md-4 mb-md-0  contect-div">
-                {/* <p className="mb-4">Receive monthly updates through our Newsletter</p>
-              <button className="btn-jion">Jion <MdKeyboardArrowRight className="md_icon" /></button> */}
+              
                 <div className="col mb-4 mb-md-0 abs">
                   <div className="col ">
                     <h4 className="mb-4">CONTACT</h4>
