@@ -95,8 +95,20 @@ const Career = () => {
               <div className="col-10 mx-auto">
                 <div className="row">
                   <div className="col-lg-6 col-md-12 col-sm-12 pt-5 pt-lg-0 div-header  d-flex justify-content-center flex-column">
-                    <p>CAREERS</p>
-                    <h3>Want to join our arcadian community?</h3>
+                    <h2>Careers at TechCreator</h2>
+
+                    <p className="careers-p pt-3">
+                      Are you passionate about technology and innovation? Do you
+                      enjoy being at the forefront of cutting-edge developments
+                      in the tech industry? If so, TechCreator might be the
+                      perfect place for you to take your career to the next
+                      level.
+                    </p>
+                    <p className="pt-3">
+                      If you're interested in joining our team, we encourage you
+                      to explore our current job openings and apply today. We
+                      look forward to hearing from you!
+                    </p>
                     <div className="div-btn pt-5 col-sm-12 ">
                       {/* <button className="btns1 m-3">View our job openings <MdKeyboardArrowRight className="md_icon" /></button> */}
                       <button className="btns2 m-3" onClick={handleShow}>

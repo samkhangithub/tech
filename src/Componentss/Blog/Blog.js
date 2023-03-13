@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import Footers from "../Footers/Footer";
 import "./Blog.css";
 
 const Blog = ({ blogs }) => {
@@ -70,7 +69,6 @@ const Blog = ({ blogs }) => {
           </div>
         </div>
       </div>
-      <Footers />
     </>
   );
 };
