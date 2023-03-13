@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./career.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import piwe from "../../image/piwe.svg";
+import piwe from "../../image/career.jpg";
 import Fade from "react-reveal/Fade";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
@@ -215,7 +215,7 @@ const Career = () => {
                   </div>
 
                   <div className="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-end">
-                    <img src={piwe} className="img-fluid1" />
+                    <img src={piwe} className="img-fluid" />
                   </div>
                 </div>
               </div>
