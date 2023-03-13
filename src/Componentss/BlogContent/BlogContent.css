@@ -36,6 +36,8 @@
 
 .class_blogc_h {
   @layer line-break;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .class_blogc_i {
@@ -58,4 +60,10 @@
   .class_blogc_i {
     width: 135vh;
   }
+}
+@media (max-width: 490px){
+.class_blogc_h{
+  font-size: 30px;
+  line-height: 52px;
+}
 }
