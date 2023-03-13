@@ -118,7 +118,7 @@ const Home = () => {
 
                 <div className="container-fluid bg-light">
                     <div className="row">
-                        <div className="col-10 mx-auto">
+                        <div className="col-10 mx-auto mt-5">
                             <div className="row abs">
                                 <Fade bottom delay={500} duration={3000}>
                                     <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column  fade__bottom">
@@ -154,7 +154,7 @@ const Home = () => {
                     </div>
 
                     <div className="row ">
-                        <div className="col-10 mx-auto mt-5">
+                        <div className="col-10 mx-auto mt-2">
                             <div className="row">
                                 <div className="col-lg-5 col-md-12 col-sm-12 pt-5 header-img">
                                     <Fade left duration={2000}>

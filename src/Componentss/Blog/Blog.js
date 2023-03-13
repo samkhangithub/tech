@@ -56,7 +56,7 @@ const Blog = ({ blogs }) => {
                       src={blog.attributes.coverImg.data.attributes.url}
                     />
                     <div className=" class-e p-8">
-                      <h3 className="class-f font-bold text-2xl my-1">
+                      <h3 className="class-f font-bold text-2xl my-3">
                         {blog.attributes.blogTitle}
                       </h3>
                       <p className=" class-g text-gray-600 text-base">

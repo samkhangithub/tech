@@ -68,8 +68,12 @@ const Footers = () => {
                     <div className="d-flex">
                       <div>
                         <MdLocationOn />
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
                       </div>
-                      &nbsp;
+                 
                       <div>
                         <a href="https://goo.gl/maps/9jGNEgeX2fomX5CMA" target="_blank" style={{color:"white"}}>
                         TechCreator Private Limited near Muneer Hospital, Mardan Road Swabi.
@@ -81,11 +85,12 @@ const Footers = () => {
                       <div>
                         <MdEmail />
                       </div>
-                      &nbsp;
+                     
                       <div>
                         <a
                           href="mailto:saudkhanbpk@gmail.com"
                           className="text-white"
+                          style={{marginLeft:"10px"}}
                         >
                           saudkhanbpk@gmail.com
                         </a>
@@ -96,9 +101,10 @@ const Footers = () => {
                       <div>
                         <BsTelephoneFill />
                       </div>
-                      &nbsp;
+                      {/* &nbsp; */}
+                  
                       <div>
-                        <a href="tel:+92-347 1914920" style={{color:"white"}}>0347 1914920</a>
+                        <a href="tel:+92-347 1914920" style={{color:"white",marginLeft:"10px"}}>0347 1914920</a>
                       </div>
                     </div>
                     <div>

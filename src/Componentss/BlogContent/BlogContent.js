@@ -36,11 +36,11 @@ const BlogContent = ({ blogs }) => {
                 className=" class_blogc_e h-56 w-full object-cover"
                 src={firstImage}
               />
-              <h1 className="class_blogc_f font-bold text-2xl my-1 pt-5">
+              <h1 className="class_blogc_f  font-bold text-2xl my-1 pt-5">
                 {blog?.attributes?.blogTitle}
               </h1>
               <div className="class_blogc_g pt-5">
-                <ReactMarkdown className="class_blogc_h line-break">
+                <ReactMarkdown className="class_blogc_h line-break ">
                   {blog?.attributes?.blogContent}
                 </ReactMarkdown>
               </div>
