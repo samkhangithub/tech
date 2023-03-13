@@ -414,8 +414,8 @@ const About = () => {
 
                 <Row xs={1} md={4} className="g-4 two-img">
                   {Array.map((item, index) => (
-                    <Col key={index}>
-                      <Card>
+                    <Col key={index} className="col-md-6 col-lg-3">
+                      <Card >
                         <div className="senior-img">
                           <img src={item.img} className="img-fluid" />
                         </div>
@@ -497,11 +497,11 @@ const About = () => {
                   <h3>Senior Management</h3>
                   <p>Where Strategic decisions take place</p>
                 </div>
-
+ 
                 <Row xs={1} md={4} className="g-4">
                   {Senior.map((item, index) => (
-                    <Col key={index}>
-                      <Card >
+                    <Col key={index} className="col-md-6 col-lg-3">
+                      <Card className="">
                         <div className="senior-img">
                           <img src={item.img} className="img-fluid" />
                         </div>
