@@ -2,7 +2,7 @@
     font-size: 50px;
     text-align: end;
     margin-right: 5%;
-    margin-bottom: 30%;
+    margin-bottom: 10%;
     font-weight: 700;
 }
 @media screen and (max-width:490px){
@@ -13,6 +13,7 @@
 @media screen and (max-width:768px){
     .about{
         text-align: start;
+       
     }
 }
 .aboutimg {
@@ -25,7 +26,6 @@
     position: relative;
     vertical-align: middle;
 }
-
 .we-about {
     color: white;
     text-align: start;
@@ -252,7 +252,8 @@
     overflow: hidden;
     height: 270px;
     border-bottom-right-radius: 12.5%;
-    /* background: linear-gradient(180deg,hsla(0,0%,100%,0) 42.71%,rgba(4,108,252,.8)) !important; */
+    object-fit: cover;
+    margin: 0px 0 20px 0;
 }
 
 .senior-img:hover img {
@@ -264,7 +265,7 @@
 }
 
 .main-cards {
-    height: 170px;
+    height: 150px;
     align-items: center;
 }
 

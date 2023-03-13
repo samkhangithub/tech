@@ -229,7 +229,7 @@ const Services = () => {
           <div class="col-lg-6 soft-pro">
             <Fade bottom duration={2000}>
               <div className="pro">
-                <h2 class="display-5 fw-bold lh-1 mb-3 text-primary ">
+                <h2 class="display-5 fw-bold lh-1 mb-3 text-primary">
                   Software Product
                   <br /> Discovery
                 </h2>
