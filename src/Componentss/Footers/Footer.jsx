@@ -64,24 +64,19 @@ const Footers = () => {
                   <div className="col ">
                     <h4 className="mb-4">CONTACT</h4>
                     <div className="d-flex">
-                      <div className="mt-1">
-                    <i><ImLocation2 /></i>
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
+                      <div className="mt-1 loc">
+                    <p><ImLocation2 /></p>
+                   
                       </div>
                  
-                      <div>
+                      <div style={{marginLeft:"10px"}}>
                         <a href="https://goo.gl/maps/9jGNEgeX2fomX5CMA" target="_blank" style={{color:"white"}}>
                         TechCreator Private Limited near Muneer Hospital, Mardan Road Swabi.
                         </a>
                       </div>
                     </div>
 
-                    <div className="d-flex pt-2">
+                    <div className="d-flex">
                       <div style={{background:"#e56700", padding:"3px 7px 3px 7px",  borderRadius:"50%"}}>
                         <MdEmail />
                       </div>
@@ -97,7 +92,7 @@ const Footers = () => {
                       </div>
                     </div>
 
-                    <div className="d-flex pt-3">
+                    <div className="d-flex pt-2">
                       <div style={{background:"#e56700", padding:"3px 7px 3px 7px",  borderRadius:"50%"}}>
                         <BsTelephoneFill />
                       </div>
