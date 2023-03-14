@@ -213,7 +213,7 @@ const About = () => {
           name="keywords"
           content="techcreator, techCreator's UX/UI design, custom software development solutions, techcreator software house, softwarehouse, apps development, software industry, swabi software house, techcreator about"
         />
-        <link rel="canonical" href="techcreator.co/about" />
+        <link rel="canonical" href="/about" />
       </Helmet>
       <section className="d-flex align-items-center aboutimg text-white">
         <div className="container-fluid ">
