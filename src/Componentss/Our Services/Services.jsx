@@ -91,7 +91,8 @@ const Services = () => {
         />
         <meta
           name="keywords"
-          content="techcreator, techcreator sofwarehouse, sofwarehouse, apps development, software industry, swabi software house, software development services"
+          content="TechCreator, TechCreator web and mobile app development services,  web and mobile app development services, TechCreator Software
+          Development, TechCreator Software Product Discovery, TechCreator Talent Augmentation, techcreator software house, apps development, software industry, swabi software house, software development services"
         />
         <link rel="canonical" href="techcreator.co/services" />
       </Helmet>
@@ -180,10 +181,12 @@ const Services = () => {
                 </h2>
                 <p class="lead">
                   At TechCreator, we provide software development services using
-                  cutting-edge technologies such as React, Angular, and
+                  cutting-edge technologies such as{" "}
+                  <a href="https://reactjs.org/">ReactJs</a>, Angular, and
                   WordPress.Whether it's building a website with WordPress,
                   developing a single-page application with React, or creating a
-                  robust enterprise application with Angular, we have the
+                  robust enterprise application with{" "}
+                  <a href="https://angular.io/">Angular</a>, we have the
                   expertise to deliver high-quality solutions that exceed
                   your expectations.
                 </p>
@@ -223,11 +226,15 @@ const Services = () => {
                   Product Discovery
                 </h2>
                 <p class="lead">
-                  TechCreator provides software product discovery services to
-                  help businesses identify and validate opportunities for new
+                  TechCreator provides{" "}
+                  <a href="https://relevant.software/software-product-discovery/">
+                    software product discovery services{" "}
+                  </a>{" "}
+                  to help businesses identify and validate opportunities for new
                   software products. Whether you're looking to develop a new
                   product from scratch or improve an existing one, We can help
-                  you identify and validate the best opportunities. Contact us
+                  you identify and validate the best opportunities.{" "}
+                  <a href="https://techcreator.co/contact">Contact us </a>
                   today to learn more about our software product
                   discovery services.
                 </p>
@@ -268,9 +275,12 @@ const Services = () => {
                   We offer talent augmentation services to help software
                   companies augment their existing teams with skilled and
                   experienced developers. Whether you need additional resources
-                  for a short-term project or long-term support, TechCreator can
-                  help you augment your team with top-notch talent. Contact us
-                  today to learn more about our talent augmentation services.
+                  for a short-term project or long-term support,{" "}
+                  <a href="https://techcreator.co/about">
+                    <b>TechCreator</b>
+                  </a>{" "}
+                  can help you augment your team with top-notch talent. Contact
+                  us today to learn more about our talent augmentation services.
                 </p>
                 {/* <div className="pb-5 see-btn">
                 <a href="" className="dev-btn">SEE SERVICE  <MdKeyboardArrowRight className="md_icon" /></a>

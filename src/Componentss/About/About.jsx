@@ -207,11 +207,11 @@ const About = () => {
         <title>About - Techcreator Software Company</title>
         <meta
           name="description"
-          content="We have been providing quality services since 2001. We provide our clients with complete end-to-end solutions. We offer customized solutions according to their needs."
+          content="We have been providing quality services since 2001. We provide our clients with complete end-to-end solutions. We offer customized solutions..."
         />
         <meta
           name="keywords"
-          content="techcreator, techcreatorsofwarehouse, sofwarehouse, appsdevelopment, softwareindustry, swabisoftwarehouse, techcreatorabout"
+          content="techcreator, techCreator's UX/UI design, custom software development solutions, techcreator software house, softwarehouse, apps development, software industry, swabi software house, techcreator about"
         />
         <link rel="canonical" href="techcreator.co/about" />
       </Helmet>
@@ -256,7 +256,7 @@ const About = () => {
             <div className="col-10 mx-auto">
               <div className="row">
                 <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex flex-column ">
-                  <img src={img1} className="img1" />
+                  <img src={img1} alt="techcreator" className="img1" />
                 </div>
                 <Fade bottom duration={2000}>
                   <div className="col-lg-7 col-md-12 col-sm-12 mb-5 ">
@@ -418,7 +418,11 @@ const About = () => {
                     <Col key={index} className="col-md-6 col-lg-3">
                       <Card>
                         <div className="senior-img">
-                          <img src={item.img} className="img-fluid" />
+                          <img
+                            src={item.img}
+                            alt="techCreator's UX/UI design"
+                            className="img-fluid"
+                          />
                         </div>
                         <Card.Body className="main-cards">
                           <Card.Text className="sen-name">
@@ -504,7 +508,11 @@ const About = () => {
                     <Col key={index} className="col-md-6 col-lg-3">
                       <Card className="">
                         <div className="senior-img">
-                          <img src={item.img} className="img-fluid" />
+                          <img
+                            src={item.img}
+                            alt="custom software development solutions"
+                            className="img-fluid"
+                          />
                         </div>
 
                         <Card.Body className="main-cards">
@@ -595,7 +603,7 @@ const About = () => {
                       <img
                         src={repairimg}
                         className="img-fluid pt-5"
-                        alt="img13"
+                        alt="techcreator software house"
                       />
                     </div>
                     {/* <div className="img14">
@@ -630,7 +638,7 @@ const About = () => {
                       <img
                         src={patronimg}
                         className="img-fluid pt-5"
-                        alt="img13"
+                        alt="swabi software house"
                       />
                     </div>
                     {/* <div className="img14">
@@ -665,7 +673,7 @@ const About = () => {
                       <img
                         src={saloonimg}
                         className="img-fluid pt-5"
-                        alt="img13"
+                        alt="techcreator about"
                       />
                     </div>
                     {/* <div className="img14">
@@ -689,7 +697,11 @@ const About = () => {
             {projectInfo.map((projectInfo) => {
               return (
                 <div className="col-md-4 col-md-6 col-lg-4 cards container">
-                  <img src={projectInfo.img} className="" />
+                  <img
+                    src={projectInfo.img}
+                    alt="techCreator's UX/UI design"
+                    className=""
+                  />
                   <div className="cards-body">
                     <h2 className="cards-title">{projectInfo.head}</h2>
                     <p className="cards-info">{projectInfo.para}</p>

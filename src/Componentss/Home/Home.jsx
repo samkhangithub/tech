@@ -14,6 +14,7 @@ import saloonimg from "../../image/saloon.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { FaQuoteLeft } from "react-icons/fa";
 import "./home.css";
+import { Helmet } from "react-helmet";
 
 import Marquee from "react-fast-marquee";
 import image4 from "../../image/quote.webp";
@@ -61,6 +62,24 @@ const Home = () => {
 
   return (
     <>
+      <Helmet>
+        <title data-react-helmet="true">Techcreator Software Company</title>
+        <meta
+          name="description"
+          content="TechCreator is a leading technology software company that specializes in custom software development for businesses worldwide. Contact us today to learn more"
+          data-rh="true"
+        />
+        <meta
+          name="keywords"
+          content=" TechCreator, TechCreator Software House, technology software company, TechCreator software company, TechCreator Software Development Company, TechCreator's innovative software solutions , software development, technology solutions"
+        />
+        <meta name="robots" content="index,follow"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
+        <link rel="canonical" href="techcreator.co/" />
+      </Helmet>
       <section
         id="header"
         className="d-flex align-items-center homeimg text-white"
@@ -92,7 +111,11 @@ const Home = () => {
                   </div>
                 </Fade>
                 <div className="col-lg-5 col-md-12 col-sm-12 mb-5 animation">
-                  <img src={img1} className="img-fluid animation" alt="img1" />
+                  <img
+                    src={img1}
+                    className="img-fluid animation"
+                    alt="TechCreator software company"
+                  />
                   <div className="mt-5 head-btn col-sm-12">
                     <button
                       className="btn-con2"
@@ -118,7 +141,7 @@ const Home = () => {
               <div className="row">
                 <Fade left duration={2000}>
                   <div className="col-lg-7 col-md-12 col-sm-12 soft-img">
-                    <img src={imgsoft} alt="img1" />
+                    <img src={imgsoft} alt="TechCreator software company" />
                   </div>
                 </Fade>
                 <Fade bottom delay={2000} duration={3000}>
@@ -130,9 +153,13 @@ const Home = () => {
                       At TechCreator Software House, we believe that client
                       satisfaction is key to our success, and we are committed
                       to providing exceptional customer service at every stage
-                      of the software development process. Our team works
-                      closely with clients to ensure that their vision is
-                      realized, and their software solution is a success.
+                      of the{" "}
+                      <a href="https://en.wikipedia.org/wiki/Software_development_process">
+                        software development process
+                      </a>{" "}
+                      . Our team works closely with clients to ensure that their
+                      vision is realized, and their software
+                      solution is a success.
                     </p>
                   </div>
                 </Fade>
@@ -158,7 +185,8 @@ const Home = () => {
                     <p className="mt-2 Over ">
                       TechCreator is a technology software company that
                       specializes in developing custom software solutions to
-                      help businesses of all sizes achieve their goals. Our team
+                      help businesses of all sizes achieve their goals.{" "}
+                      <a href="https://techcreator.co/about">Our team </a>
                       of experienced developers, designers, and project managers
                       work closely with clients to understand their business
                       needs and develop software solutions that streamline
@@ -183,17 +211,25 @@ const Home = () => {
                   <Fade right duration={2000}>
                     <div className="img11"></div>
                     <div className="img8">
-                      <img src={img8} className="img-fluid" alt="img8" />
+                      <img
+                        src={img8}
+                        className="img-fluid"
+                        alt="Techcreator Software Company"
+                      />
                     </div>
                     <div className="img3">
                       <img
                         src={img13}
                         className="img-fluid img3 my-img"
-                        alt="img3"
+                        alt="TechCreator Software Development Company"
                       />
                     </div>
                     <div className="img4 ">
-                      <img src={img4} className="img-fluid img4" alt="img4" />
+                      <img
+                        src={img4}
+                        className="img-fluid img4"
+                        alt="TechCreator"
+                      />
                     </div>
                   </Fade>
                 </div>
@@ -208,13 +244,25 @@ const Home = () => {
                   <Fade left duration={2000}>
                     <div className="img12"></div>
                     <div className="img9">
-                      <img src={img9} alt="img9" className="img-fluid" />
+                      <img
+                        src={img9}
+                        alt="Techcreator Software Company"
+                        className="img-fluid"
+                      />
                     </div>
                     <div className="img6">
-                      <img src={img6} className="img-fluid my-img" alt="img6" />
+                      <img
+                        src={img6}
+                        className="img-fluid my-img"
+                        alt="TechCreator Software Development Company"
+                      />
                     </div>
                     <div className="img10">
-                      <img src={img10} className="img-fluid" alt="img10" />
+                      <img
+                        src={img10}
+                        className="img-fluid"
+                        alt="Techcreator Software Company"
+                      />
                     </div>
                   </Fade>
                 </div>
@@ -229,8 +277,8 @@ const Home = () => {
                       products are tailored to meet their specific business
                       needs. Whether you need a web application, a mobile app,
                       or a custom software solution to automate your business
-                      processes, TechCreator software company has the expertise
-                      and experience to help you achieve your goals.
+                      processes,<b>TechCreator software company</b> has the
+                      expertise and experience to help you achieve your goals.
                     </p>
                     {/* <div className="mt-3 mb-5">
                                             <a href="" className="Getbtn">SEE SERVICES  <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
@@ -282,17 +330,25 @@ const Home = () => {
                   <Fade right duration={2000}>
                     <div className="img11"></div>
                     <div className="img8">
-                      <img src={img8} className="img-fluid" alt="img8" />
+                      <img
+                        src={img8}
+                        className="img-fluid"
+                        alt="TechCreator Software House"
+                      />
                     </div>
                     <div className="img3">
                       <img
                         src={img3}
                         className="img-fluid img3 my-img"
-                        alt="img3"
+                        alt=" TechCreator software company"
                       />
                     </div>
                     <div className="img4">
-                      <img src={img4} className="img-fluid img4" alt="img4" />
+                      <img
+                        src={img4}
+                        className="img-fluid img4"
+                        alt="TechCreator Software Development Company"
+                      />
                     </div>
                   </Fade>
                 </div>
@@ -377,7 +433,7 @@ const Home = () => {
                       <img
                         src={repairimg}
                         className="img-fluid pt-5"
-                        alt="img13"
+                        alt="TechCreator Software House"
                       />
                     </div>
                     {/* <div className="img14">
@@ -400,8 +456,9 @@ const Home = () => {
                       Point of sale system for retail businesses
                     </p>
                     <p className="we lead">
-                      We were hesitant to switch to a new POS system, but we are
-                      so glad we chose Techcreator.
+                      We were hesitant to switch to a new{" "}
+                      <a href="https://patronworks.com/">POS system</a> , but we
+                      are so glad we chose Techcreator.
                     </p>
                     {/* <div className="mb-5">
                                         <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
@@ -412,7 +469,7 @@ const Home = () => {
                       <img
                         src={patronimg}
                         className="img-fluid pt-5"
-                        alt="img13"
+                        alt="TechCreator Software House"
                       />
                     </div>
                     {/* <div className="img14">
@@ -447,7 +504,7 @@ const Home = () => {
                       <img
                         src={saloonimg}
                         className="img-fluid pt-5"
-                        alt="img13"
+                        alt="TechCreator Software House"
                       />
                     </div>
                     {/* <div className="img14">
@@ -481,8 +538,17 @@ const Home = () => {
                       <p className="">{item.para}</p>
                       <a>
                         {" "}
-                        <img src={image4} className="img-quote" />
-                        <img src={image4} className="img-quote" /> {item.link}
+                        <img
+                          src={image4}
+                          alt="Techcreator Software Company"
+                          className="img-quote"
+                        />
+                        <img
+                          src={image4}
+                          alt="TechCreator Software House"
+                          className="img-quote"
+                        />{" "}
+                        {item.link}
                       </a>
                       <span>{item.span}</span>
                     </div>
@@ -522,20 +588,20 @@ const Home = () => {
               <Fade bottom duration={2000}>
                 <Marquee gradient={false} speed={40} className="pt-5 marque">
                   <div className="col img-wrapper">
-                    <img src={imgs2} />
+                    <img src={imgs2} alt="TechCreator" />
                   </div>
                   <div className="col img-wrapper">
-                    <img src={imgs3} />
+                    <img src={imgs3} alt="TechCreator" />
                   </div>
                   <div className="col img-wrapper">
-                    <img src={imgs4} />
+                    <img src={imgs4} alt="TechCreator" />
                   </div>
                   <div className="col img-wrapper">
-                    <img src={imgs5} />
+                    <img src={imgs5} alt="TechCreator" />
                   </div>
 
                   <div className="col img-wrapper">
-                    <img src={imgs7} />
+                    <img src={imgs7} alt="technology software company" />
                   </div>
                 </Marquee>
               </Fade>
