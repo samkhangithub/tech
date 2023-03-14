@@ -87,7 +87,7 @@ const Contact = () => {
         />
         <meta
           name="keywords"
-          content="techcreator, techcreatorsofwarehouse, sofwarehouse, appsdevelopment, softwareindustry, swabisoftwarehouse, techcreatorabout"
+          content="techcreator, techcreator software house, techcreator software compant, sofwarehouse, apps development, software industry, swabi software house, techcreator contact us"
         />
         <link rel="canonical" href="techcreator.co/contact" />
       </Helmet>
@@ -148,7 +148,7 @@ const Contact = () => {
             <div className="row">
               <Fade bottom duration={2000}>
                 <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex flex-column cont-img">
-                  <img src={contact} />
+                  <img src={contact} alt="Techcreator Software Company" />
                 </div>
               </Fade>
             </div>

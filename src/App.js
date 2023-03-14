@@ -34,7 +34,7 @@ function App() {
             },
           })}
         </script>
-        <title data-react-helmet="true">Techcreator Software Company</title>
+        {/* <title data-react-helmet="true">Techcreator Software Company</title>
         <meta
           name="description"
           content="techcreator, we offer a wide range of products and services in the fields of software development, data analytics, embedded systems, and artificial intelligence. Our goal is to use technology to create a better future for everyone."
@@ -49,7 +49,7 @@ function App() {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
-        <link rel="canonical" href="techcreator.co/" />
+        <link rel="canonical" href="techcreator.co/" /> */}
       </Helmet>
       <div className="App">
         <RouterPage />
