@@ -215,7 +215,11 @@ const Career = () => {
                   </div>
 
                   <div className="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-end">
-                    <img src={piwe} className="img-fluid" />
+                    <img
+                      src={piwe}
+                      alt="Techcreator Software Company"
+                      className="img-fluid"
+                    />
                   </div>
                 </div>
               </div>
