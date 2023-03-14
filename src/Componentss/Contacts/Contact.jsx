@@ -89,7 +89,7 @@ const Contact = () => {
           name="keywords"
           content="techcreator, techcreator software house, techcreator software compant, sofwarehouse, apps development, software industry, swabi software house, techcreator contact us"
         />
-        <link rel="canonical" href="techcreator.co/contact" />
+        <link rel="canonical" href="/contact" />
       </Helmet>
       {/* <section className="contact-main">
         <div className="container-fluid">

@@ -94,7 +94,7 @@ const Services = () => {
           content="TechCreator, TechCreator web and mobile app development services,  web and mobile app development services, TechCreator Software
           Development, TechCreator Software Product Discovery, TechCreator Talent Augmentation, techcreator software house, apps development, software industry, swabi software house, software development services"
         />
-        <link rel="canonical" href="techcreator.co/services" />
+        <link rel="canonical" href="/services" />
       </Helmet>
 
       {/* <section className="d-flex align-items-center servises-main text-white">

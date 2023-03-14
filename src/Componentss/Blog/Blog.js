@@ -27,7 +27,7 @@ const Blog = ({ blogs }) => {
           name="keywords"
           content="techcreator, techcreatorsofwarehouse, sofwarehouse, appsdevelopment, softwareindustry, swabisoftwarehouse, techcreatorabout"
         />
-        <link rel="canonical" href="techcreator.co/blog" />
+        <link rel="canonical" href="/blog" />
       </Helmet>
       <div className="main_class">
         <Helmet>
