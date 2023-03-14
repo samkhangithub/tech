@@ -6,7 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { GrTwitter } from "react-icons/gr";
 import Fade from "react-reveal/Fade";
 import logofot from "../../image/techlogo.png";
-import { MdLocationOn } from "react-icons/md";
+import { ImLocation2 } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
@@ -64,8 +64,10 @@ const Footers = () => {
                   <div className="col ">
                     <h4 className="mb-4">CONTACT</h4>
                     <div className="d-flex">
-                      <div>
-                        <MdLocationOn />
+                      <div className="mt-1">
+                    <i><ImLocation2 /></i>
+                        &nbsp;
+                        &nbsp;
                         &nbsp;
                         &nbsp;
                         &nbsp;
@@ -80,29 +82,30 @@ const Footers = () => {
                     </div>
 
                     <div className="d-flex pt-2">
-                      <div>
+                      <div style={{background:"#e56700", padding:"3px 7px 3px 7px",  borderRadius:"50%"}}>
                         <MdEmail />
                       </div>
-                     
-                      <div>
+                      &nbsp;
+                      &nbsp;
+                      <div className="pt-1">
                         <a
                           href="mailto:saudkhanbpk@gmail.com"
                           className="text-white"
-                          style={{marginLeft:"10px"}}
                         >
                           saudkhanbpk@gmail.com
                         </a>
                       </div>
                     </div>
 
-                    <div className="d-flex pt-2">
-                      <div>
+                    <div className="d-flex pt-3">
+                      <div style={{background:"#e56700", padding:"3px 7px 3px 7px",  borderRadius:"50%"}}>
                         <BsTelephoneFill />
                       </div>
-                      {/* &nbsp; */}
+                      &nbsp;
+                      &nbsp;
                   
-                      <div>
-                        <a href="tel:+92-347 1914920" style={{color:"white",marginLeft:"10px"}}>0347 1914920</a>
+                      <div className="pt-1">
+                        <a href="tel:+92-347 1914920" style={{color:"white"}}>0347 1914920</a>
                       </div>
                     </div>
                     <div>
