@@ -84,3 +84,13 @@
 .logofot {
   width: 120px;
 }
+/* .icon-inner span{
+background-color: #e56700;
+} */
+i{
+  background-color: #e56700;
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding: 5px 8px;
+  font-size: 13px;
+}
