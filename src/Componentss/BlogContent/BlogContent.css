@@ -225,6 +225,9 @@ svg {
 }
 @media screen and (max-width: 768px) {
   .class_blogc_b_container {
-    padding: 70px 7px;
+    padding: 61px 5px;
   }
+  .class_blogc_d {
+    padding: 24px 17px;
+}
 }
