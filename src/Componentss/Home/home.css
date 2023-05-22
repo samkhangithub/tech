@@ -181,6 +181,11 @@ animation: animateUser 5s linear infinite;
     border: 2px solid #e56700;
     transition: 0.5s;
 }
+.mt-3 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 @media (min-width: 320px) and (max-width: 499px) {

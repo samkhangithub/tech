@@ -78,9 +78,13 @@
   color: #e56700;
 }
 
-/* .social-icons {
-  margin-top: 15px;
-} */
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+    height: 25px;
+}
 .logofot {
   width: 120px;
 }

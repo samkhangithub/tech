@@ -65,7 +65,12 @@ const Footers = () => {
                     <h4 className="mb-4">CONTACT</h4>
                     <div className="d-flex">
                       <div className="mt-1 loc">
-                    <p><ImLocation2 /></p>
+                      <div style={{background:"#e56700", padding:"3px 7px 3px 7px",  borderRadius:"50%"}}>
+                        <ImLocation2 style={{width: "15px",
+    height: "15px"}} />
+                      </div>
+                      
+
                    
                       </div>
                  

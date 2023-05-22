@@ -105,7 +105,7 @@ const Home = () => {
                         className="btn-con1"
                         onClick={() => navigate("/contact")}
                       >
-                        Contact us <MdKeyboardArrowRight />
+                        ContactUs <MdKeyboardArrowRight  style={{width: "20px", height:"20px"}}/>
                       </button>
                     </div>
                   </div>
