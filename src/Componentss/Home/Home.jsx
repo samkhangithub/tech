@@ -33,16 +33,16 @@ import Fade from "react-reveal/Fade";
 // import { FaLinkedinIn } from "react-icons/fa";
 // import { GrTwitter } from "react-icons/gr";
 
-import cardimg1 from "../../image/saloonlogo.png";
+// import cardimg1 from "../../image/saloonlogo.png";
 import cardimg2 from "../../image/Patronlogo.png";
 import cardimg3 from "../../image/logo-white.png";
 const boxInfo = [
-  {
-    img: cardimg1,
-    para: "Everyone at TechCreator has been an excellent communicator with no surprises in billing or delivery.",
-    link: "Arben",
-    span: "Founder & CEO",
-  },
+  // {
+  //   img: cardimg1,
+  //   para: "Everyone at TechCreator has been an excellent communicator with no surprises in billing or delivery.",
+  //   link: "Arben",
+  //   span: "Founder & CEO",
+  // },
   {
     img: cardimg3,
     para: "TechCreator's innovative software solutions have helped us streamline our operations and improve our customer service.",
@@ -219,7 +219,7 @@ const Home = () => {
                     </div>
                     <div className="img3">
                       <img
-                        src={img13}
+                        src={img6}
                         className="img-fluid img3 my-img"
                         alt="TechCreator Software Development Company"
                       />
@@ -481,7 +481,7 @@ const Home = () => {
               </div>
             </Fade>
           </div>
-
+{/* 
           <div className="row text-white  rounded">
             <Fade bottom delay={500} duration={2000}>
               <div className="col-10 mx-auto">
@@ -495,9 +495,9 @@ const Home = () => {
                       Everyone at TechCreator has been an excellent communicator
                       with no surprises in billing or delivery.
                     </p>
-                    {/* <div className="mb-5">
+                    <div className="mb-5">
                                         <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
-                                    </div> */}
+                                    </div>
                   </div>
                   <div className="col-lg-5 col-md-12 col-sm-12 header-img">
                     <div className="img13 mt-3">
@@ -507,15 +507,15 @@ const Home = () => {
                         alt="TechCreator Software House"
                       />
                     </div>
-                    {/* <div className="img14">
+                    <div className="img14">
                                                 <img src={img14} className="img-fluid" alt="img14" />
 
-                                              </div> */}
+                                              </div>
                   </div>
                 </div>
               </div>
             </Fade>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -593,9 +593,9 @@ const Home = () => {
                   <div className="col img-wrapper">
                     <img src={imgs3} alt="TechCreator" />
                   </div>
-                  <div className="col img-wrapper">
+                  {/* <div className="col img-wrapper">
                     <img src={imgs4} alt="TechCreator" />
-                  </div>
+                  </div> */}
                   <div className="col img-wrapper">
                     <img src={imgs5} alt="TechCreator" />
                   </div>

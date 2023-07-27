@@ -193,13 +193,13 @@ const About = () => {
       para: "The fact that they’ve been with us from the start and were patient, supportive, committed, and flexible is excellent.",
       btn: "Go To Website",
     },
-    {
-      img: imgpro15,
-      link: "https://dancing-vacherin-e90755.netlify.app/",
-      head: "Saloon",
-      para: "A spot where all your beauty appointments meet",
-      btn: "Go To Website",
-    },
+    // {
+    //   img: imgpro15,
+    //   link: "https://dancing-vacherin-e90755.netlify.app/",
+    //   head: "Saloon",
+    //   para: "A spot where all your beauty appointments meet",
+    //   btn: "Go To Website",
+    // },
   ];
   return (
     <>
@@ -651,7 +651,7 @@ const About = () => {
             </Fade>
           </div>
 
-          <div className="row text-white  rounded">
+          {/* <div className="row text-white  rounded">
             <Fade bottom delay={500} duration={2000}>
               <div className="col-10 mx-auto">
                 <div className="row bg-sam mt-5">
@@ -664,9 +664,9 @@ const About = () => {
                       Everyone at TechCreator has been an excellent communicator
                       with no surprises in billing or delivery.
                     </p>
-                    {/* <div className="mb-5">
+                    <div className="mb-5">
                                         <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
-                                    </div> */}
+                                    </div>
                   </div>
                   <div className="col-lg-5 col-md-12 col-sm-12 header-img">
                     <div className="img13 mt-3">
@@ -676,15 +676,15 @@ const About = () => {
                         alt="techcreator about"
                       />
                     </div>
-                    {/* <div className="img14">
+                    <div className="img14">
                                                 <img src={img14} className="img-fluid" alt="img14" />
 
-                                              </div> */}
+                                              </div>
                   </div>
                 </div>
               </div>
             </Fade>
-          </div>
+          </div> */}
         </div>
       </section>
 
