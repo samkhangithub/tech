@@ -38,16 +38,16 @@ const TopNav = () => {
             <img src={logo} />
           </NavLink>
           <Navbar.Toggle />
-          <Navbar.Collapse>
-            <Nav className="ms-auto">
+          <Navbar.Collapse >
+            <Nav  className="ms-auto">
               {menuData.map((item) => (
-                <NavLink to={item.path} key={item.id} className="nav-item">
-                  <div className="text-white">{item.name}</div>
+                <NavLink  to={item.path} key={item.id} className="nav-item" >
+                  <div className="text-white" >{item.name}</div>
                 </NavLink>
               ))}
             </Nav>
             <Nav className="ms-auto">
-              <NavLink to="/contact" className="btn-nav">
+              <NavLink  to="/contact" className="btn-nav">
                 CONTACT
               </NavLink>
             </Nav>
