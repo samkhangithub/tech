@@ -6,6 +6,9 @@ import patronimg from "../../image/petron.png";
 import saloonimg from "../../image/saloon.png";
 import imgsen1 from "../../image/saud.webp";
 import imgsen2 from "../../image/shehzadshah.webp";
+import imgteam14 from "../../image/Aqib.png";
+import imgteam4 from "../../image/saad.png";
+import imgteam1 from "../../image/Imran.png";
 import imgsen3 from "../../image/amir.webp";
 import imgsen4 from "../../image/roohullah.webp";
 import imgpro1 from "../../image/travcont.webp";
@@ -76,20 +79,20 @@ const About = () => {
       link: "https://www.linkedin.com/in/saudkhan0039/",
     },
     {
-      img: imgsen2,
+      img: imgteam14,
       title: "Full Stack Developer",
-      name: "Shehzad Shah",
+      name: "Aqib Khan",
     },
     {
-      img: imgsen3,
-      title: "Founder",
-      name: "Aamir Shehzad",
+      img: imgteam1,
+      title: "Full Stack Developer",
+      name: "Imran Khan",
       link: "https://pk.linkedin.com/in/aamir-shahzad-77ba95191?trk=public_profile_browsemap",
     },
     {
-      img: imgsen4,
-      title: "DevOps/Project Manager",
-      name: "Rooh Ullah",
+      img: imgteam4,
+      title: "Full Stack Developer",
+      name: "Saad Khan",
       link: "https://pk.linkedin.com/in/rooh-ullah-bpk?trk=public_profile_browsemap",
     },
   ];
@@ -499,7 +502,7 @@ const About = () => {
             <Fade bottom duration={2000}>
               <div className="col-10 mx-auto senior-main">
                 <div className="Senior">
-                  <h3>Senior Management</h3>
+                  <h3>Full Stack Developers</h3>
                   <p>Where Strategic decisions take place</p>
                 </div>
 
@@ -688,7 +691,7 @@ const About = () => {
         </div>
       </section>
 
-      <div className="proimg">
+      {/* <div className="proimg">
         <div className="col">
           <h2 className="pro-mains text-center my-5">Our Projects</h2>
         </div>
@@ -718,7 +721,7 @@ const About = () => {
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       <Career />
       <Footers />
     </>

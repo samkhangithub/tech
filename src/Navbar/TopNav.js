@@ -28,6 +28,10 @@ const TopNav = () => {
       path: "/blog",
       name: "Blog",
     },
+    {
+      path: "/portfolio",
+      name: "Portfolio",
+    },
   ];
 
   return (

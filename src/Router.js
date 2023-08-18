@@ -6,6 +6,7 @@ import Services from "./Componentss/Our Services/Services";
 import Contact from "./Componentss/Contacts/Contact";
 import Scrolltoup from "./Componentss/Scrool/Scrool";
 import Blog from "./Componentss/Blog/Blog";
+import Portfolio from "./Componentss/Portfolio/portfolio";
 import BlogContentPage from "./Componentss/BlogContentPage/BlogContentPage";
 import useFetch from "../src/hooks/useFetcgh";
 // import { BACKEND_URL, BACKEND_URL2 } from "./helper";
@@ -26,6 +27,7 @@ const RouterPage = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio/>} />
           <Route path="/blog" element={<Blog blogs={data ? data : ""} />} />
           <Route
             path="/blogc/:id"

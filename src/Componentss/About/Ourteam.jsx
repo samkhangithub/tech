@@ -31,12 +31,12 @@ const team = [
     name:"Imran Khan",
     title:"React Developer"
   },
-  {
-    img:imgteam2,
-    linkdin:"https://www.linkedin.com/in/hamid-khan-b47b1b261/",
-    name:"Hamid Khan",
-    title:"React Developer"
-  },
+  // {
+  //   img:imgteam2,
+  //   linkdin:"https://www.linkedin.com/in/hamid-khan-b47b1b261/",
+  //   name:"Hamid Khan",
+  //   title:"React Developer"
+  // },
   {
     img:imgteam3,
     linkdin:"https://www.linkedin.com/in/sameer-khan-660966251/",
@@ -61,12 +61,12 @@ const team = [
     name:"Ahmad Ali",
     title:"Angular Developer"
   },
-  {
-    img:imgteam7,
-    linkdin:"https://www.linkedin.com/in/zeeshan-khan-aa1026243/",
-    name:"Zeeshan Khan",
-    title:"React Developer"
-  },
+  // {
+  //   img:imgteam7,
+  //   linkdin:"https://www.linkedin.com/in/zeeshan-khan-aa1026243/",
+  //   name:"Zeeshan Khan",
+  //   title:"React Developer"
+  // },
   {
     img:imgteam8,
     linkdin:"https://www.linkedin.com/in/saudkhan0039/",
@@ -75,24 +75,24 @@ const team = [
     name:"Rehman Zeb Khan",
     title:"React Developer"
   },
-  {
-    img:imgteam9,
-    linkdin:"https://www.linkedin.com/in/ihtizaz-ahmad-716385255/",
-    name:"Ihtizaz Khan",
-    title:"Angular Developer"
-  },
+  // {
+  //   img:imgteam9,
+  //   linkdin:"https://www.linkedin.com/in/ihtizaz-ahmad-716385255/",
+  //   name:"Ihtizaz Khan",
+  //   title:"Angular Developer"
+  // },
   {
     img:imgteam10,
     linkdin:"https://www.linkedin.com/in/luqman-yousafzai-8a4744223",
     name:"Muhammad Luqman",
     title:"Angular Developer"
   },
-  {
-    img:imgteam11,
-    linkdin:"https://www.linkedin.com/in/muhammad-ayaz-4823b3251/",
-    name:"Ayaz Khan",
-    title:"React Developer"
-  },
+  // {
+  //   img:imgteam11,
+  //   linkdin:"https://www.linkedin.com/in/muhammad-ayaz-4823b3251/",
+  //   name:"Ayaz Khan",
+  //   title:"React Developer"
+  // },
   {
     img:imgteam12,
     linkdin:"https://www.linkedin.com/in/mustafa-zeb-72a180172/",

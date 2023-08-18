@@ -49,16 +49,17 @@ const cardInfo = [
     btn: "VIEW SERVICE DETAILS",
   },
   {
+    img: card3,
+    header: "SEO & Content Writing",
+    para: "Enhance your online visibility and engage your target audience through our expert SEO and content writing services tailored for TechCreator's unique identity.",
+  },
+  {
     img: card9,
     header: "Project Management",
     para: "Our experienced project managers work closely with clients to ensure that projects are completed on time, within budget, and to the highest standards.",
     btn: "VIEW SERVICE DETAILS",
   },
-  {
-    img: card3,
-    header: "Scrum Master",
-    para: "With a focus on effective communication and project management, our Scrum Masters ensure that projects stay on track and are completed on time and within budget.",
-  },
+ 
   {
     img: card6,
     header: "QA Testing",
@@ -163,7 +164,7 @@ const Services = () => {
         </div>
       </section>
 
-      <div class="container col-xxl-8 ">
+      {/* <div class="container col-xxl-8 ">
         <div class="row flex-lg-row align-items-center g-md-5 my-5">
           <div class="col-10 col-sm-8 col-lg-6 dev-img">
             <Fade left duration={2000}>
@@ -190,17 +191,7 @@ const Services = () => {
                   expertise to deliver high-quality solutions that exceed
                   your expectations.
                 </p>
-                {/* <div className="pb-5 see-btn">
-                  <a href="" className="dev-btn">SEE SERVICE <MdKeyboardArrowRight className="md_icon" /></a>
-                </div>
-                <div className="pt-3">
-                  <span>RELATED SERVICES  </span>
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start pt-5">
-                  <button type="button" class="btn btn-outline-secondary btn-my  px-4 me-md-2">DATA SERVICES</button>
-                  <button type="button" class="btn btn-outline-secondary  px-4">DATA SCIENCE</button>
-                  <button type="button" class="btn btn-outline-secondary  px-4">DEVELOPMENT</button>
-                </div> */}
+                
               </div>
             </Fade>
           </div>
@@ -238,17 +229,7 @@ const Services = () => {
                   today to learn more about our software product
                   discovery services.
                 </p>
-                {/* <div className="pb-5 see-btn">
-                  <a href="" className="dev-btn">SEE SERVICE  <MdKeyboardArrowRight className="md_icon" /></a>
-                </div>
-                <div className="pt-3 ">
-                  <span>RELATED SERVICES</span>
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start pt-5">
-                  <button type="button" class="btn btn-outline-secondary  px-4 me-md-2">USER INTERFACE</button>
-                  <button type="button" class="btn btn-outline-secondary  px-4">BRANDING</button>
-                  <button type="button" class="btn btn-outline-secondary  px-4">USER EXPERIENCE</button>
-                </div> */}
+                
               </div>
             </Fade>
           </div>
@@ -282,14 +263,12 @@ const Services = () => {
                   can help you augment your team with top-notch talent. Contact
                   us today to learn more about our talent augmentation services.
                 </p>
-                {/* <div className="pb-5 see-btn">
-                <a href="" className="dev-btn">SEE SERVICE  <MdKeyboardArrowRight className="md_icon" /></a>
-              </div> */}
+                
               </div>
             </Fade>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Card Jsx */}
       <section className="main">
@@ -297,7 +276,7 @@ const Services = () => {
           <Fade bottom duration={2000}>
             <div className="head">
               <h2 className="display-5 fw-bold lh-1 mb-3 text-primary ">
-                Our Expertise
+              Our Service
               </h2>
             </div>
           </Fade>
@@ -310,7 +289,7 @@ const Services = () => {
                       <img src={item.img} className="pt-3" />
                       <h3 className="pt-4">{item.header}</h3>
                       <span className="pt-4">{item.para}</span>
-                      {/* <a href="">{item.btn}  <MdKeyboardArrowRight className="md_icon" /></a> */}
+                      
                     </div>
                   </div>
                 </Fade>
