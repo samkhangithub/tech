@@ -1,5 +1,8 @@
 import react from "react"
-// import "./about.css";
+import "./portfolio.css";
+import React, { useState } from "react";
+import ReactPaginate from "react-paginate";
+// import "react-paginate/dist/react-paginate.css";
 import Fade from "react-reveal/Fade";
 import Career from "../Careers/Career";
 import Footers from "../Footers/Footer";
@@ -27,15 +30,28 @@ import imgpro20 from "../../image/image20.PNG";
 import imgpro21 from "../../image/image21.PNG";
 import imgpro22 from "../../image/image22.PNG";
 import imgpro23 from "../../image/image23.PNG";
-const portfolio=()=>{
+import imgpro24 from "../../image/image24.PNG";
+import imgpro25 from "../../image/image25.PNG";
+import imgpro26 from "../../image/image26.PNG";
+import imgpro27 from "../../image/image27.PNG";
+import imgpro28 from "../../image/image28.PNG";
+import imgpro29 from "../../image/image29.PNG";
+import imgpro30 from "../../image/image30.PNG";
+import imgpro31 from "../../image/image31.PNG";
+import imgpro32 from "../../image/image32.PNG";
+import imgpro33 from "../../image/image33.PNG";
+const Portfolio=()=>{
+  const itemsPerPage = 12;
+  const [currentPage, setCurrentPage] = useState(1);
+  
     const projectInfo = [
-        {
-          img: imgpro1,
-          link: "https://www.travcont.com/",
-          head: "Travcont",
-          para: "Travcont provide complete satisfaction for every traveler. We recognize that good service is more than competitive pricing",
-          btn: "Go To Website",
-        },
+        // {
+        //   img: imgpro1,
+        //   link: "https://www.travcont.com/",
+        //   head: "Travcont",
+        //   para: "Travcont provide complete satisfaction for every traveler. We recognize that good service is more than competitive pricing",
+        //   btn: "Go To Website",
+        // },
         {
           img: imgpro2,
           link: "https://risetech.pk/",
@@ -71,13 +87,13 @@ const portfolio=()=>{
           para: "Bubbles Laundry may need to upgrade its laundry facilities to improve the quality of its services and increase efficiency. ",
           btn: "Go To Website",
         },
-        {
-          img: imgpro7,
-          link: "https://www.behance.net/gallery/89606661/Mosafir-App-for-Mobilink-Jazz?tracking_source=project_owner_other_projects",
-          head: "Musafir App",
-          para: "Musafir App is easy to use for booking both International as well as domestic flights, hotel bookings, holidays & packages booking",
-          btn: "Go To Website",
-        },
+        // {
+        //   img: imgpro7,
+        //   link: "https://www.behance.net/gallery/89606661/Mosafir-App-for-Mobilink-Jazz?tracking_source=project_owner_other_projects",
+        //   head: "Musafir App",
+        //   para: "Musafir App is easy to use for booking both International as well as domestic flights, hotel bookings, holidays & packages booking",
+        //   btn: "Go To Website",
+        // },
         {
           img: imgpro8,
           link: "https://www.behance.net/gallery/92140709/Gratitude",
@@ -190,6 +206,83 @@ const portfolio=()=>{
           para: "we work with talent",
           btn: "Go To Website",
         },
+        {
+          img: imgpro24,
+          link: "https://liontrustspain.com/",
+          head: "Lion Trust Spain Property Service",
+          para: "Buying or selling a property on the Costa del Sol might seem a simple procedure.",
+          btn: "Go To Website",
+        },
+        {
+          img: imgpro25,
+          link: "https://stackpushtechnology.com/",
+          head: "stackpushtechnology Solutions Pvt Ltd",
+          para: "We are stackpushtechnology Solutions Pvt Ltd. We build Mobile Apps, Web Apps And Cloud Apps, that perform!",
+          btn: "Go To Website",
+        },
+        {
+          img: imgpro26,
+          link: "https://powerbikekc.com/",
+          head: "HIMIWAY ELECTRIC BIKE ACCESSORIES",
+          para: "Himiway electric bike accessories help you get more fun. Find favorite extras and upgrades for your electric fat bike",
+          btn: "Go To Website",
+        },
+        {
+          img: imgpro27,
+          link: "https://newsite.basit.agency/",
+          head: "Ace Painting Service",
+          para: "Ace Painting is a locally owned and operated painting company based in Michigan.",
+          btn: "Go To Website",
+        },
+        {
+          img: imgpro28,
+          link: "https://abdul.basit.agency/",
+          head: "ASPIRE THUDUNG",
+          para: "HIJAB COLLECTIONS",
+          btn: "Go To Website",
+        },
+        {
+          img: imgpro29,
+          link: "https://bookingshop.basit.agency/",
+          head: "Wedding Book Store",
+          para: "Creating A Beautiful And Memorable Wedding",
+          btn: "Go To Website",
+        },
+        {
+          img: imgpro30,
+          link: "https://restaurant.basit.agency/",
+          head: "Restaurant Website",
+          para: "Restaurant Website",
+          btn: "Go To Website",
+        },
+        {
+          img: imgpro30,
+          link: "https://restaurant.basit.agency/",
+          head: "Restaurant Website",
+          para: "Restaurant Website",
+          btn: "Go To Website",
+        },
+        {
+          img: imgpro31,
+          link: "https://transformrides.com/",
+          head: "Transformrides",
+          para: "Transformrides has been providing top-notch spare parts with the best quality standards for over a decade, earning...",
+          btn: "Go To Website",
+        },
+        {
+          img: imgpro32,
+          link: "https://hussu.pk/",
+          head: "Hussu Jewellers",
+          para: "At Hussu Jewellers, we believe that jewelry is not just an accessory but an expression of one’s personality and style.",
+          btn: "Go To Website",
+        },
+        {
+          img: imgpro33,
+          link: "https://aventon.basit.agency/",
+          head: "Yacht Management Services",
+          para: "A-Team Captains Yacht Management Services Newest Headquarters is located in Fort Pierce, next to Derecktors....",
+          btn: "Go To Website",
+        },
         // {
         //   img: imgpro22,
         //   link: "https://repaircms.com/en/",
@@ -198,6 +291,13 @@ const portfolio=()=>{
         //   btn: "Go To Website",
         // },
       ];
+      const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const displayedProjects = projectInfo.slice(startIndex, endIndex);
+
+  const handlePageChange = (selectedPage) => {
+    setCurrentPage(selectedPage.selected + 1);
+  };
     return(
         <>
         <Helmet>
@@ -238,16 +338,21 @@ const portfolio=()=>{
       </section>
       <div className="">
         <div className="col mt-5">
-          <h2 className="text-center my-5 fw-bold lh-1 mb-3 text-primary">Our Projects</h2>
+          <h2 className="text-center my-5 fw-bold lh-1 mb-3 text-primary">
+            Our Projects
+          </h2>
         </div>
         <div className="container d-md-flex mt-5">
           <div className="row">
-            {projectInfo.map((projectInfo) => {
+            {displayedProjects.map((projectInfo, index) => {
               return (
-                <div className="col-md-4 col-md-6 col-lg-4 cards container">
+                <div
+                  key={index}
+                  className="col-md-4 col-md-6 col-lg-4 cards container"
+                >
                   <img
                     src={projectInfo.img}
-                    alt="techCreator's UX/UI design"
+                    alt={projectInfo.head}
                     className=""
                   />
                   <div className="cards-body">
@@ -266,10 +371,23 @@ const portfolio=()=>{
             })}
           </div>
         </div>
+        <div className="text-center mt-4">
+          <ReactPaginate
+            previousLabel={"Previous"}
+            nextLabel={"Next"}
+            pageCount={Math.ceil(projectInfo.length / itemsPerPage)}
+            onPageChange={handlePageChange}
+            containerClassName={"pagination"}
+            previousLinkClassName={"pagination__link"}
+            nextLinkClassName={"pagination__link"}
+            disabledClassName={"pagination__link--disabled"}
+            activeClassName={"pagination__link--active"}
+          />
+        </div>
       </div>
       <Career />
       <Footers />
         </>
     )
 }
-export default portfolio
+export default Portfolio
