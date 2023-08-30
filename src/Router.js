@@ -23,15 +23,7 @@ const RouterPage = () => {
       <Scrolltoup />
       <TopNav />
       {/* Frontity Menu Link */}
-      <nav>
-        <ul>
-          <li>
-            {/* Use Frontity's route for Home */}
-            <Link to="/">new (Frontity)</Link>
-          </li>
-          {/* Add more Frontity menu links here */}
-        </ul>
-      </nav>
+      
 
       <Routes>
         {/* React Router Routes */}
