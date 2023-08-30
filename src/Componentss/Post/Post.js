@@ -57,6 +57,7 @@ function Post() {
   const metadata = postMetadata[slug] || {};
 
   return (
+    <div className='main-class'>
     <div className="post-container">
       <Helmet>
         <title>{metadata.title || post.title.rendered}</title>
@@ -67,6 +68,7 @@ function Post() {
       </Helmet>
       <h2>{post.title.rendered}</h2>
       <div className="post-content" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+    </div>
     </div>
   );
 }
