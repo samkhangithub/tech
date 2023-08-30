@@ -1,4 +1,4 @@
-import img1 from "../../image/hero-img.png";
+import img1 from "../../image/bgs.png";
 import imgsoft from "../../image/img1.webp";
 import img3 from "../../image/repair1.png";
 import img4 from "../../image/img4.webp";
@@ -80,56 +80,37 @@ const Home = () => {
         ></meta>
         <link rel="canonical" href="/" />
       </Helmet>
-      <section
-        id="header"
-        className="d-flex align-items-center homeimg text-white"
-      >
-        <div className="container-fluid dot-img">
-          <div className="row">
-            <div className="col-10 mx-auto home-main">
-              <div className="row">
-                <Fade left duration={2000}>
-                  <div className="min-head col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column ">
-                    <h1>Developing Excellent Digital Solutions</h1>
-
-                    <p className="pt-2 lead">
-                      In today's digital age, having the right software can make
-                      all the difference in driving your business forward. At
-                      TechCreator, we understand the importance of technology in
-                      driving business success, and that's why we are dedicated
-                      to providing innovative software solutions to help our
-                      clients achieve their goals.
-                    </p>
-                    <div className="mt-3 col-sm-12">
-                      <button
-                        className="btn-con1"
-                        onClick={() => navigate("/contact")}
-                      >
-                        ContactUs <MdKeyboardArrowRight  style={{width: "20px", height:"20px"}}/>
-                      </button>
+      <section id="header" className="d-flex align-items-center homeimg text-white">
+    <div className="container-fluid">
+        <div className="row">
+            <div className="col-12 col-md-10 mx-auto home-main">
+                <div className="container1">
+                    <Fade left duration={2000}>
+                        <div className="min-head col-lg-12 col-md-10 col-sm-12 pt-5 pt-lg-0 d-flex justify-content-center flex-column text-center">
+                            <h1 className="text-center col-lg-7 align-center mx-auto">We <span className="text-textColor">Automate</span> Your Business With
+                                <span className="text-textColor"> Software Solutions</span>
+                            </h1>
+                            <p className="pt-2 lead col-lg-10 mx-auto">
+                                At TechCreator, We Don't Just Understand Business - We Anticipate
+                                its Needs. Our Mission is to Empower Your Growth Journey With
+                                Cutting-Edge Automation Solutions.
+                            </p>
+                            <div className="mt-3 col-sm-6 d-flex col-lg-12 justify-content-center">
+                                <button className="btn btn-con1" onClick={() => navigate("/contact")}>
+                                    AUTOMATE YOUR BUSINESS
+                                </button>
+                            </div>
+                        </div>
+                    </Fade>
+                    <div className="col-12 col-lg-8  lg:h-[400px] mx-auto col-md-12 col-sm-12 mb-5 animation">
+                        <img src={img1}  style={{ boxShadow: '2px 2px 20px #8c40d4' }} className="img-fluid" alt="TechCreator software company" />
                     </div>
-                  </div>
-                </Fade>
-                <div className="col-lg-5 col-md-12 col-sm-12 mb-5 animation">
-                  <img
-                    src={img1}
-                    className="img-fluid animation"
-                    alt="TechCreator software company"
-                  />
-                  <div className="mt-5 head-btn col-sm-12">
-                    <button
-                      className="btn-con2"
-                      onClick={() => navigate("/contact")}
-                    >
-                      Contact us <MdKeyboardArrowRight />
-                    </button>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </section>
+    </div>
+</section>
+
 
       <section
         id="header2"
@@ -481,7 +462,7 @@ const Home = () => {
               </div>
             </Fade>
           </div>
-{/* 
+          {/* 
           <div className="row text-white  rounded">
             <Fade bottom delay={500} duration={2000}>
               <div className="col-10 mx-auto">
