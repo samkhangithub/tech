@@ -19,6 +19,7 @@ import imgteam15 from "../../image/basit.png";
 import imgteam16 from "../../image/hamza.png";
 import imgteam17 from "../../image/inam.png";
 import imgteam18 from "../../image/Sameer2.png";
+import imgteam19 from "../../image/ayaz-removebg-preview.jpg";
 import { GrLinkedinOption } from "react-icons/gr";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -29,6 +30,12 @@ const team = [
     img:imgteam1,
     linkdin:"https://www.linkedin.com/in/imran-khan-160446216/",
     name:"Imran Khan",
+    title:"React Developer"
+  },
+  {
+    img:imgteam19,
+    linkdin:"https://www.linkedin.com/in/ayazcoder/",
+    name:"Ayaz Khan",
     title:"React Developer"
   },
   // {
