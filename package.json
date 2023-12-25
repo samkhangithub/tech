@@ -13,6 +13,7 @@
     "emailjs": "^4.0.1",
     "emailjs-com": "^3.2.0",
     "formik": "^2.2.9",
+    "gsap": "^3.12.4",
     "netlify": "^13.1.2",
     "react": "^18.2.0",
     "react-3-carousel": "^1.0.6",
@@ -31,6 +32,7 @@
     "sass": "^1.58.3",
     "slick-carousel": "^1.8.1",
     "swiper": "^9.0.5",
+    "three": "^0.160.0",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
@@ -60,7 +62,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
-    "node-sass": "^8.0.0",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.3.3"
   }

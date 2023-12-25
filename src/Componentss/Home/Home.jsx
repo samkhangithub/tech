@@ -36,6 +36,7 @@ import Fade from "react-reveal/Fade";
 // import cardimg1 from "../../image/saloonlogo.png";
 import cardimg2 from "../../image/Patronlogo.png";
 import cardimg3 from "../../image/logo-white.png";
+import Sphere from "./Sphere";
 const boxInfo = [
   // {
   //   img: cardimg1,
@@ -80,37 +81,56 @@ const Home = () => {
         ></meta>
         <link rel="canonical" href="/" />
       </Helmet>
-      <section id="header" className="d-flex align-items-center homeimg text-white">
-    <div className="container-fluid">
-        <div className="row">
-            <div className="col-12 col-md-10 mx-auto home-main">
-                <div className="container1">
-                    <Fade left duration={2000}>
-                        <div className="min-head col-lg-12 col-md-10 col-sm-12 pt-5 pt-lg-0 d-flex justify-content-center flex-column text-center">
-                            <h1 className="text-center col-lg-7 align-center mx-auto">We <span className="text-textColor">Automate</span> Your Business With
-                                <span className="text-textColor"> Software Solutions</span>
-                            </h1>
-                            <p className="pt-2 lead col-lg-10 mx-auto">
-                                At TechCreator, We Don't Just Understand Business - We Anticipate
-                                its Needs. Our Mission is to Empower Your Growth Journey With
-                                Cutting-Edge Automation Solutions.
-                            </p>
-                            <div className="mt-3 col-sm-6 d-flex col-lg-12 justify-content-center">
-                                <button className="btn btn-con1" onClick={() => navigate("/contact")}>
-                                    AUTOMATE YOUR BUSINESS
-                                </button>
-                            </div>
-                        </div>
-                    </Fade>
-                    <div className="col-12 col-lg-8  lg:h-[400px] mx-auto col-md-12 col-sm-12 mb-5 animation">
-                        <img src={img1}  style={{ boxShadow: '2px 2px 20px #8c40d4' }} className="img-fluid" alt="TechCreator software company" />
+      <section
+        id="header"
+        className="d-flex align-items-center homeimg text-white"
+      >
+        <div className="container-fluid">
+          <div className="row-cols">
+            <div className="col-lg-7  home-main">
+              <div className="container1">
+                <Fade left duration={2000}>
+                  <div className="min-head col-lg-12 col-md-10 col-sm-12 pt-5 pt-lg-0 d-flex justify-content-center flex-column text-center">
+                    <h1 className="text-center col-lg-7 align-center mx-auto">
+                      We <span className="text-textColor">Automate</span> Your
+                      Business With
+                      <span className="text-textColor">
+                        {" "}
+                        Software Solutions
+                      </span>
+                    </h1>
+                    <p className="pt-2 lead col-lg-10 mx-auto">
+                      At TechCreator, We Don't Just Understand Business - We
+                      Anticipate its Needs. Our Mission is to Empower Your
+                      Growth Journey With Cutting-Edge Automation Solutions.
+                    </p>
+                    <div className="mt-3 col-sm-6 d-flex col-lg-12 justify-content-center">
+                      <button
+                        className="btn btn-con1"
+                        onClick={() => navigate("/contact")}
+                      >
+                        AUTOMATE YOUR BUSINESS
+                      </button>
                     </div>
+                  </div>
+                </Fade>
+                <div className="col-12 col-lg-8  lg:h-[400px] mx-auto col-md-12 col-sm-12 mb-5 animation">
+                  <img
+                    src={img1}
+                    style={{ boxShadow: "2px 2px 20px #8c40d4" }}
+                    className="img-fluid"
+                    alt="TechCreator software company"
+                  />
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
 
+            <div className="sphere ">
+              <Sphere />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section
         id="header2"
@@ -173,19 +193,6 @@ const Home = () => {
                       needs and develop software solutions that streamline
                       operations, increase efficiency, and drive growth.
                     </p>
-                    {/* <div className="mt-3 mb-5">
-                                            <a href="" className="Getbtn">SEE SERVICES <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
-                                        </div> */}
-                    {/* <FaQuoteLeft
-                      size={30}
-                      style={{ color: "lightslategray" }}
-                    />
-                    <p className="mt-5 Every">
-                      {" "}
-                      Everyone at TechCreator has been an excellent communicator
-                      with no surprises in billing or delivery.
-                    </p>
-                    <p className="CTO">Arben, CEO, Sallon</p> */}
                   </div>
                 </Fade>
                 <div className="col-lg-5 col-md-12 col-sm-12  header-img mb-5">
@@ -261,17 +268,6 @@ const Home = () => {
                       processes,<b>TechCreator software company</b> has the
                       expertise and experience to help you achieve your goals.
                     </p>
-                    {/* <div className="mt-3 mb-5">
-                                            <a href="" className="Getbtn">SEE SERVICES  <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
-                                        </div> */}
-                    {/* <FaQuoteLeft
-                      size={30}
-                      style={{ marginLeft: "130px", color: "lightslategray" }}
-                    />
-                    <p className="mt-5 Every">
-                      TechCreator is very good at what they do.
-                    </p>
-                    <p className="CTO">Norman moore, CEO, PetronWorks</p> */}
                   </div>
                 </Fade>
               </div>
@@ -293,18 +289,6 @@ const Home = () => {
                       businesses augment their teams with top talent to achieve
                       their software development goals.
                     </p>
-                    {/* <div className="mt-3 mb-5">
-                                            <a href="" className="Getbtn">SEE SERVICES <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
-                                        </div> */}
-                    {/* <FaQuoteLeft
-                      size={30}
-                      style={{ color: "lightslategray" }}
-                    />
-                    <p className="mt-5 Every">
-                      The fact that they’ve been with us from the start and were
-                      patient, supportive, committed, and flexible is excellent.
-                    </p>
-                    <p className="CTO">Zafar, CEO, Repaircms</p> */}
                   </div>
                 </Fade>
                 <div className="col-lg-5 col-md-12 col-sm-12  header-img">
