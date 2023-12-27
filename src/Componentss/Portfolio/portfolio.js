@@ -385,8 +385,7 @@ const Portfolio=()=>{
           />
         </div>
       </div>
-      <Career />
-      <Footers />
+     
         </>
     )
 }

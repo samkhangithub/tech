@@ -54,9 +54,10 @@ const Sphere = () => {
       transparent: true, // Enable transparency
       opacity: 1.0, // Set the initial opacity
     });
-    const sphere = new THREE.Points(geometry, material);
+      const sphere = new THREE.Points(geometry, material);
     sphereRef.current = sphere;
-    scene.add(sphere);
+      scene.add(sphere);
+      
 
     // Set camera position
     camera.position.z = 20;
@@ -68,11 +69,11 @@ const Sphere = () => {
     // Mouse variables
     let mouseX = 0;
     let mouseY = 0;
-    let isMouseDown = false;
+      let isMouseDown = false;
 
     // Mousemove event listener
     document.addEventListener("mousemove", (event) => {
-      mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+      mouseX = (event.clientX / window.innerWidth) * 2 + 1;
       mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
     });
 
@@ -80,6 +81,10 @@ const Sphere = () => {
     document.addEventListener("mousedown", () => {
       isMouseDown = true;
     });
+      
+      
+       
+      
 
     // Mouseup event listener
     document.addEventListener("mouseup", () => {
@@ -103,6 +108,8 @@ const Sphere = () => {
         sphere.rotation.x += 0.01;
         sphere.rotation.y += 0.01;
       }
+        
+       
 
       renderer.render(scene, camera);
     };
@@ -126,15 +133,37 @@ const Sphere = () => {
 
     // Clean up
     return () => {
-      document
-        .getElementById("scene-container")
-        .removeChild(renderer.domElement);
+     
+       const sceneContainer = document.getElementById("scene-container");
+       if (sceneContainer && sceneContainer.contains(renderer.domElement)) {
+         sceneContainer.removeChild(renderer.domElement);
+       }
+    
     };
   }, []);
 
   // ...
 
-  return <div id="scene-container" style={{}} />;
+    return (
+      <>
+        <div
+          id="scene-container"
+          style={{
+            width: "100%",
+            display: "flex",
+            //   position: "absolute",
+            marginRight: "100px",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "996px", // Set the height to your desired size
+            overflow: "hidden",
+          }}
+        />
+         
+        
+      </>
+    );
 };
 
 export default Sphere;

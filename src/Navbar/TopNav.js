@@ -1,54 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./TopNav.css";
-import logo from "../image/techlogo.png";
+import logo from "../image/MoscarLogo.png";
 
 const TopNav = () => {
-  const menuData = [
-    {
-      path: "/",
-      name: "Home",
-    },
-    {
-      path: "/about",
-      name: "About",
-    },
-    {
-      path: "/services",
-      name: "Services",
-    },
-    // {
-    //   path: "/contact",
-    //   name: "Contact",
-    // },
-    {
-      path: "/blog",
-      name: "Blog",
-    },
-    {
-      path: "/portfolio",
-      name: "Portfolio",
-    },
-  ];
+  
 
+
+  const [fix, setFix] = useState(false)
+
+  const setFixed = () => {
+    if (window.screenY >= 300) {
+      setFix(true)
+    }
+    else {
+      setFix(false)
+    }
+  }
+  window.addEventListener("scroll", setFixed)
   return (
     <>
-      <Navbar expand="lg" fixed="top" className="main-nav py-2 bg-[#00000]">
+      <Navbar expand="lg" fixed="top" className={" navbar-inverse main-nav py-2 bg - [#00000]"}>
         <Container>
-          <NavLink to="/" className="logo">
-            <img src={logo} />
+          <NavLink  to="/" className="logo">
+            <img  src={logo} />
           </NavLink>
           <Navbar.Toggle />
           <Navbar.Collapse >
             <Nav  className="ms-auto">
-              {menuData.map((item) => (
-                <NavLink  to={item.path} key={item.id} className="nav-item" >
-                  <div className="text-white" >{item.name}</div>
-                </NavLink>
-              ))}
+              {/* {menuData.map((item) => ( */}
+                <NavLink  to='/'  className="nav-item" >
+                  <div className="text-white" >Home</div>
+              </NavLink>
+              
+              <NavLink to='/about' className="nav-item" >
+                <div className="text-white" >About</div>
+              </NavLink>
+
+              <NavLink to='/services' className="nav-item" >
+                <div className="text-white" >Services </div>
+              </NavLink>
+
+              <NavLink to='/portfolio' className="nav-item" >
+                <div className="text-white" >Portfolio</div>
+              </NavLink>
+              {/* ))} */}
             </Nav>
             <Nav className="ms-auto">
               <NavLink  to="/contact" className="btn-nav">

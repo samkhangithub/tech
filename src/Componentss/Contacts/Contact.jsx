@@ -304,8 +304,12 @@ const Contact = () => {
                             ADDRESS
                           </h3>
                           <p className="text-white op-7">
-                            TechCreator Private Limited near Muneer Hospital,
-                            Mardan Road Swabi.
+                            Egypt 3/10 Gate: B - Misr Development Buildings, El
+                            Sefarat District, Nasr City, Cairo – Egypt.
+                          </p>
+                          <p className="text-white op-7">
+                            Saudi Arabia Al Murjanah Tower, Prince Sultan Road,
+                            Jeddah - Saudi Arabia.
                           </p>
                           <h3
                             className="text-white font-weight-light mb-3 mt-4"
@@ -314,9 +318,10 @@ const Contact = () => {
                             CALL US
                           </h3>
                           <p className="text-white op-7">
-                            +923488123407
-                            <br />
-                            {/* 03485422181{" "} */}
+                            +2 011 017 20558 <br />
+                          </p>
+                          <p className="text-white op-7">
+                            info@moscar-bs.com <br />
                           </p>
                           <div className="col-md-3 col-sm-12 col-xs-12 text-center">
                             <div className="">
@@ -358,274 +363,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
-      <Footers />
     </>
   );
 };
 
 export default Contact;
 
-// import React, { useRef, useState } from "react";
-// import emailjs from "@emailjs/browser";
-// import "./contactus.css";
-
-// //validation
-
-// //formid and yup
-// import { Formik, Form, ErrorMessage } from "formik";
-// import * as yup from "yup";
-// import { Helmet } from "react-helmet";
-
-// function Contactuswithouthelmet() {
-//   const [message, setSentMessage] = useState(false);
-//   const [done, setDone] = useState(false);
-//   const form = useRef();
-
-//   const defaultValue = {
-//     name: "",
-//     email: "",
-//     message: "",
-//     phone: "",
-//     location: "",
-//   };
-
-//   const validationSchema = yup.object().shape({
-//     name: yup.string().required("Please enter your name"),
-//     email: yup
-//       .string()
-//       .required("Please enter your valid email")
-//       .email("please enter valid email"),
-//     location: yup.string().required("please enter your location"),
-//     phone: yup.number().required(" please enter your phone number"),
-//     message: yup.string().required("At least 12 characters required"),
-//   });
-
-//   const handleSubmit = (values) => {
-//     console.log("values", values);
-//   };
-
-//   const sendEmail = (e) => {
-//     emailjs
-//       .sendForm(
-//         "service_ke6l7t9",
-//         "template_az7509f",
-//         form.current,
-//         "YVdl6iNn7uMxsZU4r"
-//       )
-//       .then(
-//         (result) => {
-//           console.log(result.text);
-//           setSentMessage(true);
-//           setTimeout(() => {
-//             setSentMessage(false);
-//           }, 2000);
-//         },
-//         (error) => {
-//           console.log(error.text);
-//         }
-//       );
-//     document.getElementById("name").value = "";
-//     document.getElementById("email").value = "";
-//     document.getElementById("phone").value = "";
-//     document.getElementById("location").value = "";
-//     document.getElementById("message").value = "";
-//   };
-//   return (
-//     <div>
-//       <div
-//         className="contact2"
-//         style={{
-//           backgroundImage:
-//             "url(https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/map.jpg)",
-//         }}
-//         id="contact"
-//       >
-//         <div className="container">
-//           <div className="row contact-container">
-//             <div className="col-lg-12">
-//               <div className="card card-shadow border-0 mb-4">
-//                 <div className="row">
-//                   <div className="col-lg-8">
-//                     <div className="contact-box p-4">
-//                       <h4 className="title">Contact Us</h4>
-//                       <Formik
-//                         initialValues={defaultValue}
-//                         validationSchema={validationSchema}
-//                         onSubmit={sendEmail}
-//                       >
-//                         {({
-//                           values,
-//                           errors,
-//                           touched,
-//                           handleChange,
-//                           handleBlur,
-//                           handleSubmit,
-//                           isSubmitting,
-//                         }) => (
-//                           <form onSubmit={handleSubmit} ref={form}>
-//                             <div className="row">
-//                               <div className="col-lg-6">
-//                                 <div className="form-group mt-3">
-//                                   <input
-//                                     className="form-control"
-//                                     type="text"
-//                                     placeholder="Name"
-//                                     name="name"
-//                                     id="name"
-//                                     onChange={handleChange}
-//                                     onBlur={handleBlur}
-//                                   />
-//                                   <p className="text-danger">
-//                                     <ErrorMessage name="name" />
-//                                   </p>
-//                                 </div>
-//                               </div>
-//                               <div className="col-lg-6">
-//                                 <div className="form-group mt-3">
-//                                   <input
-//                                     className="form-control"
-//                                     type="text"
-//                                     placeholder="Email"
-//                                     id="email"
-//                                     name="email"
-//                                     onChange={handleChange}
-//                                     onBlur={handleBlur}
-//                                   />
-//                                   <p className="text-danger">
-//                                     <ErrorMessage name="email" />
-//                                   </p>
-//                                 </div>
-//                               </div>
-//                               <div className="col-lg-6">
-//                                 <div className="form-group mt-3">
-//                                   <input
-//                                     className="form-control"
-//                                     type="text"
-//                                     placeholder="Phone"
-//                                     id="phone"
-//                                     name="phone"
-//                                     onChange={handleChange}
-//                                     onBlur={handleBlur}
-//                                   />
-//                                   <p className="text-danger">
-//                                     <ErrorMessage name="phone" />
-//                                   </p>
-//                                 </div>
-//                               </div>
-//                               <div className="col-lg-6">
-//                                 <div className="form-group mt-3">
-//                                   <input
-//                                     className="form-control"
-//                                     type="text"
-//                                     placeholder="Location"
-//                                     id="location"
-//                                     name="location"
-//                                     onChange={handleChange}
-//                                     onBlur={handleBlur}
-//                                   />
-//                                   <p className="text-danger">
-//                                     <ErrorMessage name="location" />
-//                                   </p>
-//                                 </div>
-//                               </div>
-//                               <div className="col-lg-12">
-//                                 <div className="form-group mt-3">
-//                                   <input
-//                                     className="form-control"
-//                                     type="text"
-//                                     placeholder="Message"
-//                                     id="message"
-//                                     name="message"
-//                                     onChange={handleChange}
-//                                     onBlur={handleBlur}
-//                                   />
-//                                   <p className="text-danger">
-//                                     <ErrorMessage name="message" />
-//                                   </p>
-//                                 </div>
-//                               </div>
-//                               <div className="col-lg-12">
-//                                 <button
-//                                   type="submit"
-//                                   className="btn btn-danger-gradiant mt-3 mb-3 text-white border-0 py-2 px-3"
-//                                   disabled={isSubmitting}
-//                                 >
-//                                   <span>
-//                                     {" "}
-//                                     SUBMIT NOW <i className="ti-arrow-right" />
-//                                   </span>
-//                                 </button>
-//                               </div>
-//                             </div>
-//                           </form>
-//                         )}
-//                       </Formik>
-//                       {message && (
-//                         <p
-//                           className="contact-box-text"
-//                           style={{ color: "black" }}
-//                         >
-//                           Thank you for Contacting us. We will get in touch with
-//                           you as soon as possible.
-//                         </p>
-//                       )}
-//                     </div>
-//                   </div>
-//                   <div
-//                     className="col-lg-4 bg-image"
-//                     style={{
-//                       backgroundImage:
-//                         "url(https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/1.jpg)",
-//                     }}
-//                   >
-//                     <div className="detail-box p-4">
-//                       <h5 className="text-white font-weight-light mb-3">
-//                         ADDRESS
-//                       </h5>
-//                       <p className="text-white op-7">
-//                         Sherdad Dheri Village Maneri Payan,
-//                         <br /> Swabi, Khyber Pakhtunkhwa
-//                       </p>
-//                       <h5 className="text-white font-weight-light mb-3 mt-4">
-//                         CALL US
-//                       </h5>
-//                       <p className="text-white op-7">
-//                         +923488123407
-//                         <br />
-//                         {/* 03485422181{" "} */}
-//                       </p>
-//                       <div className="round-social light">
-//                         <a
-//                           href="#"
-//                           className="ml-0 text-decoration-none text-white border border-white rounded-circle"
-//                         >
-//                           <i className="icon-social-facebook" />
-//                         </a>
-//                         <a
-//                           href="#"
-//                           className="text-decoration-none text-white border border-white rounded-circle"
-//                         >
-//                           <i className="icon-social-twitter" />
-//                         </a>
-//                         <a
-//                           href="#"
-//                           className="text-decoration-none text-white border border-white rounded-circle"
-//                         >
-//                           <i className="icon-social-youtube" />
-//                         </a>
-//                       </div>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-
-//     </div>
-//   );
-// }
-
-// export default Contactuswithouthelmet;

@@ -6,6 +6,12 @@
 
 }
 
+.fixed {
+	background-color: white;
+	border-color: red;
+	border-width: 1px solid red;
+}
+
 .main-nav{
 	padding: 10px;
 }

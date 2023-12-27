@@ -28,22 +28,12 @@ import Career from "../Careers/Career";
 import Footers from "../Footers/Footer";
 import { useNavigate } from "react-router-dom";
 import Fade from "react-reveal/Fade";
-// import { FaFacebook } from "react-icons/fa";
-// import { FaInstagram } from "react-icons/fa";
-// import { FaLinkedinIn } from "react-icons/fa";
-// import { GrTwitter } from "react-icons/gr";
-
-// import cardimg1 from "../../image/saloonlogo.png";
+import Typewriter from "typewriter-effect";
 import cardimg2 from "../../image/Patronlogo.png";
 import cardimg3 from "../../image/logo-white.png";
 import Sphere from "./Sphere";
 const boxInfo = [
-  // {
-  //   img: cardimg1,
-  //   para: "Everyone at TechCreator has been an excellent communicator with no surprises in billing or delivery.",
-  //   link: "Arben",
-  //   span: "Founder & CEO",
-  // },
+
   {
     img: cardimg3,
     para: "TechCreator's innovative software solutions have helped us streamline our operations and improve our customer service.",
@@ -64,7 +54,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title data-react-helmet="true">Techcreator Software Company</title>
+        <title data-react-helmet="true">Moscar Software Company</title>
         <meta
           name="description"
           content="TechCreator is a leading technology software company that specializes in custom software development for businesses worldwide. Contact us today to learn more"
@@ -86,21 +76,32 @@ const Home = () => {
         className="d-flex align-items-center homeimg text-white"
       >
         <div className="container-fluid">
-          <div className="row-cols">
-            <div className="col-lg-7  home-main">
+          <div className=" row row-cols">
+            <div className="col-lg-6 col-md-10 col-sm-4 mx-auto  home-main">
               <div className="container1">
                 <Fade left duration={2000}>
                   <div className="min-head col-lg-12 col-md-10 col-sm-12 pt-5 pt-lg-0 d-flex justify-content-center flex-column text-center">
-                    <h1 className="text-center col-lg-7 align-center mx-auto">
-                      We <span className="text-textColor">Automate</span> Your
-                      Business With
+                    <h1 className="text-center col-lg-12 align-center mx-auto">
+                      YOUR TRUSTED PARTNER FOR EXCELLENCE IN
+                      {/* <span className="text-textColor">Mission</span>  */}
                       <span className="text-textColor">
-                        {" "}
-                        Software Solutions
+                        <Typewriter
+                          options={{
+                            autoStart: true,
+                            loop: true,
+                            delay: 50,
+                            strings: [
+                              "GLOBAL IT OUTSOURCING",
+                              "Odoo ERP SOLUTIONS",
+                              "EMPLOYER OF RECORD – EOR",
+                              "OUTSOURCING CALL CENTER",
+                            ],
+                          }}
+                        />
                       </span>
                     </h1>
                     <p className="pt-2 lead col-lg-10 mx-auto">
-                      At TechCreator, We Don't Just Understand Business - We
+                      At Moscar, We Don't Just Understand Business - We
                       Anticipate its Needs. Our Mission is to Empower Your
                       Growth Journey With Cutting-Edge Automation Solutions.
                     </p>
@@ -125,7 +126,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="sphere ">
+            <div className="sphere col-lg-5 col-md-0 col-sm-0">
               <Sphere />
             </div>
           </div>
@@ -446,41 +447,6 @@ const Home = () => {
               </div>
             </Fade>
           </div>
-          {/* 
-          <div className="row text-white  rounded">
-            <Fade bottom delay={500} duration={2000}>
-              <div className="col-10 mx-auto">
-                <div className="row bg-sam mt-5">
-                  <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                    <p className="petro">Sallon</p>
-                    <p className="mt-2 Plat">
-                      A spot where all your beauty appointments meet
-                    </p>
-                    <p className="we lead">
-                      Everyone at TechCreator has been an excellent communicator
-                      with no surprises in billing or delivery.
-                    </p>
-                    <div className="mb-5">
-                                        <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
-                                    </div>
-                  </div>
-                  <div className="col-lg-5 col-md-12 col-sm-12 header-img">
-                    <div className="img13 mt-3">
-                      <img
-                        src={saloonimg}
-                        className="img-fluid pt-5"
-                        alt="TechCreator Software House"
-                      />
-                    </div>
-                    <div className="img14">
-                                                <img src={img14} className="img-fluid" alt="img14" />
-
-                                              </div>
-                  </div>
-                </div>
-              </div>
-            </Fade>
-          </div> */}
         </div>
       </section>
 
@@ -613,8 +579,7 @@ const Home = () => {
         </div>
       </div>
 
-      <Career />
-      <Footers />
+     
     </>
   );
 };

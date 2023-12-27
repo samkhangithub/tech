@@ -233,17 +233,28 @@ const About = () => {
 
                   <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
                     <p className="we-about lead">
-                      At TechCreator, we pride ourselves on creating custom
-                      software development solutions that help businesses
-                      achieve their unique objectives. Our expertise in the
-                      latest technologies and industry best practices allows us
-                      to create solutions that are scalable, reliable, and easy
-                      to use. Whether it's developing a custom software
-                      application, implementing a data analytics solution, or
-                      creating an intuitive TechCreator's UX/UI design,
-                      TechCreator has the expertise to help businesses succeed.
-                      Contact us today to learn more about our custom software
-                      development solutions.
+                      We are Moscar Business Solutions who partner with
+                      high-growth organizations to develop their people
+                      strategy; source and hire key talent; and, coach their
+                      senior executives to build emotionally intelligent leaders
+                      and create high-performing teams. Our clients span the
+                      globe from Egypt, Gulf & Europe from blue-chip
+                      multinationals to owner-led start-ups to not-for-profit
+                      organizations. We thrive in fast-paced challenging
+                      environments where our clients are experiencing growth and
+                      hyper-growth; transformation and turnaround; and
+                      internationalization. At MBS, we know that people are the
+                      cornerstone to a company’s success. Great strategies,
+                      visions, and amazing products won’t yield results, revenue
+                      or customers, without the right people who have the right
+                      growth mindset. We help companies break new ground, plant
+                      new roots, and build a solid people foundation in new
+                      markets—person by person, team by team. You focus on the
+                      product; we focus on the people and together we’ll build
+                      the pinnacle platform for international success. Working
+                      with MBS we believe in helping companies build strong
+                      people foundations to enable companies and their teams to
+                      not only be effective today but long into the future.
                     </p>
                   </div>
                 </div>
@@ -313,97 +324,8 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* 
-            <section id="header3" className="d-flex align-items-center bg-light text-dark">
 
-                <div className="container-fluid ">
-                    <div className="row">
-                        <div className="col-10 mx-auto">
-                            <div className="row">
-                                <div className="col-lg-6 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                                    <div className='triangleimg1'>
-                                        <img src={img2} className="img-fluid" />
-                                    </div>
-                                    <div className='triangleimg2' >
-                                        <img src={img2} className="img-fluid" />
-                                    </div>
-                                    <div className='triangleimg3' >
-                                        <img src={img2} className="img-fluid" />
-                                    </div>
-                                    <Fade bottom duration={2000}>
-                                        <div className='lifetext'>
-                                            <p className='style'>LIFESTYLE</p>
-                                            <h1 className='our'>Our Culture</h1>
-                                            <p className='spite'>In spite of having experienced significant growth we strive to maintain the essence of a small outfit: with open door policies, a relaxed work culture and, first and foremost, an unwavering fidelity for all of our clients, big and small.</p>
-                                            <a class="cmp-btn" onClick={() => navigate("/services")}>View all services <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="cmp-btn__icon" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></a>
-                                        </div>
-                                    </Fade>
-                                </div>
-
-                                <div className="col-lg-6 col-md-12 col-sm-12 mb-5 mt-5">
-                                    <Fade right duration={2000}>
-                                        <div className='img4'>
-                                            <img src={img4} className="img-fluid" />
-                                        </div>
-                                    </Fade>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="header4" className="d-flex align-items-center  ">
-
-                <div className="container-fluid ">
-                    <div className="row" style={{ marginTop: "10%", marginBottom: "10%" }}>
-                        <Fade bottom duration={2000}>
-                            <div className="col-10 mx-auto">
-
-                                <p className='start'>We started out in a garage down south in patagonia. But now...</p>
-                                <h3 className='you'>You can find us here</h3>
-                            </div>
-                        </Fade>
-                    </div>
-                </div>
-            </section>
-
-            <section id="header5" className="d-flex align-items-center">
-
-                <div className="container-fluid ">
-                    <div className="row">
-                        <Fade bottom duration={2000}>
-                            <div className="col-10 mx-auto">
-                                <div className="row">
-                                    <div className="col-lg-4 col-md-12 col-sm-12 mb-5 mb-lg-0 mt-5 mt-lg-0">
-                                        <div className='circle'>
-                                            <img src={img5} className="img-fluid" />
-                                        </div>
-                                        <h3 className='caption'>Argentina</h3>
-                                    </div>
-
-                                    <div className="col-lg-4 col-md-12 col-sm-12 ">
-                                        <div className='circle'>
-                                            <img src={img6} className="img-fluid" />
-                                        </div>
-                                        <h3 className='caption'>Colombia</h3>
-                                    </div>
-                                    <div className="col-lg-4 col-md-12 col-sm-12 mb-5 mb-lg-0 mt-5 mt-lg-0">
-                                        <div className='circle'>
-                                            <img src={img7} className="img-fluid" />
-                                        </div>
-                                        <h3 className='caption'>USA</h3>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </Fade>
-                    </div>
-                </div>
-            </section> */}
-
-      <section
+      {/* <section
         id="header3"
         className="d-flex align-items-center bg-light text-dark mt-5"
       >
@@ -453,17 +375,6 @@ const About = () => {
                             </div>
                           </Card.Text>
                         </Card.Body>
-                        {/* <Card.Body className="main-cards">
-                          <Card.Title className="sen-title">
-                            {item.title}
-                          </Card.Title>
-                          <Card.Text className="sen-name">
-                            {item.name}
-                            <a href={item.link} target="_blank">
-                              <GrLinkedinOption className="icon" />
-                            </a>
-                          </Card.Text>
-                        </Card.Body> */}
                       </Card>
                     </Col>
                   ))}
@@ -471,32 +382,6 @@ const About = () => {
               </div>
             </Fade>
           </div>
-          {/* <div className="row">
-            <Fade bottom duration={2000}>
-              <div className="col-10 mx-auto">
-                <Carousel
-                  activeIndex={index}
-                  onSelect={handleSelect}
-                  className="slider2"
-                >
-                  <Carousel.Item className="carouselitem2">
-                    <h3 className="slidetitle2">"No risk, no reward"</h3>
-                    <p className="slidepara2">Federico</p>
-                  </Carousel.Item>
-                  <Carousel.Item className="carouselitem2">
-                    <h3 className="slidetitle2">
-                      "This looks intersting, let's give it a try"
-                    </h3>
-                    <p className="slidepara2">Rodrigo</p>
-                  </Carousel.Item>
-                  <Carousel.Item className="carouselitem2">
-                    <h3 className="slidetitle2">"Think big!"</h3>
-                    <p className="slidepara2">Eugenio</p>
-                  </Carousel.Item>
-                </Carousel>
-              </div>
-            </Fade>
-          </div> */}
 
           <div className="row">
             <Fade bottom duration={2000}>
@@ -596,10 +481,6 @@ const About = () => {
                       The fact that they’ve been with us from the start and were
                       patient, supportive, committed, and flexible is excellent.
                     </p>
-
-                    {/* <div className="mt-3 mb-5">
-                                            <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
-                                        </div> */}
                   </div>
                   <div className="col-lg-5 col-md-12 col-sm-12 header-img">
                     <div className="img13 mt-3">
@@ -609,10 +490,6 @@ const About = () => {
                         alt="techcreator software house"
                       />
                     </div>
-                    {/* <div className="img14">
-                                            <img src={img14} className="img-fluid" alt="img14" />
-
-                                        </div> */}
                   </div>
                 </div>
               </div>
@@ -632,9 +509,6 @@ const About = () => {
                       We were hesitant to switch to a new POS system, but we are
                       so glad we chose Techcreator.
                     </p>
-                    {/* <div className="mb-5">
-                                        <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
-                                    </div> */}
                   </div>
                   <div className="col-lg-5 col-md-12 col-sm-12 header-img">
                     <div className="img13 mt-3">
@@ -644,86 +518,13 @@ const About = () => {
                         alt="swabi software house"
                       />
                     </div>
-                    {/* <div className="img14">
-                                              <img src={img14} className="img-fluid" alt="img14" />
-
-                                             </div> */}
                   </div>
                 </div>
               </div>
             </Fade>
           </div>
-
-          {/* <div className="row text-white  rounded">
-            <Fade bottom delay={500} duration={2000}>
-              <div className="col-10 mx-auto">
-                <div className="row bg-sam mt-5">
-                  <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                    <p className="petro">Sallon</p>
-                    <p className="mt-2 Plat">
-                      A spot where all your beauty appointments meet
-                    </p>
-                    <p className="we lead">
-                      Everyone at TechCreator has been an excellent communicator
-                      with no surprises in billing or delivery.
-                    </p>
-                    <div className="mb-5">
-                                        <a href="" className="howbtn">SEE HOW WE DID IT <MdKeyboardArrowRight style={{ marginBottom: "5px", width: "1.3em", height: "1.3em" }} /></a>
-                                    </div>
-                  </div>
-                  <div className="col-lg-5 col-md-12 col-sm-12 header-img">
-                    <div className="img13 mt-3">
-                      <img
-                        src={saloonimg}
-                        className="img-fluid pt-5"
-                        alt="techcreator about"
-                      />
-                    </div>
-                    <div className="img14">
-                                                <img src={img14} className="img-fluid" alt="img14" />
-
-                                              </div>
-                  </div>
-                </div>
-              </div>
-            </Fade>
-          </div> */}
         </div>
-      </section>
-
-      {/* <div className="proimg">
-        <div className="col">
-          <h2 className="pro-mains text-center my-5">Our Projects</h2>
-        </div>
-        <div className="container d-md-flex">
-          <div className="row">
-            {projectInfo.map((projectInfo) => {
-              return (
-                <div className="col-md-4 col-md-6 col-lg-4 cards container">
-                  <img
-                    src={projectInfo.img}
-                    alt="techCreator's UX/UI design"
-                    className=""
-                  />
-                  <div className="cards-body">
-                    <h2 className="cards-title">{projectInfo.head}</h2>
-                    <p className="cards-info">{projectInfo.para}</p>
-                    <a
-                      className="cards-btn"
-                      target="_blank"
-                      href={projectInfo.link}
-                    >
-                      {projectInfo.btn}
-                    </a>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div> */}
-      <Career />
-      <Footers />
+      </section> */}
     </>
   );
 };
