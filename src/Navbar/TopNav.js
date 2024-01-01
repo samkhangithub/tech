@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -7,23 +7,34 @@ import "./TopNav.css";
 import logo from "../image/MoscarLogo.png";
 
 const TopNav = () => {
-  
 
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
 
-  const [fix, setFix] = useState(false)
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+    const isScrollingDown = prevScrollPos < currentScrollPos;
 
-  const setFixed = () => {
-    if (window.screenY >= 300) {
-      setFix(true)
-    }
-    else {
-      setFix(false)
-    }
-  }
-  window.addEventListener("scroll", setFixed)
+    setPrevScrollPos(currentScrollPos);
+
+    // Show/hide the navbar based on the scroll direction
+    setVisible(isScrollingDown ? false : true);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
+
+  const navbarStyle = {
+    transition: 'top 0.6s',
+    top: visible ? '0' : '-100px', // Adjust the height of the navbar
+  };
   return (
     <>
-      <Navbar expand="lg" fixed="top" className={" navbar-inverse main-nav py-2 bg - [#00000]"}>
+      <Navbar style={navbarStyle} expand="lg" fixed="top" className={" navbar-inverse main-nav py-2 bg - [#00000]"}>
         <Container>
           <NavLink  to="/" className="logo">
             <img  src={logo} />

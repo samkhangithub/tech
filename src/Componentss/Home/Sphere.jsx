@@ -155,6 +155,7 @@ const Sphere = () => {
             marginRight: "100px",
             flexDirection: "row",
             justifyContent: "center",
+            // paddingRight:'80px',
             alignItems: "center",
             height: "996px", // Set the height to your desired size
             overflow: "hidden",

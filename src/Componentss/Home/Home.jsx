@@ -33,7 +33,6 @@ import cardimg2 from "../../image/Patronlogo.png";
 import cardimg3 from "../../image/logo-white.png";
 import Sphere from "./Sphere";
 const boxInfo = [
-
   {
     img: cardimg3,
     para: "TechCreator's innovative software solutions have helped us streamline our operations and improve our customer service.",
@@ -126,7 +125,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="sphere col-lg-5 col-md-0 col-sm-0">
+            <div className="sphere col-lg-5 d-none d-lg-block">
               <Sphere />
             </div>
           </div>
@@ -148,21 +147,21 @@ const Home = () => {
                 </Fade>
                 <Fade bottom delay={2000} duration={3000}>
                   <div className="col-lg-5 col-md-12 col-sm-12 hero-dev  d-flex justify-content-center flex-column">
-                    <h2 className="mt-3 Develop">
-                      Our Comprehensive Software Solutions
-                    </h2>
+                    <h2 className="mt-3 Develop">Global Reach</h2>
                     <p className="pt-3">
-                      At TechCreator Software House, we believe that client
-                      satisfaction is key to our success, and we are committed
-                      to providing exceptional customer service at every stage
-                      of the{" "}
-                      <a href="https://en.wikipedia.org/wiki/Software_development_process">
+                      We operate on a global scale, catering to businesses
+                      across continents. Our widespread presence and
+                      understanding of diverse markets empower us to offer
+                      localized solutions and support, ensuring a seamless
+                      experience for our clients worldwide.
+                    </p>
+                    {/* <a href="https://en.wikipedia.org/wiki/Software_development_process">
                         software development process
                       </a>{" "}
                       . Our team works closely with clients to ensure that their
                       vision is realized, and their software
                       solution is a success.
-                    </p>
+                    </p> */}
                   </div>
                 </Fade>
               </div>
@@ -181,18 +180,22 @@ const Home = () => {
               <div className="row abs">
                 <Fade bottom delay={500} duration={3000}>
                   <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column  fade__bottom">
-                    <h2 className="mt-3 Develop">
-                      Innovative Software Solutions
-                    </h2>
+                    <h2 className="mt-3 Develop">Expert Team</h2>
                     <p className="mt-2 Over ">
-                      TechCreator is a technology software company that
+                      Our team comprises talented professionals with extensive
+                      industry knowledge and technical expertise. We
+                      continuously invest in training and skill development,
+                      ensuring that our clients benefit from the latest
+                      advancements and best practices in the IT and outsourcing
+                      domains.
+                      {/* TechCreator is a technology software company that
                       specializes in developing custom software solutions to
                       help businesses of all sizes achieve their goals.{" "}
                       <a href="https://techcreator.co/about">Our team </a>
                       of experienced developers, designers, and project managers
                       work closely with clients to understand their business
                       needs and develop software solutions that streamline
-                      operations, increase efficiency, and drive growth.
+                      operations, increase efficiency, and drive growth. */}
                     </p>
                   </div>
                 </Fade>
@@ -257,17 +260,21 @@ const Home = () => {
                 </div>
                 <Fade bottom delay={500} duration={3000}>
                   <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-end text-end  flex-column">
-                    <h2 className="mt-5 Develop">
-                      Software Products Discovery
-                    </h2>
+                    <h2 className="mt-5 Develop">Client-Centric Approach</h2>
                     <p className="mt-5 Over">
-                      We understand that every project is unique, and we work
+                      At Moscar, client satisfaction is our priority. We
+                      collaborate closely with our clients, understanding their
+                      unique requirements, and offering customized solutions
+                      that align with their goals and objectives. Our dedication
+                      to excellence and attention to detail set us apart in
+                      delivering value-added services consistently.
+                      {/* We understand that every project is unique, and we work
                       closely with our clients to ensure that their software
                       products are tailored to meet their specific business
                       needs. Whether you need a web application, a mobile app,
                       or a custom software solution to automate your business
                       processes,<b>TechCreator software company</b> has the
-                      expertise and experience to help you achieve your goals.
+                      expertise and experience to help you achieve your goals. */}
                     </p>
                   </div>
                 </Fade>
@@ -280,15 +287,21 @@ const Home = () => {
               <div className="row abs">
                 <Fade bottom delay={500} duration={3000}>
                   <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                    <h2 className="mt-3 Develop">Talent Augmentation</h2>
+                    <h2 className="mt-3 Develop">Cutting-Edge Technology: </h2>
                     <p className="mt-5 Over">
-                      TechCreator Software Development Company understands that
+                      We stay at the forefront of technological advancements,
+                      utilizing the latest tools and platforms to deliver
+                      efficient and innovative solutions. Our commitment to
+                      leveraging technology ensures that our clients benefit
+                      from state-of-the-art solutions that drive efficiency and
+                      performance.
+                      {/* TechCreator Software Development Company understands that
                       businesses need a strong and reliable software development
                       team to stay ahead of the competition. But finding and
                       retaining the right talent can be challenging. That's
                       where our talent augmentation services come in, helping
                       businesses augment their teams with top talent to achieve
-                      their software development goals.
+                      their software development goals. */}
                     </p>
                   </div>
                 </Fade>
@@ -578,8 +591,6 @@ const Home = () => {
           </Fade>
         </div>
       </div>
-
-     
     </>
   );
 };
