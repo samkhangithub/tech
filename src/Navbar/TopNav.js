@@ -34,7 +34,7 @@ const TopNav = () => {
   };
   return (
     <>
-      <Navbar style={navbarStyle} expand="lg" fixed="top" className={" navbar-inverse main-nav py-2 bg - [#00000]"}>
+      <Navbar style={navbarStyle} expand="lg" fixed="top" className={" navbar-inverse main-nav py-2 bg-dark"}>
         <Container>
           <NavLink  to="/" className="logo">
             <img  src={logo} />
@@ -42,7 +42,6 @@ const TopNav = () => {
           <Navbar.Toggle />
           <Navbar.Collapse >
             <Nav  className="ms-auto">
-              {/* {menuData.map((item) => ( */}
                 <NavLink  to='/'  className="nav-item" >
                   <div className="text-white" >Home</div>
               </NavLink>
@@ -58,7 +57,6 @@ const TopNav = () => {
               <NavLink to='/portfolio' className="nav-item" >
                 <div className="text-white" >Portfolio</div>
               </NavLink>
-              {/* ))} */}
             </Nav>
             <Nav className="ms-auto">
               <NavLink  to="/contact" className="btn-nav">
@@ -66,9 +64,10 @@ const TopNav = () => {
               </NavLink>
             </Nav>
           </Navbar.Collapse>
-          
-        </Container>
+          </Container>
       </Navbar>
+      
+
     </>
   );
 };

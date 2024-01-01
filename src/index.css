@@ -25,3 +25,6 @@ code {
 a {
   text-decoration: none !important;
 }
+.fixed-navbar {
+  display: none;
+}
