@@ -22,28 +22,33 @@ import Footers from "../Footers/Footer";
 import Career from "../Careers/Career";
 import Fade from "react-reveal/Fade";
 import { Helmet } from "react-helmet";
+import { NavLink } from "react-router-dom";
 
 const cardInfo = [
   {
     img: card10,
+    href: '/odoo',
     header: "Odoo ERP Solutions",
     para: "At Moscar, we excel in delivering comprehensive Odoo ERP solutions tailored to meet the diverse needs of businesses across various industries. Our team of experienced professionals leverages the power of Odoo's modular approach to streamline operations, enhance productivity, and drive business growth.Learn More……..",
     btn: "VIEW SERVICE DETAILS",
   },
   {
     img: card11,
+    href: '/eor',
     header: "Employer of Record (EOR)",
     para: " We specialize in EOR services, providing businesses with a seamless solution for their global workforce management needs. Our expertise in compliance, payroll, HR administration, and legal support enables companies to expand their global presence while mitigating risks and ensuring compliance with local regulations.Learn More……",
     btn: "VIEW SERVICE DETAILS",
   },
   {
     img: card4,
+    href: '/gulf',
     header: "Gulf Call Center Outsourcing",
     para: "With a focus on customer satisfaction, we offer top-notch outsourcing call center services designed to optimize customer interactions. Our skilled agents are equipped with the latest technology and best practices to deliver exceptional customer support, enhancing your brand's reputation and fostering long-term relationships with your clientele.Learn More…….",
     btn: "VIEW SERVICE DETAILS",
   },
   {
     img: card13,
+    href: '/global',
     header: "Global IT Outsourcing",
     para: "At Moscar, we understand the significance of global outsourcing for businesses seeking to optimize costs, access specialized talent, and expand their operational capabilities. Our global outsourcing services encompass a wide array of solutions, ensuring seamless integration and support across various functions, enabling businesses to thrive in a competitive global landscape.Learn More…….",
   },
@@ -58,7 +63,7 @@ const cardInfo = [
   //   para: "Our experienced project managers work closely with clients to ensure that projects are completed on time, within budget, and to the highest standards.",
   //   btn: "VIEW SERVICE DETAILS",
   // },
- 
+
   // {
   //   img: card6,
   //   header: "QA Testing",
@@ -97,21 +102,21 @@ const Services = () => {
         <link rel="canonical" href="/services" />
       </Helmet>
 
-      
-      <section className="d-flex align-items-center aboutimg text-white">
+
+      <section className="text-white d-flex align-items-center aboutimg">
         <div className="container-fluid ">
           <div
             className="row"
             style={{ marginTop: "15%", marginBottom: "15%" }}
           >
             <Fade left delay={500} duration={3000}>
-              <div className="col-10 mx-auto">
+              <div className="mx-auto col-10">
                 <div className="row">
-                  <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+                  <div className="pt-5 col-lg-5 col-md-12 col-sm-12 pt-lg-0 d-flex justify-content-center flex-column">
                     <h1 className="services">Our Services</h1>
                   </div>
 
-                  <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
+                  <div className="mb-5 col-lg-7 col-md-12 col-sm-12">
                     <p className="we-services lead">
                       TechCreator offers top-notch web and mobile app
                       development services to help businesses bring their ideas
@@ -133,15 +138,15 @@ const Services = () => {
         </div>
       </section>
 
-      
+
 
       {/* Card Jsx */}
       <section className="main">
         <div className="container">
           <Fade bottom duration={2000}>
             <div className="head">
-              <h2 className="display-5 fw-bold lh-1 mb-3 text-primary ">
-              Our Service
+              <h2 className="mb-3 display-5 fw-bold lh-1 text-primary ">
+                Our Service
               </h2>
             </div>
           </Fade>
@@ -149,13 +154,14 @@ const Services = () => {
             {cardInfo.map((item) => {
               return (
                 <Fade bottom duration={1000}>
-                  <div className="col-md-6 col-lg-4 py-5">
-                    <div className="card-ser p-4 bg-white text-dark">
-                      <img src={item.img} className="pt-3" />
-                      <h3 className="pt-4">{item.header}</h3>
-                      <span className="pt-4">{item.para}</span>
-                      
-                    </div>
+                  <div className="py-5 col-md-6 col-lg-4">
+                    <NavLink to={item.href}>
+                      <div className="p-4 bg-white card-ser text-dark">
+                        <img src={item.img} className="pt-3" />
+                        <h3 className="pt-4">{item.header}</h3>
+                        <span className="pt-4">{item.para}</span>
+                      </div>
+                    </NavLink>
                   </div>
                 </Fade>
               );
@@ -163,7 +169,7 @@ const Services = () => {
           </div>
         </div>
       </section>
-     
+
     </>
   );
 };

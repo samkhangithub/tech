@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -10,28 +10,38 @@ const TopNav = () => {
   
 
 
-  const [fix, setFix] = useState(false)
+  const [isFixed, setIsFixed] = useState(false);
 
-  const setFixed = () => {
-    if (window.screenY >= 300) {
-      setFix(true)
+
+  const handleScroll = () => {
+    // Use window.scrollY instead of window.screenY
+    if (window.scrollY >= 100) {
+      setIsFixed(true);
+    } else {
+      setIsFixed(false);
     }
-    else {
-      setFix(false)
-    }
-  }
-  window.addEventListener("scroll", setFixed)
+  };
+
+  useEffect(() => {
+    // Add and remove event listener when component mounts and unmounts
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
-      <Navbar expand="lg" fixed="top" className={" navbar-inverse main-nav py-2 bg - [#00000]"}>
-        <Container>
+    {/* <div className={` ${isFixed ? "fixed-navbar" : ""}`}>
+
+      <Navbar expand="lg" fixed="top"  className={`navbar-inverse main-nav py-2 border border-red-800 w-full`}>
+       
           <NavLink  to="/" className="logo">
             <img  src={logo} />
           </NavLink>
           <Navbar.Toggle />
           <Navbar.Collapse >
             <Nav  className="ms-auto">
-              {/* {menuData.map((item) => ( */}
                 <NavLink  to='/'  className="nav-item" >
                   <div className="text-white" >Home</div>
               </NavLink>
@@ -47,7 +57,6 @@ const TopNav = () => {
               <NavLink to='/portfolio' className="nav-item" >
                 <div className="text-white" >Portfolio</div>
               </NavLink>
-              {/* ))} */}
             </Nav>
             <Nav className="ms-auto">
               <NavLink  to="/contact" className="btn-nav">
@@ -56,8 +65,9 @@ const TopNav = () => {
             </Nav>
           </Navbar.Collapse>
           
-        </Container>
       </Navbar>
+      </div> */}
+
     </>
   );
 };

@@ -12,6 +12,10 @@ import Services from "./Componentss/Our Services/Services";
 import Contact from "./Componentss/Contacts/Contact";
 import Portfolio from "./Componentss/Portfolio/portfolio";
 import RouterPage from './Router'
+import Odoo from './Componentss/Our Services/Odoo';
+import Eor from './Componentss/Our Services/Eor';
+import GlobalIT from './Componentss/Our Services/GlobalIT';
+import Gulf from './Componentss/Our Services/Gulf';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +41,22 @@ const router = createBrowserRouter([
       {
         path: "services",
         element: <Services />,
+      },
+      {
+        path: "/odoo",
+        element: <Odoo />,
+      },
+      {
+        path: "/eor",
+        element: <Eor />,
+      },
+      {
+        path: "/global",
+        element: <GlobalIT />,
+      },
+      {
+        path: "/gulf",
+        element: <Gulf />,
       },
     ],
   },
