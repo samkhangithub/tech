@@ -34,7 +34,7 @@ const TopNav = () => {
   };
   return (
     <>
-      <Navbar style={navbarStyle} expand="lg" fixed="top" className={" navbar-inverse main-nav py-2 bg-dark"}>
+      <Navbar style={navbarStyle} expand="lg" fixed="top" className={" navbar-inverse main-nav py-2 bg-00000"}>
         <Container>
           <NavLink  to="/" className="logo">
             <img  src={logo} />

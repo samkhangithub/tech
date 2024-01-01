@@ -146,7 +146,7 @@ const GlobalIT = () => {
                             >
                                 <div className='px-2 py-2 md:py-32 md:px-36'>
                                     <div>
-                                        <h3 className='text-white text-[46px] font-medium'>Why <br />Egyptfor<br /> IT Outsourcing?</h3>
+                                        <h3 className='text-white text-[46px] font-medium'>Why <br />Egypt for<br /> IT Outsourcing?</h3>
                                     </div>
                                     <div className='gap-4 pt-5 md:flex'>
                                         <div className='border-l-4 border-r-white'>

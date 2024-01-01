@@ -42,7 +42,7 @@ const cardInfo = [
   {
     img: card4,
     href: '/gulf',
-    header: "Gulf Call Center Outsourcing",
+    header: "Moscar Call Center Outsourcing",
     para: "With a focus on customer satisfaction, we offer top-notch outsourcing call center services designed to optimize customer interactions. Our skilled agents are equipped with the latest technology and best practices to deliver exceptional customer support, enhancing your brand's reputation and fostering long-term relationships with your clientele.Learn More…….",
     btn: "VIEW SERVICE DETAILS",
   },
@@ -118,7 +118,7 @@ const Services = () => {
 
                   <div className="mb-5 col-lg-7 col-md-12 col-sm-12">
                     <p className="we-services lead">
-                      TechCreator offers top-notch web and mobile app
+                      Moscar offers top-notch web and mobile app
                       development services to help businesses bring their ideas
                       to life. Our experienced team of developers creates custom
                       apps that are tailored to meet our clients' specific
